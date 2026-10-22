@@ -1,0 +1,9 @@
+{
+  "source_action": "getLifeOceanVideo",
+  "filename": "11111.mp4",
+  "url_host": "alaya-ptdh.oss-accelerate.aliyuncs.com",
+  "url_path_sha256": "db7f6d9a163d5cb6386c44bf72421925bc7a1a00cf5ca7bf656bd003f7d404c4",
+  "signed_query_removed": true,
+  "note": "URL签名及查询参数未导出；单次返回无法反推出五位文件名的编码规则或心理变化条件。",
+  "url_path": "/lifeocean/11111.mp4"
+}

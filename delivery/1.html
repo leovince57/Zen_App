@@ -1,0 +1,3434 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#e9e9e4">
+  <title>人间净土 · 修学流程原型</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23476250'/%3E%3Cpath d='M20 9C10 18 13 25 20 30C27 25 30 18 20 9Z' fill='none' stroke='%23fffdf6' stroke-width='2'/%3E%3Cpath d='M8 19C8 28 13 32 20 32C27 32 32 28 32 19C26 20 22 24 20 30C18 24 14 20 8 19Z' fill='none' stroke='%23fffdf6' stroke-width='2'/%3E%3C/svg%3E">
+  <style>
+:root{--ink:#292b25;--muted:#69705f;--primary:#476250;--primary-deep:#344b3c;--primary-soft:#e9eee7;--paper:#fffef9;--canvas:#f6f5ee;--line:#e6e7de;--ochre:#986a38;--ochre-soft:#f5ecde;--danger:#a1483f;--stage:#e9e9e4;--radius:16px;--font:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;--serif:"Songti SC","Noto Serif SC",SimSun,serif;--phone-scale:1}
+*{box-sizing:border-box}body{margin:0;background:var(--stage);color:var(--ink);font-family:var(--font);font-size:15px;-webkit-font-smoothing:antialiased}button,input,textarea,select{font:inherit}button,a{-webkit-tap-highlight-color:transparent}button{cursor:pointer;color:inherit}button:disabled{cursor:not-allowed;opacity:.48}button,input,textarea,select,a{outline-offset:4px}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid var(--primary)}button{border:0}a{color:var(--primary);text-underline-offset:3px}::selection{background:#dce5d7;color:#233329}input,textarea{caret-color:var(--primary)}svg{width:22px;height:22px;flex:none;vertical-align:middle}h1,h2,h3,h4,p{margin:0}h1,h2,h3{letter-spacing:-.025em}button{transition:background .15s ease,color .15s ease,transform .15s ease}button:active:not(:disabled){transform:translateY(1px)}.preview{height:100dvh;display:flex;gap:58px;align-items:center;justify-content:center;padding:25px 34px;overflow:hidden}.preview-sidebar{width:220px;flex:none;align-self:stretch;display:flex;flex-direction:column;justify-content:center;min-height:0}.preview-brand{display:flex;gap:12px;align-items:center;margin-bottom:24px}.brand-mark{width:36px;height:40px;display:grid;place-items:center;background:var(--primary);color:var(--paper);border-radius:10px}.brand-mark svg{width:26px;height:26px}.preview-brand strong{font-size:19px;letter-spacing:.05em}.preview-brand p{font-size:12px;color:#6d7268;margin-top:5px}.role-switch{padding:4px;display:flex;background:#dcdfd7;border-radius:10px;gap:4px;margin-bottom:24px}.role-switch button{width:50%;padding:10px 6px;font-weight:550;background:transparent;border-radius:7px;color:#636a5e;font-size:13px}.role-switch .active{background:var(--paper);color:var(--ink);box-shadow:0 2px 5px #242b1c0b}.side-heading{font-size:11px;letter-spacing:.08em;color:#70766a;margin:16px 12px 7px;font-weight:600}.preview-links{display:grid;gap:3px}.preview-links button{text-align:left;display:flex;align-items:center;gap:10px;background:transparent;border-radius:9px;padding:10px 12px;font-size:13px;color:#686f62}.preview-links button svg{width:17px;height:17px}.preview-links button:hover{background:#dfe3d9}.preview-links button.active{color:var(--primary-deep);background:#d9e1d4;font-weight:600}.preview-note{font-size:11px;line-height:1.8;color:#68705f;margin:24px 10px 0}.side-actions{display:flex;gap:14px;margin:12px 10px}.side-actions button{padding:4px 0;border-bottom:1px solid #a7ad9e;background:none;font-size:11px;color:#5e6757}.phone-wrap{position:relative;flex:none;width:calc(393px * var(--phone-scale));height:calc(852px * var(--phone-scale))}.phone{position:absolute;top:0;left:0;width:393px;height:852px;transform:scale(var(--phone-scale));transform-origin:top left;display:flex;flex-direction:column;background:var(--canvas);border:1px solid #d2d6cb;border-radius:44px;box-shadow:0 0 0 9px #ffffff92,0 28px 55px #303a2421;overflow:clip;isolation:isolate}.statusbar{height:52px;flex:none;display:flex;justify-content:space-between;align-items:center;padding:0 26px;font-size:16px;font-weight:600;user-select:none}.status-icons{display:flex;align-items:center;gap:6px}.status-icons svg{width:auto;height:12px}.phone-viewport{position:relative;flex:1;min-height:0;display:flex;flex-direction:column;overflow:hidden;isolation:isolate}.phone-content{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;scrollbar-width:none;scroll-behavior:smooth}.phone-content::-webkit-scrollbar{display:none}.gesture{height:27px;flex:none;display:grid;place-items:end center;padding-bottom:8px;background:var(--paper)}.gesture:after{content:"";width:124px;height:4px;background:#242820;border-radius:5px}.app-bar{height:53px;padding:4px 20px 0;display:flex;align-items:center;justify-content:space-between;gap:8px;flex:none;background:var(--canvas)}.app-bar .bar-title{font-size:17px;font-weight:600}.back{background:transparent;width:36px;height:40px;display:grid;place-items:center;margin-left:-9px}.icon-btn{height:40px;width:40px;display:grid;place-items:center;border-radius:50%;background:none}.icon-btn:hover{background:var(--primary-soft)}.app-wordmark{display:flex;gap:9px;align-items:center;font-family:var(--serif);font-size:21px;letter-spacing:.1em}.app-wordmark svg{width:25px;height:25px;color:var(--primary)}.pad{padding:12px 22px 24px}.page-heading{font-size:27px;font-weight:650;line-height:1.4}.sub{font-size:13px;color:var(--muted);line-height:1.7}.date{font-size:12px;color:var(--muted);margin-top:5px}.greeting{padding-top:15px;margin-bottom:26px}.greeting h1{font-family:var(--serif);font-size:30px;font-weight:600;letter-spacing:.02em}.section-title{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:23px 0 13px}.section-title h2{font-size:17px;font-weight:650}.text-button{background:none;padding:8px 0;color:var(--primary);font-size:12px;display:inline-flex;align-items:center;gap:2px}.text-button svg{width:14px;height:14px}.course-focus{background:var(--paper);border:1px solid #dce2d5;border-radius:var(--radius);padding:20px 18px 17px}.focus-top{display:flex;align-items:center;justify-content:space-between;gap:8px}.breadcrumb{font-size:11px;color:var(--muted);display:flex;align-items:center;gap:5px;line-height:1.6}.breadcrumb svg{width:11px;height:11px}.tag{font-size:10px;padding:5px 8px;border-radius:5px;display:inline-flex;gap:4px;align-items:center;white-space:nowrap;line-height:1.2}.tag.green{background:var(--primary-soft);color:var(--primary)}.tag.amber{background:var(--ochre-soft);color:var(--ochre)}.tag.gray{background:#eeeee7;color:#6a7062}.tag svg{width:11px;height:11px}.focus-title{font-family:var(--serif);font-size:30px;font-weight:600;margin:13px 0 7px;letter-spacing:.03em}.focus-copy{font-size:13px;color:#626b5a;line-height:1.8}.phase-track{display:flex;gap:7px;margin:20px 0 17px}.phase-track button{flex:1;display:flex;align-items:center;justify-content:center;gap:5px;height:37px;border-radius:6px;background:#eeefe8;color:#697260;font-size:12px}.phase-track button.done{color:var(--primary);background:#e5ece0}.phase-track button.current{background:#eef0df;color:#5c6742}.phase-track svg{width:14px;height:14px}.primary{background:var(--primary);color:var(--paper);width:100%;min-height:47px;padding:12px 17px;border-radius:10px;font-weight:550;font-size:14px;display:flex;align-items:center;justify-content:center;gap:8px}.primary:hover:not(:disabled){background:var(--primary-deep)}.primary svg{width:17px;height:17px}.secondary{background:var(--paper);border:1px solid #d9dfd1;color:var(--primary);min-height:45px;padding:11px 16px;border-radius:10px;font-weight:550;display:flex;align-items:center;justify-content:center;gap:7px;font-size:13px}.secondary:hover{background:var(--primary-soft)}.secondary svg{width:17px;height:17px}.quiet{border:0;background:transparent;color:var(--muted);padding:10px;font-size:12px}.small-primary{background:var(--primary);color:white;padding:8px 13px;border-radius:7px;font-size:12px;min-height:37px}.course-foot{display:flex;align-items:center;justify-content:space-between;font-size:10px;color:var(--muted);margin-top:13px}.avatar{width:31px;height:31px;background:#e9e5d9;border-radius:50%;display:inline-grid;place-items:center;color:#695e49;font-family:var(--serif);font-size:14px;flex:none}.teacher-by{display:flex;gap:6px;align-items:center}.teacher-by .avatar{width:20px;height:20px;font-size:10px}.list-row{display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;padding:16px 0;border-bottom:1px solid var(--line)}.row-icon{height:42px;width:42px;border-radius:12px;background:#e9ede2;color:var(--primary);display:grid;place-items:center;flex:none}.row-icon.ochre{background:#f0e9db;color:var(--ochre)}.row-icon.gray{background:#ebece5;color:#7d8375}.row-main{flex:1;min-width:0}.row-main strong{font-size:14px;font-weight:550;display:block;line-height:1.5}.row-main small{font-size:11px;color:var(--muted);display:block;line-height:1.7;margin-top:3px}.row-arrow{height:17px;width:17px;color:#8d9484;flex:none}.row-end{text-align:right;font-size:12px;color:var(--primary);font-variant-numeric:tabular-nums;flex:none}.row-end small{display:block;font-size:10px;color:var(--muted);margin-top:3px}.lotus-route{position:relative;padding:20px 18px;background:#eeeee4;border-radius:14px;display:flex;align-items:center;gap:17px;text-align:left;width:100%;margin-top:25px}.route-sign{height:53px;width:53px;color:var(--primary);border:1px solid #cbd4bf;border-radius:50%;display:grid;place-items:center}.route-sign svg{width:30px;height:30px}.lotus-route strong{font-family:var(--serif);font-size:18px;letter-spacing:.04em;font-weight:600}.lotus-route small{display:block;margin-top:7px;color:var(--muted);font-size:11px}.bottom-nav{background:var(--paper);border-top:1px solid var(--line);height:63px;flex:none;display:flex;justify-content:space-around;align-items:center;padding:5px 7px 0}.bottom-nav button{background:transparent;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:5px;color:#6d7564;font-size:10px;min-width:68px;min-height:48px}.bottom-nav button svg{width:21px;height:21px}.bottom-nav button.active{color:var(--primary);font-weight:600}.preview-context{width:205px;flex:none;align-self:center}.context-line{height:38px;width:1px;background:#bdc7b1;margin-bottom:19px}.preview-context h2{font-family:var(--serif);font-size:20px;line-height:1.65;font-weight:600}.preview-context>p{font-size:12px;line-height:1.9;color:#69715f;margin-top:14px}.flow-index{display:grid;gap:13px;margin-top:25px;font-size:11px;color:#727b66}.flow-index span{display:flex;align-items:center;gap:8px}.flow-index i{width:18px;height:18px;border:1px solid #bdc7b1;border-radius:50%;font-style:normal;font-size:9px;display:grid;place-items:center}.flow-index .active{color:var(--primary-deep)}.flow-index .active i{background:var(--primary);color:white;border-color:var(--primary)}.preview-context .scope-note{font-size:10px;line-height:1.8;margin-top:28px;padding-top:17px;border-top:1px solid #ccd1c5}.mobile-tools{display:none}.detail-title{font-family:var(--serif);font-size:31px;margin:14px 0 8px;line-height:1.35;letter-spacing:.04em}.detail-lead{font-size:13px;line-height:1.8;color:#656e5b;margin-bottom:20px}.guidance{padding:16px 0;margin:0 0 12px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.guidance-head{display:flex;align-items:center;gap:8px;font-size:12px;margin-bottom:9px}.guidance p{font-size:13px;line-height:1.9;color:#505b47}.stage-block{padding:17px 0 6px;border-bottom:1px solid var(--line)}.stage-head{display:flex;align-items:center;gap:11px;margin-bottom:5px}.stage-symbol{font-family:var(--serif);font-size:24px;color:var(--primary);width:27px;flex:none}.stage-head h2{font-size:16px;flex:1}.stage-head>small{font-size:11px;color:var(--muted)}.task-row{background:none;width:100%;display:flex;align-items:center;gap:11px;text-align:left;padding:13px 0 13px 3px}.check-dot{width:18px;height:18px;border:1px solid #c9d2c0;border-radius:50%;color:var(--primary);flex:none;display:grid;place-items:center}.check-dot.done{border-color:var(--primary);background:var(--primary);color:white}.check-dot svg{width:12px;height:12px}.task-row b{display:block;font-size:13px;font-weight:500;line-height:1.65}.task-row small{color:var(--muted);font-size:11px;display:block;margin-top:2px}.action-footer{padding:12px 22px 13px;border-top:1px solid var(--line);background:var(--paper);flex:none}.action-footer>p{font-size:11px;color:var(--muted);text-align:center;margin:8px 0 0;line-height:1.5}.action-footer.dual{display:flex;gap:10px}.action-footer.dual>*{flex:1}.banner{border:1px solid #dfd6bd;background:#f6f0e2;border-radius:9px;padding:12px 13px;font-size:12px;line-height:1.8;color:#76562c;margin:14px 0}.banner.success{background:#eaf0e5;border-color:#d3ddc9;color:var(--primary)}.muted-label{font-size:11px;color:var(--muted);margin:8px 0}.reader-toolbar{display:flex;gap:8px;margin:14px 0 18px}.chip{border:1px solid var(--line);background:var(--paper);border-radius:7px;min-height:34px;padding:7px 11px;font-size:12px;color:#6f7763}.chip.active{background:var(--primary-soft);border-color:#c7d3bd;color:var(--primary);font-weight:550}.reader-paper{background:var(--paper);border:1px solid #e4e4d8;padding:27px 22px 23px;border-radius:4px;min-height:334px}.reader-paper h2{font-family:var(--serif);text-align:center;font-size:25px;font-weight:600;margin-bottom:11px}.reader-paper .paper-sub{text-align:center;color:var(--muted);font-size:10px;margin-bottom:28px;letter-spacing:.12em}.reader-paper h3{font-family:var(--serif);font-size:17px;margin:21px 0 12px}.reader-paper p{font-family:var(--serif);font-size:16px;line-height:2.2;color:#4e5546}.paper-line{height:1px;background:var(--line);margin:20px 0}.reader-pagination{display:flex;align-items:center;justify-content:space-between;margin:15px 0}.reader-pagination span{font-size:11px;color:var(--muted)}.checkbox-row{display:flex;align-items:flex-start;gap:9px;font-size:12px;line-height:1.7;padding:14px 0}.checkbox-row input{accent-color:var(--primary);width:17px;height:17px;margin:1px 0 0;flex:none}.field{margin:21px 0}.field label,.field .label{display:block;font-size:13px;font-weight:550;margin-bottom:9px;line-height:1.6}.field small{font-weight:400;color:var(--muted);font-size:11px}.field input:not([type=checkbox]):not([type=radio]),.field textarea,.field select{width:100%;background:var(--paper);border:1px solid #d6ddcc;border-radius:9px;padding:12px;color:var(--ink);font-size:13px;line-height:1.7;min-height:46px}.field textarea{resize:vertical;min-height:106px}.field textarea:focus,.field input:focus{border-color:var(--primary)}input::placeholder,textarea::placeholder{color:#717866;opacity:1}.question{padding:19px 0;border-bottom:1px solid var(--line)}.question legend{font-size:14px;font-weight:550;margin-bottom:12px;line-height:1.7;padding:0}.question{border-left:0;border-right:0;border-top:0;min-width:0;margin:0}.radio-options{display:flex;flex-wrap:wrap;gap:8px}.radio-label{display:flex;align-items:center;gap:5px;font-size:11px;line-height:1.5;background:var(--paper);border:1px solid #e0e4d7;padding:9px;border-radius:7px;cursor:pointer;min-height:37px}.radio-label:has(input:checked){background:var(--primary-soft);border-color:var(--primary);color:var(--primary)}.radio-label input{accent-color:var(--primary);margin:0;width:13px;height:13px}.error{color:var(--danger);font-size:12px;line-height:1.7;margin-top:10px}.practice-hero{display:flex;align-items:center;justify-content:space-between;padding:17px 0;border-bottom:1px solid var(--line)}.practice-hero strong{font-size:14px;font-weight:550}.practice-hero small{font-size:11px;color:var(--muted);display:block;margin-top:6px}.practice-hero b{font-variant-numeric:tabular-nums;font-size:17px;font-weight:500;color:var(--primary)}.counter-area{text-align:center;padding:29px 0 14px}.count-button{width:224px;height:224px;border-radius:50%;background:#e8eee1;border:1px solid #d2ddc6;display:flex;flex-direction:column;gap:3px;align-items:center;justify-content:center;margin:0 auto 16px;color:var(--primary)}.count-button:hover{background:#e0e9d8}.count-button:active{transform:scale(.98)!important}.count-button svg{width:31px;height:31px;margin-bottom:8px;opacity:.8}.count-button strong{font-size:53px;font-weight:350;line-height:1.15;font-variant-numeric:tabular-nums;letter-spacing:-.04em}.count-button small{font-size:11px;opacity:.8;margin-top:7px}.count-tools{display:flex;justify-content:center;gap:15px}.count-tools button{background:transparent;border:1px solid #d6deca;min-width:60px;height:36px;border-radius:8px;color:var(--primary);font-size:13px}.manual-entry{display:flex;gap:9px;align-items:center;margin-top:15px}.manual-entry input{min-width:0}.manual-entry button{flex:none}.progress-line{height:5px;background:#e7ebdf;border-radius:5px;overflow:hidden}.progress-line span{height:100%;display:block;background:var(--primary);border-radius:5px;transition:width .2s ease}.summary-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid var(--line);font-size:13px;line-height:1.6}.summary-row .value{font-size:12px;color:var(--primary);display:flex;gap:6px;align-items:center;text-align:right}.summary-row svg{width:15px;height:15px}.summary-prose{font-size:13px;line-height:1.9;color:#55614d;margin:11px 0 20px}.success-state{text-align:center;padding:40px 10px 28px}.success-mark{height:72px;width:72px;border-radius:50%;display:grid;place-items:center;background:var(--primary-soft);color:var(--primary);margin:0 auto 21px}.success-mark svg{width:33px;height:33px}.success-state h1{font-family:var(--serif);font-size:29px;margin-bottom:10px}.success-state p{font-size:13px;line-height:1.9;color:var(--muted)}.state-list{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:3px 17px;margin:15px 0}.state-list .summary-row:last-child{border:0}.plain-note{font-size:12px;line-height:1.9;color:var(--muted);padding:12px 0}.tabs{display:flex;gap:21px;border-bottom:1px solid var(--line);margin:16px 0 4px}.tabs button{background:none;font-size:13px;color:#68725e;position:relative;padding:11px 0 13px;min-height:43px}.tabs button.active{color:var(--primary);font-weight:600}.tabs button.active:after{content:"";position:absolute;bottom:-1px;left:0;right:0;height:2px;background:var(--primary)}.journey-current{margin:19px 0 20px;padding:14px 0 14px 15px;border:1px solid #d5deca;border-radius:10px;display:flex;align-items:center;gap:12px;background:var(--paper)}.journey-current svg{width:27px;height:27px;color:var(--primary)}.journey-current strong{display:block;font-family:var(--serif);font-size:19px}.journey-current small{font-size:11px;color:var(--muted);display:block;margin-top:5px}.journey-chapter{position:relative;margin-left:13px;padding:0 0 23px 26px;border-left:1px solid #d2dcc5}.journey-chapter:last-child{border:0}.journey-dot{position:absolute;top:0;left:-12px;width:24px;height:24px;border:1px solid #cbd5be;border-radius:50%;background:var(--canvas);display:grid;place-items:center;font-size:10px;color:#7f8b72}.journey-dot.current{background:var(--primary);border-color:var(--primary);color:white}.journey-dot.done{background:#e1e9d9;color:var(--primary)}.journey-dot svg{width:12px;height:12px}.journey-chapter h2{font-family:var(--serif);font-size:20px;padding-top:2px}.journey-chapter>p{font-size:11px;color:var(--muted);margin:7px 0 10px}.journey-entries{display:flex;gap:7px;flex-wrap:wrap}.journey-entries button{border:1px solid #e0e4d8;background:var(--paper);border-radius:7px;padding:9px;font-size:11px;color:#68725e;min-height:36px;display:flex;gap:5px;align-items:center}.journey-entries button svg{width:11px;height:11px}.journey-entries button.current{background:#e6ecde;border-color:#c6d4b8;color:var(--primary)}.journey-entries button.done{color:var(--primary)}.empty{text-align:center;padding:42px 14px}.empty svg{width:35px;height:35px;color:#87937d;margin-bottom:17px}.empty h2{font-size:17px;font-weight:550;margin-bottom:9px}.empty p{font-size:12px;line-height:1.9;color:var(--muted)}.profile{display:flex;align-items:center;gap:14px;margin:18px 0 24px}.profile>.avatar{height:55px;width:55px;font-size:24px;background:#e0e7d7;color:var(--primary)}.profile h1{font-family:var(--serif);font-size:26px;font-weight:600}.profile p{font-size:12px;color:var(--muted);margin-top:6px}.stat-inline{display:flex;gap:0;margin:15px 0 20px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:17px 0}.stat-inline>div{flex:1;border-right:1px solid var(--line);text-align:center}.stat-inline>div:last-child{border:0}.stat-inline strong{font-size:21px;font-weight:500;display:block}.stat-inline small{font-size:11px;color:var(--muted);display:block;margin-top:6px}.student-row>.avatar{width:45px;height:45px;font-size:19px;background:#e2e9d9;color:var(--primary)}.search{display:flex;align-items:center;gap:9px;border:1px solid #e0e4d7;background:var(--paper);border-radius:10px;margin:20px 0 8px;padding:0 12px;height:43px}.search svg{width:17px;height:17px;color:var(--muted)}.search input{background:transparent;border:0;width:100%;height:100%;font-size:12px;outline:0}.assign-option{display:flex;gap:11px;align-items:flex-start;border-bottom:1px solid var(--line);padding:16px 0;cursor:pointer}.assign-option input{margin:4px 0 0;accent-color:var(--primary);width:17px;height:17px;flex:none}.assign-option strong{font-size:14px;font-weight:550}.assign-option p{font-size:12px;color:var(--muted);margin:5px 0;line-height:1.7}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.required-line{display:flex;align-items:center;gap:9px;padding:10px 0;font-size:13px}.required-line input{accent-color:var(--primary);height:16px;width:16px;margin:0}.review-title{font-family:var(--serif);font-size:26px;margin:14px 0 9px}.review-section{padding:19px 0;border-bottom:1px solid var(--line)}.review-section h2{font-size:16px;margin-bottom:10px}.review-section h2 span{font-family:var(--serif);font-weight:400;font-size:19px;margin-right:8px;color:var(--primary)}.review-section>p{font-size:13px;color:#536049;line-height:1.9}.review-section small{font-size:11px;color:var(--muted);display:block;line-height:1.8;margin-top:8px}.review-answer{margin-top:9px;font-size:12px;line-height:1.8;color:#5c6751}.review-answer b{color:var(--primary);font-weight:500}.record-line{display:flex;gap:12px;padding:17px 0;border-bottom:1px solid var(--line)}.record-line>.row-icon{height:35px;width:35px;border-radius:9px}.record-line strong{font-weight:500;font-size:13px}.record-line p{font-size:11px;color:var(--muted);line-height:1.8;margin-top:5px}.toast{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);max-width:calc(100% - 35px);width:max-content;padding:11px 16px;border-radius:9px;background:#303c2e;color:#fffef9;font-size:12px;line-height:1.7;z-index:30;box-shadow:0 6px 15px #23301a24;pointer-events:none}.toast.error-toast{background:#8e4339}.modal{position:absolute;inset:0;background:#2028195c;display:flex;align-items:flex-end;z-index:20;padding-top:45px}.sheet{background:var(--paper);border-radius:22px 22px 0 0;padding:23px 22px 24px;width:100%;max-height:100%;overflow:auto;box-shadow:0 -5px 30px #20281912}.sheet-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:13px}.sheet-head h2{font-size:19px;font-weight:600}.sheet-head .icon-btn{height:30px;width:30px}.sheet>p{font-size:13px;line-height:1.9;color:var(--muted);margin:12px 0 22px}.sheet-actions{display:flex;gap:11px;margin-top:20px}.sheet-actions>*{flex:1}.sheet textarea{width:100%;border:1px solid #d4dccb;background:var(--canvas);padding:12px;border-radius:9px;min-height:115px;resize:vertical;font-size:13px;line-height:1.8}.review-stamp{font-size:12px;color:var(--primary);display:flex;gap:6px;align-items:center;margin-top:15px}.review-stamp svg{width:15px;height:15px}.revision-note{background:#f5eee0;border-radius:10px;padding:14px;margin:17px 0;color:#7b5c33;font-size:12px;line-height:1.9}.small-gap{margin-top:14px}.space-top{margin-top:23px}.center{text-align:center}.flex-row{display:flex;gap:10px;align-items:center}.flex-row>*{flex:1}.notice-dot{width:5px;height:5px;border-radius:50%;background:var(--ochre);display:inline-block}.history-label{font-size:11px;color:var(--muted);margin:18px 0 7px}.not-applicable{color:var(--muted);font-size:12px;padding:12px 0}.snapshot-note{font-size:10px;color:var(--muted);margin:14px 0;line-height:1.8}
+@media(min-width:1450px){.preview{gap:76px}}@media(max-width:1080px){.preview-context{display:none}.preview{gap:45px}.preview-sidebar{width:205px}}@media(max-width:700px){.preview-sidebar{display:none}.preview{padding:53px 18px 18px;gap:0;align-items:flex-start}.mobile-tools{display:flex;position:fixed;top:9px;left:18px;right:18px;justify-content:space-between;align-items:center;font-size:11px;color:#5c6652}.mobile-tools button{border:1px solid #cbd2c2;background:#f6f6ef;padding:7px 10px;border-radius:7px;font-size:11px}.mobile-tools .mini-brand{font-family:var(--serif);font-size:14px;color:#485641}.phone{box-shadow:0 0 0 7px #ffffff85,0 15px 30px #303a241c}.preview-context{display:none}}@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+/* Homepage: five-petal curriculum navigation, based on the supplied emblem. */
+.lotus-home{padding-top:11px}.lotus-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:7px 0 3px}.lotus-heading h1{font-family:var(--serif);font-size:26px;font-weight:600;letter-spacing:.02em}.lotus-heading p{font-size:11px;color:var(--muted);margin-top:6px;line-height:1.7}.study-lotus{width:306px;max-width:100%;margin:1px auto 0}.lotus-map{display:block;width:100%;height:auto;vertical-align:top;overflow:visible}.lotus-petal,.lotus-center{cursor:pointer;outline:none}.lotus-petal .petal-silhouette{transition:stroke-width .18s ease,filter .18s ease}.lotus-petal:hover .petal-silhouette{stroke:#fff4cf;stroke-width:2.8}.lotus-petal:focus-visible .petal-silhouette{stroke:#fff9de;stroke-width:4.2}.lotus-petal text,.lotus-petal>circle,.lotus-petal>path:not(.petal-silhouette),.lotus-center text{pointer-events:none}.petal-name{font-family:var(--serif);font-size:24px;fill:#f3e4b4;letter-spacing:.12em}.petal-state{font-family:var(--font);font-size:11px;fill:#fff3d3;letter-spacing:.03em}.lotus-awakening{font-family:var(--serif);font-size:49px;fill:#f4e3ad;font-weight:400}.lotus-center-label{font-family:var(--serif);font-size:12px;fill:#ecdfb9;letter-spacing:.15em}.lotus-center:hover>circle:first-child,.lotus-center:focus-visible>circle:first-child{stroke:#fff9de;stroke-width:4}.lotus-hint{text-align:center;font-size:10px;letter-spacing:.06em;line-height:1.6;color:var(--muted);margin:1px 0 14px}.lotus-branch-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:11px}.lotus-branch-head h2{font-family:var(--serif);font-size:21px;font-weight:600;display:flex;align-items:center;gap:9px}.lotus-branch-head h2 span{font-family:var(--font);font-size:10px;font-weight:400;color:var(--primary);border:1px solid #c8d2bf;display:grid;place-items:center;width:21px;height:21px;border-radius:4px}.lotus-branch-head>span{font-size:11px;color:var(--muted)}.lotus-course{border:1px solid #dce2d5;border-radius:14px;background:var(--paper);padding:13px 15px 14px}.lotus-course-title{display:flex;align-items:center;justify-content:space-between;margin:7px 0 0}.lotus-course-title h3{font-family:var(--serif);font-size:25px;font-weight:600}.lotus-course-title>span{font-size:10px;color:var(--muted)}.lotus-course .phase-track{margin:12px 0}.lotus-course .phase-track button{min-height:30px;padding:7px 4px;font-size:10px}.lotus-course .primary{min-height:42px;padding-top:11px;padding-bottom:11px;font-size:13px}.lotus-empty{padding:21px 15px 13px;background:var(--paper);border:1px solid var(--line);border-radius:14px}.lotus-empty p{font-size:14px;margin-bottom:9px}.lotus-empty small{font-size:11px;color:var(--muted);line-height:1.9}.lotus-empty .text-button{margin-top:11px;display:flex}.lotus-all{display:flex;align-items:center;justify-content:space-between;width:100%;background:transparent;padding:18px 0 13px;margin-top:9px;border-bottom:1px solid var(--line);font-size:13px}.lotus-all>span:last-child{color:var(--muted);font-size:11px;display:flex;gap:3px;align-items:center}.lotus-all svg{width:13px;height:13px}.lotus-note{font-size:10px}
+@media(prefers-reduced-motion:reduce){.lotus-petal .petal-silhouette{transition:none}}
+
+/* Units are the assignment boundary; a learner's route follows actual assignments. */
+.space-top-sm{margin-top:8px}.unit-description{font-size:13px;line-height:1.9;color:#55614d;margin:14px 0 18px}.unit-deadline{display:block;margin-top:11px;color:var(--muted);font-size:11px}.reader-title{font-family:var(--serif);font-size:25px;font-weight:600;margin:10px 0 7px}.unit-filters{display:flex;flex-wrap:wrap;gap:7px;margin:20px 0 9px}.unit-filters .chip{padding:8px 11px;min-height:34px}.unit-choice{padding:16px 0 12px;border-bottom:1px solid var(--line)}.unit-choice>label{display:flex;gap:11px;align-items:flex-start;cursor:pointer}.unit-choice input{width:17px;height:17px;accent-color:var(--primary);flex:none;margin:3px 0 0}.unit-choice label strong{font-size:16px;font-weight:550}.unit-choice label small{display:block;font-size:11px;color:var(--muted);margin-top:7px;line-height:1.6}.unit-choice>p{font-size:12px;color:#55614d;line-height:1.8;margin:10px 0 0 28px}.unit-choice-foot{display:flex;justify-content:space-between;gap:8px;align-items:center;margin:2px 0 0 28px}.unit-choice-foot>span{font-size:11px;color:var(--muted)}.unit-choice.already-assigned>label{cursor:default}.unit-choice.already-assigned label strong{color:var(--muted)}.unit-target{padding:13px 0 19px;border-bottom:1px solid var(--line)}.unit-target>div{display:flex;align-items:center;justify-content:space-between;gap:10px}.unit-target strong{font-size:14px;font-weight:550}.unit-target label{font-size:12px;display:block;margin:8px 0}.unit-target input{width:100%;min-height:44px;background:var(--paper);border:1px solid #d6ddcc;border-radius:9px;padding:11px 12px;font-size:14px;color:var(--ink)}.unit-material-preview{display:flex;align-items:center;gap:10px;padding:15px 0;border-bottom:1px solid var(--line);font-size:14px}.unit-material-preview:last-child{border-bottom:0}.unit-material-preview svg{color:var(--primary);width:18px;height:18px}.unit-material-preview span{flex:1}.unit-material-preview small{font-size:11px;color:var(--muted)}.journey-summary{display:flex;justify-content:space-between;gap:15px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:16px 0;margin:22px 0 28px;font-size:12px;color:var(--muted)}.journey-summary b{font-weight:600;color:var(--primary);font-size:15px;padding:0 3px}.personal-route{position:relative;isolation:isolate;margin-top:6px}.personal-route:before{content:"";position:absolute;z-index:-1;top:23px;bottom:137px;left:2px;width:44px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='160' viewBox='0 0 44 160'%3E%3Cpath d='M22 0C-7 53 51 107 22 160' fill='none' stroke='%23becabb' stroke-width='1.4'/%3E%3C/svg%3E") repeat-y}.route-node{position:relative;min-height:160px;padding:0 0 25px 58px}.route-dot{position:absolute;left:14px;top:13px;display:grid;place-items:center;width:20px;height:20px;border:1px solid #9cae98;border-radius:50%;background:var(--canvas);color:var(--primary)}.route-dot svg{width:12px;height:12px}.route-node.completed .route-dot{background:var(--primary);border-color:var(--primary);color:var(--paper)}.route-node.current .route-dot{border:2px solid var(--primary)}.route-node.current .route-dot>span{width:6px;height:6px;border-radius:50%;background:var(--primary)}.route-node.submitted .route-dot{background:var(--ochre-soft);color:var(--ochre);border-color:var(--ochre)}.route-content{display:flex;width:100%;text-align:left;background:transparent;flex-direction:column;align-items:flex-start;padding:0 0 13px;border-bottom:1px solid var(--line)}.route-meta{font-size:11px;line-height:1.6;color:var(--muted)}.route-title{display:flex;justify-content:space-between;align-items:center;gap:8px;width:100%;font-family:var(--serif);font-weight:600;font-size:23px;margin-top:8px;line-height:1.5}.route-title svg{width:15px;height:15px;color:var(--primary)}.route-path{font-size:11px;color:var(--muted);margin-top:5px;line-height:1.8}.route-state{display:flex;align-items:center;gap:10px;margin-top:11px;flex-wrap:wrap}.route-state>small{font-size:10px;color:var(--muted)}.route-content:hover .route-title{color:var(--primary)}
+.submission-materials{padding:0 3px 10px}.submission-materials>div{display:flex;align-items:center;gap:8px;font-size:12px;padding:9px 0;color:var(--primary)}.submission-materials svg{width:14px;height:14px}.submission-materials span{flex:1}.submission-materials small{font-size:10px;color:var(--muted)}
+/* The lotus distinguishes understanding (正见) from the four practice domains. */
+.lotus-mode{pointer-events:none}.lotus-mode circle{stroke:#ead8a7;stroke-width:1}.lotus-mode text{font:600 12px var(--serif);letter-spacing:0}.lotus-mode.theory circle{fill:#efddb0}.lotus-mode.theory text{fill:#164d50}.lotus-mode.practice circle{fill:#164f54}.lotus-mode.practice text{fill:#f3e5bd}.lotus-relation{display:flex;align-items:center;justify-content:center;gap:17px;margin:4px 0 14px;font-size:10px;line-height:1.6;color:#55614d}.lotus-relation>span{display:flex;align-items:center;gap:5px;white-space:nowrap}.lotus-relation b{font-family:var(--serif);font-size:11px;font-weight:600;width:19px;height:19px;display:grid;place-items:center;border-radius:4px;background:#e9e1cd;color:#625434}.lotus-relation>span+span b{background:var(--primary-soft);color:var(--primary)}
+/* Source-backed themes and explicit unresolved curriculum definitions. */
+.source-path{font-size:12px;line-height:1.9;color:var(--primary);margin:14px 0;overflow-wrap:anywhere}.source-path>span{color:var(--muted);padding:0 2px}.definition-notice{background:#f2eddf;border-radius:10px;padding:14px 15px;margin:18px 0;color:#715832;font-size:12px;line-height:1.9}.definition-notice strong{font-size:13px;font-weight:550}.definition-notice p{margin-top:7px}.source-marker,.source-note{font-size:12px;line-height:1.9;color:var(--muted);margin:14px 0}.source-note{background:var(--paper);padding:13px;border:1px solid var(--line);border-radius:9px;color:#6b5a3d}.source-tree{padding:0 0 0 18px;margin:11px 0 20px}.source-tree li{font-size:13px;line-height:1.8;padding:8px 0;border-bottom:1px solid var(--line)}.source-tree small{display:block;color:var(--muted);font-size:11px}.pending-list{padding-left:19px;font-size:13px;line-height:1.9;color:#655a43;margin:12px 0 22px}.pending-list li{padding:5px 0}.source-group{border-top:1px solid var(--line);margin:8px 0}.source-group>summary{cursor:pointer;min-height:48px;padding:14px 0;font-size:14px;font-weight:550;color:var(--primary);line-height:1.5}.source-group>summary small{float:right;font-size:11px;font-weight:400;color:var(--muted);padding-right:2px}.source-group .unit-choice{padding-left:4px}.selected-source{display:flex;align-items:center;justify-content:space-between;gap:10px;border-bottom:1px solid var(--line);font-size:12px;line-height:1.8;padding:7px 0}.pending-methods{margin:22px 0}.pending-methods button{display:flex;align-items:center;gap:10px;width:100%;padding:15px 0;background:transparent;border-bottom:1px solid var(--line);text-align:left;font-size:12px}.pending-methods b{font-family:var(--serif);font-size:23px;font-weight:400;color:var(--primary)}.pending-methods span{flex:1;color:var(--muted)}.pending-methods svg{width:15px;height:15px;color:var(--primary)}
+
+/* Mentor configuration fields share the existing paper form style. */
+.field input:not([type=checkbox]):not([type=radio]),.field select{width:100%;min-height:44px;border:1px solid #d4dccb;border-radius:9px;background:var(--paper);padding:11px 12px;color:var(--ink);font-size:13px}.field select{appearance:auto}
+
+</style>
+  <script>
+/* Source names plus user-approved unit boundaries. */
+globalThis.STUDY_MAP = {
+  "source": "001_人间净土修学导图_20240413(2).pdf",
+  "sourcePage": 1,
+  "scope": "用户已同意按完整理论主题、独立实践划分学习单元。原图分组保留为目录；实际教材、自检表、导师实践目标另行配置。",
+  "markerPolicy": "保留原图圆圈数字或省略号，具体下级未展开；不将其推定为课时、目标数量或完成标准。",
+  "units": [
+    {
+      "id": "map-3e095b6eeb",
+      "title": "导读",
+      "path": "导读",
+      "sourcePath": [
+        "导读",
+        "导读"
+      ],
+      "children": [
+        {
+          "title": "回归“人间净土”",
+          "mapMarker": "4"
+        },
+        {
+          "title": "《“人间净土”修学体系》导读",
+          "mapMarker": "1"
+        },
+        {
+          "title": "人间净土修学导图",
+          "mapMarker": "1"
+        },
+        {
+          "title": "平板使用帮助",
+          "mapMarker": "1"
+        },
+        {
+          "title": "雨花长老开示",
+          "mapMarker": "1"
+        },
+        {
+          "title": "觉光普明"
+        },
+        {
+          "title": "觉醒教育专访",
+          "mapMarker": "1"
+        }
+      ],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入"
+      ],
+      "mode": "intro",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": false,
+        "practice": false
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "map-5a5658591d",
+      "title": "皈依",
+      "path": "导读",
+      "sourcePath": [
+        "导读",
+        "皈依"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入",
+        "具体自检表与题目待接入"
+      ],
+      "mapMarker": "6",
+      "mode": "intro",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": false
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "map-0829893317",
+      "title": "早晚定课",
+      "path": "导读",
+      "sourcePath": [
+        "导读",
+        "早晚定课"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mapMarker": "2",
+      "mode": "intro",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "map-b1f629fa42",
+      "title": "入门自检",
+      "path": "导读",
+      "sourcePath": [
+        "导读",
+        "入门自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mapMarker": "6",
+      "mode": "intro",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "map-a26152b80e",
+      "title": "专修",
+      "path": "正见 · 正人",
+      "sourcePath": [
+        "正见",
+        "正人",
+        "专修"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": true,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "专修／选修下的实际课程目录待补充"
+      ],
+      "mapMarker": "…",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": false
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "map-6ec3be3d36",
+      "title": "选修",
+      "path": "正见 · 正人",
+      "sourcePath": [
+        "正见",
+        "正人",
+        "选修"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": true,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "专修／选修下的实际课程目录待补充"
+      ],
+      "mapMarker": "…",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": false
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "map-366640e7b9",
+      "title": "因缘果",
+      "path": "正见 · 正信",
+      "sourcePath": [
+        "正见",
+        "正信",
+        "因缘果"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入",
+        "具体自检表与题目待接入",
+        "配套实践要求由导师设置：因缘果自检"
+      ],
+      "mapMarker": "12",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": [],
+      "practiceUnitId": "unit-318a86d69a",
+      "practiceTitle": "因缘果自检"
+    },
+    {
+      "id": "map-687546f7b1",
+      "title": "轮回路险",
+      "path": "正见 · 正信",
+      "sourcePath": [
+        "正见",
+        "正信",
+        "轮回路险"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入",
+        "具体自检表与题目待接入",
+        "配套实践要求由导师设置：轮回路险自检"
+      ],
+      "mapMarker": "19",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": [],
+      "practiceUnitId": "unit-fabed64d22",
+      "practiceTitle": "轮回路险自检"
+    },
+    {
+      "id": "map-2ab6693dea",
+      "title": "四正勤",
+      "path": "正见 · 正信",
+      "sourcePath": [
+        "正见",
+        "正信",
+        "四正勤"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入",
+        "具体自检表与题目待接入",
+        "配套实践要求由导师设置：四正勤自检"
+      ],
+      "mapMarker": "2",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": [],
+      "practiceUnitId": "unit-3cf6c78ae7",
+      "practiceTitle": "四正勤自检"
+    },
+    {
+      "id": "map-579e1f9d20",
+      "title": "四念处",
+      "path": "正见 · 正信",
+      "sourcePath": [
+        "正见",
+        "正信",
+        "四念处"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入",
+        "具体自检表与题目待接入",
+        "配套实践要求由导师设置：四念处自检"
+      ],
+      "mapMarker": "20",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": [],
+      "practiceUnitId": "unit-0ac8a7e270",
+      "practiceTitle": "四念处自检"
+    },
+    {
+      "id": "map-9e0920be1d",
+      "title": "四如意足",
+      "path": "正见 · 正信",
+      "sourcePath": [
+        "正见",
+        "正信",
+        "四如意足"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入",
+        "具体自检表与题目待接入",
+        "配套实践要求由导师设置：四如意足自检"
+      ],
+      "mapMarker": "1",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": [],
+      "practiceUnitId": "unit-d629c2f277",
+      "practiceTitle": "四如意足自检"
+    },
+    {
+      "id": "map-14eda2c4fc",
+      "title": "人间净土",
+      "path": "正见 · 正信",
+      "sourcePath": [
+        "正见",
+        "正信",
+        "人间净土"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入",
+        "具体自检表与题目待接入",
+        "配套实践要求由导师设置：人间净土自检"
+      ],
+      "mapMarker": "…",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": [],
+      "practiceUnitId": "unit-b2d06f557e",
+      "practiceTitle": "人间净土自检"
+    },
+    {
+      "id": "map-9a1e5f290d",
+      "title": "信自信他",
+      "path": "正见 · 正信",
+      "sourcePath": [
+        "正见",
+        "正信",
+        "信自信他"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入",
+        "具体自检表与题目待接入",
+        "配套实践要求由导师设置：信自信他自检"
+      ],
+      "mapMarker": "8",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": [],
+      "practiceUnitId": "unit-e07a801be1",
+      "practiceTitle": "信自信他自检"
+    },
+    {
+      "id": "map-90be21dcb9",
+      "title": "菩提心",
+      "path": "正见 · 正愿",
+      "sourcePath": [
+        "正见",
+        "正愿",
+        "菩提心"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入",
+        "具体自检表与题目待接入",
+        "配套实践要求由导师设置：菩提心自检"
+      ],
+      "mapMarker": "18",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": [],
+      "practiceUnitId": "map-5127318d9f",
+      "practiceTitle": "菩提心自检"
+    },
+    {
+      "id": "map-c5ca14f9bf",
+      "title": "菩萨行",
+      "path": "正见 · 正愿",
+      "sourcePath": [
+        "正见",
+        "正愿",
+        "菩萨行"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入",
+        "具体自检表与题目待接入"
+      ],
+      "mapMarker": "27",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": false
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": [],
+      "practiceUnitId": null,
+      "practiceTitle": null
+    },
+    {
+      "id": "map-c44ab9e96d",
+      "title": "弥陀功德",
+      "path": "正见 · 正行",
+      "sourcePath": [
+        "正见",
+        "正行",
+        "弥陀功德"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入",
+        "具体自检表与题目待接入"
+      ],
+      "mapMarker": "4",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": false
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": [],
+      "practiceUnitId": null,
+      "practiceTitle": null
+    },
+    {
+      "id": "map-8779f647d2",
+      "title": "念佛原理",
+      "path": "正见 · 正行",
+      "sourcePath": [
+        "正见",
+        "正行",
+        "念佛原理"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入",
+        "具体自检表与题目待接入"
+      ],
+      "mapMarker": "1",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": false
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": [],
+      "practiceUnitId": null,
+      "practiceTitle": null
+    },
+    {
+      "id": "map-d3aee29f94",
+      "title": "舍命念佛",
+      "path": "正见 · 正行",
+      "sourcePath": [
+        "正见",
+        "正行",
+        "舍命念佛"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入",
+        "具体自检表与题目待接入",
+        "配套实践要求由导师设置：舍命念佛"
+      ],
+      "mapMarker": "3",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": [],
+      "practiceUnitId": "unit-3f80851fdc",
+      "practiceTitle": "舍命念佛"
+    },
+    {
+      "id": "map-7a68baa6d4",
+      "title": "闭关念佛",
+      "path": "正见 · 正行",
+      "sourcePath": [
+        "正见",
+        "正行",
+        "闭关念佛"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入",
+        "具体自检表与题目待接入"
+      ],
+      "mapMarker": "3",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": false
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": [],
+      "practiceUnitId": null,
+      "practiceTitle": null
+    },
+    {
+      "id": "map-57e71bb362",
+      "title": "定时念佛",
+      "path": "正见 · 正行",
+      "sourcePath": [
+        "正见",
+        "正行",
+        "定时念佛"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入",
+        "具体自检表与题目待接入"
+      ],
+      "mapMarker": "4",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": false
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": [],
+      "practiceUnitId": null,
+      "practiceTitle": null
+    },
+    {
+      "id": "map-40e529fccc",
+      "title": "临终开示",
+      "path": "正见 · 正行",
+      "sourcePath": [
+        "正见",
+        "正行",
+        "临终开示"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入",
+        "具体自检表与题目待接入"
+      ],
+      "mapMarker": "8",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": false
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": [],
+      "practiceUnitId": null,
+      "practiceTitle": null
+    },
+    {
+      "id": "map-429ab882a1",
+      "title": "荼毗开示",
+      "path": "正见 · 正行",
+      "sourcePath": [
+        "正见",
+        "正行",
+        "荼毗开示"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入",
+        "具体自检表与题目待接入"
+      ],
+      "mapMarker": "1",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": false
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": [],
+      "practiceUnitId": null,
+      "practiceTitle": null
+    },
+    {
+      "id": "unit-b1648c939d",
+      "title": "《佛说阿弥陀经》",
+      "path": "正人 · 诵",
+      "sourcePath": [
+        "正人",
+        "诵",
+        "《佛说阿弥陀经》"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-7737403a0a",
+      "title": "《无量寿经》",
+      "path": "正人 · 诵",
+      "sourcePath": [
+        "正人",
+        "诵",
+        "《无量寿经》"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mapMarker": "3",
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-aaa04accca",
+      "title": "《大势至菩萨念佛圆通章》",
+      "path": "正人 · 诵",
+      "sourcePath": [
+        "正人",
+        "诵",
+        "《大势至菩萨念佛圆通章》"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-949266dc57",
+      "title": "《般若波罗蜜多心经》",
+      "path": "正人 · 诵",
+      "sourcePath": [
+        "正人",
+        "诵",
+        "《般若波罗蜜多心经》"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-07cf8dd2a3",
+      "title": "《八大人觉经》",
+      "path": "正人 · 诵",
+      "sourcePath": [
+        "正人",
+        "诵",
+        "《八大人觉经》"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-09003840d3",
+      "title": "《慈经》",
+      "path": "正人 · 诵",
+      "sourcePath": [
+        "正人",
+        "诵",
+        "《慈经》"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-667248a842",
+      "title": "大悲咒、十小咒（出家众）",
+      "path": "正人 · 诵",
+      "sourcePath": [
+        "正人",
+        "诵",
+        "大悲咒、十小咒（出家众）"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-8c31b93586",
+      "title": "《弟子规》",
+      "path": "正人 · 诵",
+      "sourcePath": [
+        "正人",
+        "诵",
+        "《弟子规》"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-f91142acb6",
+      "title": "《太上感应篇》",
+      "path": "正人 · 诵",
+      "sourcePath": [
+        "正人",
+        "诵",
+        "《太上感应篇》"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-4c69768606",
+      "title": "《十善业道经》",
+      "path": "正人 · 诵",
+      "sourcePath": [
+        "正人",
+        "诵",
+        "《十善业道经》"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-45bf1686cd",
+      "title": "净土宗纲宗、人间净土理念、净土十信、净土文",
+      "path": "正人 · 诵",
+      "sourcePath": [
+        "正人",
+        "诵",
+        "净土宗纲宗、人间净土理念、净土十信、净土文"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-fff1fd4c09",
+      "title": "三福、三学、六度、六和、普贤十愿",
+      "path": "正人 · 诵",
+      "sourcePath": [
+        "正人",
+        "诵",
+        "三福、三学、六度、六和、普贤十愿"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-95fd0e2e5c",
+      "title": "《劝发菩提心文》",
+      "path": "正人 · 诵",
+      "sourcePath": [
+        "正人",
+        "诵",
+        "《劝发菩提心文》"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-e89cbc3765",
+      "title": "印光大师开示",
+      "path": "正人 · 诵",
+      "sourcePath": [
+        "正人",
+        "诵",
+        "印光大师开示"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-1f81915795",
+      "title": "长者悲愿、雨花长老人生十六最",
+      "path": "正人 · 诵",
+      "sourcePath": [
+        "正人",
+        "诵",
+        "长者悲愿、雨花长老人生十六最"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-553276f002",
+      "title": "唤醒生命中的净土三宝",
+      "path": "正人 · 诵",
+      "sourcePath": [
+        "正人",
+        "诵",
+        "唤醒生命中的净土三宝"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-7062272aab",
+      "title": "礼拜普贤十愿十万拜",
+      "path": "正人 · 拜",
+      "sourcePath": [
+        "正人",
+        "拜",
+        "礼拜普贤十愿十万拜"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "notes": [
+        "“十万拜”是原图名称；本次指派目标与周期由导师设置。"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "拜",
+      "prerequisites": []
+    },
+    {
+      "id": "unit-d783cef2c6",
+      "title": "六念自检",
+      "path": "正人 · 念",
+      "sourcePath": [
+        "正人",
+        "念",
+        "六念自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-3a657b9dc4",
+      "title": "忏悔发愿文",
+      "path": "正人 · 忏",
+      "sourcePath": [
+        "正人",
+        "忏",
+        "忏悔发愿文"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mapMarker": "2",
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-bd8db0d934",
+      "title": "家训自检",
+      "path": "正人 · 忏",
+      "sourcePath": [
+        "正人",
+        "忏",
+        "家训自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mapMarker": "18",
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-308d4af20b",
+      "title": "蒙正养德",
+      "path": "正人 · 自检（习）",
+      "sourcePath": [
+        "正人",
+        "自检（习）",
+        "蒙正养德"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mapMarker": "2",
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-6f7f731de8",
+      "title": "趋吉避凶",
+      "path": "正人 · 自检（习）",
+      "sourcePath": [
+        "正人",
+        "自检（习）",
+        "趋吉避凶"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mapMarker": "13",
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-5aec1e51b4",
+      "title": "生命觉醒",
+      "path": "正人 · 自检（习）",
+      "sourcePath": [
+        "正人",
+        "自检（习）",
+        "生命觉醒"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mapMarker": "2",
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-5af44994d0",
+      "title": "习劳",
+      "path": "正人 · 自检（习）",
+      "sourcePath": [
+        "正人",
+        "自检（习）",
+        "习劳"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mapMarker": "3",
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "map-dd9fbfdc54",
+      "title": "定课自检",
+      "path": "正信",
+      "sourcePath": [
+        "正信",
+        "定课自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mapMarker": "1",
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-318a86d69a",
+      "title": "因缘果自检",
+      "path": "正信 · 七信自检",
+      "sourcePath": [
+        "正信",
+        "七信自检",
+        "因缘果自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "notes": [
+        "保留原图“七信自检”目录名称，8个可见条目分别作为实践单元；不改名为“八信”。"
+      ],
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": []
+    },
+    {
+      "id": "unit-fabed64d22",
+      "title": "轮回路险自检",
+      "path": "正信 · 七信自检",
+      "sourcePath": [
+        "正信",
+        "七信自检",
+        "轮回路险自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "notes": [
+        "保留原图“七信自检”目录名称，8个可见条目分别作为实践单元；不改名为“八信”。"
+      ],
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": []
+    },
+    {
+      "id": "unit-3cf6c78ae7",
+      "title": "四正勤自检",
+      "path": "正信 · 七信自检",
+      "sourcePath": [
+        "正信",
+        "七信自检",
+        "四正勤自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "notes": [
+        "保留原图“七信自检”目录名称，8个可见条目分别作为实践单元；不改名为“八信”。"
+      ],
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": []
+    },
+    {
+      "id": "unit-0ac8a7e270",
+      "title": "四念处自检",
+      "path": "正信 · 七信自检",
+      "sourcePath": [
+        "正信",
+        "七信自检",
+        "四念处自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "notes": [
+        "保留原图“七信自检”目录名称，8个可见条目分别作为实践单元；不改名为“八信”。"
+      ],
+      "mapMarker": "4",
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": []
+    },
+    {
+      "id": "unit-d629c2f277",
+      "title": "四如意足自检",
+      "path": "正信 · 七信自检",
+      "sourcePath": [
+        "正信",
+        "七信自检",
+        "四如意足自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "notes": [
+        "保留原图“七信自检”目录名称，8个可见条目分别作为实践单元；不改名为“八信”。"
+      ],
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": []
+    },
+    {
+      "id": "unit-e07a801be1",
+      "title": "信自信他自检",
+      "path": "正信 · 七信自检",
+      "sourcePath": [
+        "正信",
+        "七信自检",
+        "信自信他自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "notes": [
+        "保留原图“七信自检”目录名称，8个可见条目分别作为实践单元；不改名为“八信”。"
+      ],
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": []
+    },
+    {
+      "id": "unit-b2d06f557e",
+      "title": "人间净土自检",
+      "path": "正信 · 七信自检",
+      "sourcePath": [
+        "正信",
+        "七信自检",
+        "人间净土自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "notes": [
+        "保留原图“七信自检”目录名称，8个可见条目分别作为实践单元；不改名为“八信”。"
+      ],
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": []
+    },
+    {
+      "id": "unit-eae5a96ce3",
+      "title": "十信自检",
+      "path": "正信 · 七信自检",
+      "sourcePath": [
+        "正信",
+        "七信自检",
+        "十信自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "notes": [
+        "保留原图“七信自检”目录名称，8个可见条目分别作为实践单元；不改名为“八信”。"
+      ],
+      "mapMarker": "2",
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": []
+    },
+    {
+      "id": "map-dceb548656",
+      "title": "八关斋戒自检",
+      "path": "正信",
+      "sourcePath": [
+        "正信",
+        "八关斋戒自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mapMarker": "1",
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "map-8b00d4d005",
+      "title": "定课自检",
+      "path": "正愿",
+      "sourcePath": [
+        "正愿",
+        "定课自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "map-5127318d9f",
+      "title": "菩提心自检",
+      "path": "正愿",
+      "sourcePath": [
+        "正愿",
+        "菩提心自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "map-00fb6937da",
+      "title": "菩提心戒自检",
+      "path": "正愿",
+      "sourcePath": [
+        "正愿",
+        "菩提心戒自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "map-4055eeb26b",
+      "title": "沙弥十戒自检",
+      "path": "正愿",
+      "sourcePath": [
+        "正愿",
+        "沙弥十戒自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-c2a62c72f6",
+      "title": "菩萨戒自检",
+      "path": "正愿 · 菩萨戒忏悔与自检",
+      "sourcePath": [
+        "正愿",
+        "菩萨戒忏悔与自检",
+        "菩萨戒自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-803fb7dfd4",
+      "title": "瑜伽菩萨戒的悔犯",
+      "path": "正愿 · 菩萨戒忏悔与自检",
+      "sourcePath": [
+        "正愿",
+        "菩萨戒忏悔与自检",
+        "瑜伽菩萨戒的悔犯"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-b9fb951226",
+      "title": "早晚念佛功课",
+      "path": "正行 · 定课自检",
+      "sourcePath": [
+        "正行",
+        "定课自检",
+        "早晚念佛功课"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-3f80851fdc",
+      "title": "舍命念佛",
+      "path": "正行 · 定课自检",
+      "sourcePath": [
+        "正行",
+        "定课自检",
+        "舍命念佛"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-8eac92eed3",
+      "title": "报时念佛",
+      "path": "正行 · 定课自检",
+      "sourcePath": [
+        "正行",
+        "定课自检",
+        "报时念佛"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "map-6a5acf87d6",
+      "title": "计数念佛",
+      "path": "正行",
+      "sourcePath": [
+        "正行",
+        "计数念佛"
+      ],
+      "children": [
+        {
+          "title": "念佛总数"
+        }
+      ],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "notes": [
+        "“念佛总数”为原图可见下级，属于记录指标；不擅自定为独立学习单元，不推定目标遍数。"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": []
+    },
+    {
+      "id": "map-9d67339b95",
+      "title": "助念",
+      "path": "正行",
+      "sourcePath": [
+        "正行",
+        "助念"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-6e91d928c5",
+      "title": "31种梵音圣号",
+      "path": "正行 · 佛号",
+      "sourcePath": [
+        "正行",
+        "佛号",
+        "31种梵音圣号"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "notes": [
+        "31为原图标题中的文字；未展开实际音频目录。"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": []
+    }
+  ],
+  "version": 4,
+  "sourceGroups": [
+    {
+      "id": "map-3e095b6eeb",
+      "title": "导读",
+      "path": "导读",
+      "sourcePath": [
+        "导读",
+        "导读"
+      ],
+      "children": [
+        {
+          "title": "回归“人间净土”",
+          "mapMarker": "4"
+        },
+        {
+          "title": "《“人间净土”修学体系》导读",
+          "mapMarker": "1"
+        },
+        {
+          "title": "人间净土修学导图",
+          "mapMarker": "1"
+        },
+        {
+          "title": "平板使用帮助",
+          "mapMarker": "1"
+        },
+        {
+          "title": "雨花长老开示",
+          "mapMarker": "1"
+        },
+        {
+          "title": "觉光普明"
+        },
+        {
+          "title": "觉醒教育专访",
+          "mapMarker": "1"
+        }
+      ],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ]
+    },
+    {
+      "id": "map-5a5658591d",
+      "title": "皈依",
+      "path": "导读",
+      "sourcePath": [
+        "导读",
+        "皈依"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "6"
+    },
+    {
+      "id": "map-0829893317",
+      "title": "早晚定课",
+      "path": "导读",
+      "sourcePath": [
+        "导读",
+        "早晚定课"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "2"
+    },
+    {
+      "id": "map-b1f629fa42",
+      "title": "入门自检",
+      "path": "导读",
+      "sourcePath": [
+        "导读",
+        "入门自检"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "6"
+    },
+    {
+      "id": "map-a26152b80e",
+      "title": "专修",
+      "path": "正见 · 正人",
+      "sourcePath": [
+        "正见",
+        "正人",
+        "专修"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": true,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "…"
+    },
+    {
+      "id": "map-6ec3be3d36",
+      "title": "选修",
+      "path": "正见 · 正人",
+      "sourcePath": [
+        "正见",
+        "正人",
+        "选修"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": true,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "…"
+    },
+    {
+      "id": "map-366640e7b9",
+      "title": "因缘果",
+      "path": "正见 · 正信",
+      "sourcePath": [
+        "正见",
+        "正信",
+        "因缘果"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "12"
+    },
+    {
+      "id": "map-687546f7b1",
+      "title": "轮回路险",
+      "path": "正见 · 正信",
+      "sourcePath": [
+        "正见",
+        "正信",
+        "轮回路险"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "19"
+    },
+    {
+      "id": "map-2ab6693dea",
+      "title": "四正勤",
+      "path": "正见 · 正信",
+      "sourcePath": [
+        "正见",
+        "正信",
+        "四正勤"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "2"
+    },
+    {
+      "id": "map-579e1f9d20",
+      "title": "四念处",
+      "path": "正见 · 正信",
+      "sourcePath": [
+        "正见",
+        "正信",
+        "四念处"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "20"
+    },
+    {
+      "id": "map-9e0920be1d",
+      "title": "四如意足",
+      "path": "正见 · 正信",
+      "sourcePath": [
+        "正见",
+        "正信",
+        "四如意足"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "1"
+    },
+    {
+      "id": "map-14eda2c4fc",
+      "title": "人间净土",
+      "path": "正见 · 正信",
+      "sourcePath": [
+        "正见",
+        "正信",
+        "人间净土"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "…"
+    },
+    {
+      "id": "map-9a1e5f290d",
+      "title": "信自信他",
+      "path": "正见 · 正信",
+      "sourcePath": [
+        "正见",
+        "正信",
+        "信自信他"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "8"
+    },
+    {
+      "id": "map-90be21dcb9",
+      "title": "菩提心",
+      "path": "正见 · 正愿",
+      "sourcePath": [
+        "正见",
+        "正愿",
+        "菩提心"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "18"
+    },
+    {
+      "id": "map-c5ca14f9bf",
+      "title": "菩萨行",
+      "path": "正见 · 正愿",
+      "sourcePath": [
+        "正见",
+        "正愿",
+        "菩萨行"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "27"
+    },
+    {
+      "id": "map-c44ab9e96d",
+      "title": "弥陀功德",
+      "path": "正见 · 正行",
+      "sourcePath": [
+        "正见",
+        "正行",
+        "弥陀功德"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "4"
+    },
+    {
+      "id": "map-8779f647d2",
+      "title": "念佛原理",
+      "path": "正见 · 正行",
+      "sourcePath": [
+        "正见",
+        "正行",
+        "念佛原理"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "1"
+    },
+    {
+      "id": "map-d3aee29f94",
+      "title": "舍命念佛",
+      "path": "正见 · 正行",
+      "sourcePath": [
+        "正见",
+        "正行",
+        "舍命念佛"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "3"
+    },
+    {
+      "id": "map-7a68baa6d4",
+      "title": "闭关念佛",
+      "path": "正见 · 正行",
+      "sourcePath": [
+        "正见",
+        "正行",
+        "闭关念佛"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "3"
+    },
+    {
+      "id": "map-57e71bb362",
+      "title": "定时念佛",
+      "path": "正见 · 正行",
+      "sourcePath": [
+        "正见",
+        "正行",
+        "定时念佛"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "4"
+    },
+    {
+      "id": "map-40e529fccc",
+      "title": "临终开示",
+      "path": "正见 · 正行",
+      "sourcePath": [
+        "正见",
+        "正行",
+        "临终开示"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "8"
+    },
+    {
+      "id": "map-429ab882a1",
+      "title": "荼毗开示",
+      "path": "正见 · 正行",
+      "sourcePath": [
+        "正见",
+        "正行",
+        "荼毗开示"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "1"
+    },
+    {
+      "id": "map-55edc7e675",
+      "title": "诵",
+      "path": "正人",
+      "sourcePath": [
+        "正人",
+        "诵"
+      ],
+      "children": [
+        {
+          "title": "《佛说阿弥陀经》"
+        },
+        {
+          "title": "《无量寿经》",
+          "mapMarker": "3"
+        },
+        {
+          "title": "《大势至菩萨念佛圆通章》"
+        },
+        {
+          "title": "《般若波罗蜜多心经》"
+        },
+        {
+          "title": "《八大人觉经》"
+        },
+        {
+          "title": "《慈经》"
+        },
+        {
+          "title": "大悲咒、十小咒（出家众）"
+        },
+        {
+          "title": "《弟子规》《太上感应篇》《十善业道经》"
+        },
+        {
+          "title": "净土宗纲宗、人间净土理念、净土十信、净土文"
+        },
+        {
+          "title": "三福、三学、六度、六和、普贤十愿"
+        },
+        {
+          "title": "《劝发菩提心文》"
+        },
+        {
+          "title": "印光大师开示"
+        },
+        {
+          "title": "长者悲愿、雨花长老人生十六最"
+        },
+        {
+          "title": "唤醒生命中的净土三宝"
+        }
+      ],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ]
+    },
+    {
+      "id": "map-09a27132e2",
+      "title": "拜",
+      "path": "正人",
+      "sourcePath": [
+        "正人",
+        "拜"
+      ],
+      "children": [
+        {
+          "title": "礼拜普贤十愿十万拜"
+        }
+      ],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "notes": [
+        "“十万拜”为原图标题中的文字；完成周期、记录与验收方式待确认。"
+      ]
+    },
+    {
+      "id": "map-b6ea5d25c7",
+      "title": "念",
+      "path": "正人",
+      "sourcePath": [
+        "正人",
+        "念"
+      ],
+      "children": [
+        {
+          "title": "六念自检"
+        }
+      ],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ]
+    },
+    {
+      "id": "map-14643e212f",
+      "title": "忏",
+      "path": "正人",
+      "sourcePath": [
+        "正人",
+        "忏"
+      ],
+      "children": [
+        {
+          "title": "忏悔发愿文",
+          "mapMarker": "2"
+        },
+        {
+          "title": "家训自检",
+          "mapMarker": "18"
+        }
+      ],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ]
+    },
+    {
+      "id": "map-3287d2b49a",
+      "title": "自检（习）",
+      "path": "正人",
+      "sourcePath": [
+        "正人",
+        "自检（习）"
+      ],
+      "children": [
+        {
+          "title": "蒙正养德",
+          "mapMarker": "2"
+        },
+        {
+          "title": "趋吉避凶",
+          "mapMarker": "13"
+        },
+        {
+          "title": "生命觉醒",
+          "mapMarker": "2"
+        },
+        {
+          "title": "习劳",
+          "mapMarker": "3"
+        }
+      ],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ]
+    },
+    {
+      "id": "map-dd9fbfdc54",
+      "title": "定课自检",
+      "path": "正信",
+      "sourcePath": [
+        "正信",
+        "定课自检"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "1"
+    },
+    {
+      "id": "map-38c5cbaa9c",
+      "title": "七信自检",
+      "path": "正信",
+      "sourcePath": [
+        "正信",
+        "七信自检"
+      ],
+      "children": [
+        {
+          "title": "因缘果自检"
+        },
+        {
+          "title": "轮回路险自检"
+        },
+        {
+          "title": "四正勤自检"
+        },
+        {
+          "title": "四念处自检",
+          "mapMarker": "4"
+        },
+        {
+          "title": "四如意足自检"
+        },
+        {
+          "title": "信自信他自检"
+        },
+        {
+          "title": "人间净土自检"
+        },
+        {
+          "title": "十信自检",
+          "mapMarker": "2"
+        }
+      ],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "notes": [
+        "原图标题为“七信自检”，可见8个下级条目；保留原名，范围与命名待确认。"
+      ]
+    },
+    {
+      "id": "map-dceb548656",
+      "title": "八关斋戒自检",
+      "path": "正信",
+      "sourcePath": [
+        "正信",
+        "八关斋戒自检"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "1"
+    },
+    {
+      "id": "map-8b00d4d005",
+      "title": "定课自检",
+      "path": "正愿",
+      "sourcePath": [
+        "正愿",
+        "定课自检"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ]
+    },
+    {
+      "id": "map-5127318d9f",
+      "title": "菩提心自检",
+      "path": "正愿",
+      "sourcePath": [
+        "正愿",
+        "菩提心自检"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ]
+    },
+    {
+      "id": "map-00fb6937da",
+      "title": "菩提心戒自检",
+      "path": "正愿",
+      "sourcePath": [
+        "正愿",
+        "菩提心戒自检"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ]
+    },
+    {
+      "id": "map-4055eeb26b",
+      "title": "沙弥十戒自检",
+      "path": "正愿",
+      "sourcePath": [
+        "正愿",
+        "沙弥十戒自检"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ]
+    },
+    {
+      "id": "map-451b9ec850",
+      "title": "菩萨戒忏悔与自检",
+      "path": "正愿",
+      "sourcePath": [
+        "正愿",
+        "菩萨戒忏悔与自检"
+      ],
+      "children": [
+        {
+          "title": "菩萨戒自检"
+        },
+        {
+          "title": "瑜伽菩萨戒的悔犯"
+        }
+      ],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ]
+    },
+    {
+      "id": "map-2b56e643b5",
+      "title": "定课自检",
+      "path": "正行",
+      "sourcePath": [
+        "正行",
+        "定课自检"
+      ],
+      "children": [
+        {
+          "title": "早晚念佛功课"
+        },
+        {
+          "title": "舍命念佛"
+        },
+        {
+          "title": "报时念佛"
+        }
+      ],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ]
+    },
+    {
+      "id": "map-6a5acf87d6",
+      "title": "计数念佛",
+      "path": "正行",
+      "sourcePath": [
+        "正行",
+        "计数念佛"
+      ],
+      "children": [
+        {
+          "title": "念佛总数"
+        }
+      ],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "notes": [
+        "“念佛总数”为原图可见下级，属于记录指标；不擅自定为独立学习单元，不推定目标遍数。"
+      ]
+    },
+    {
+      "id": "map-9d67339b95",
+      "title": "助念",
+      "path": "正行",
+      "sourcePath": [
+        "正行",
+        "助念"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ]
+    },
+    {
+      "id": "map-3035e422d7",
+      "title": "佛号",
+      "path": "正行",
+      "sourcePath": [
+        "正行",
+        "佛号"
+      ],
+      "children": [
+        {
+          "title": "31种梵音圣号"
+        }
+      ],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "notes": [
+        "31为原图标题中的文字；未展开实际音频目录。"
+      ]
+    }
+  ],
+  "decisions": {
+    "theoryBoundary": "完整主题",
+    "practiceBoundary": "可独立安排的实践",
+    "sevenChecks": "保留原目录名称，8个可见条目独立安排",
+    "requirements": "单元模板提供默认环节，导师设置实践目标与周期",
+    "prerequisites": "默认无硬性前置、允许并行；以后仅按明确依据配置",
+    "opaqueDirectories": "目录待补充，暂不可指派"
+  }
+};
+
+</script>
+</head>
+<body>
+  <div id="app"></div>
+  <noscript>请启用 JavaScript 预览闻思修的交互流程。</noscript>
+<script>
+/* Local interactive prototype. No production services or student records. */
+(() => {
+'use strict';
+const KEY = 'renjian-study-prototype.v4-units';
+const ICONS = {
+ lotus:'<path d="M12 3C6 8 7 13 12 17c5-4 6-9 0-14Z"/><path d="M3 10c0 7 4 11 9 11s9-4 9-11c-4 0-7 4-9 8-2-4-5-8-9-8Z"/>',
+ home:'<path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-8H9v8H4a1 1 0 0 1-1-1Z"/>',
+ book:'<path d="M12 5c-3-2-6-2-9-1v15c3-1 6-1 9 1 3-2 6-2 9-1V4c-3-1-6-1-9 1Z"/><path d="M12 5v15M6 8h3m6 0h3"/>',
+ path:'<circle cx="6" cy="5" r="2"/><circle cx="18" cy="19" r="2"/><path d="M6 7v3a3 3 0 0 0 3 3h6a3 3 0 0 1 3 3v1M14 4h6m-3-3v6"/>',
+ user:'<circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/>',
+ users:'<circle cx="9" cy="8" r="3.5"/><path d="M2 21v-2a7 7 0 0 1 14 0v2m0-17a4 4 0 0 1 0 8m3 4a6 6 0 0 1 3 5"/>',
+ check:'<path d="m5 12 4 4L19 6"/>',
+ right:'<path d="m9 5 7 7-7 7"/>',left:'<path d="m15 5-7 7 7 7"/>',down:'<path d="m5 9 7 7 7-7"/>',
+ arrow:'<path d="M4 12h16m-6-6 6 6-6 6"/>',close:'<path d="m6 6 12 12M6 18 18 6"/>',
+ bell:'<path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9Zm-8 12h4"/>',
+ note:'<path d="M14 3H5v18h14V8Z"/><path d="M14 3v5h5M8 12h8m-8 4h5"/>',
+ edit:'<path d="m16 3 5 5L9 20l-6 1 1-6Zm-10 10 5 5M14 5l5 5"/>',
+ clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v6l4 2"/>',
+ leaf:'<path d="M20 3C8 2 2 9 5 15c4 8 16 3 15-12ZM4 21 16 9"/>',
+ lock:'<rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"/>',
+ search:'<circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/>',
+ plus:'<path d="M12 4v16M4 12h16"/>',
+ list:'<path d="M9 5h12M9 12h12M9 19h12M3 5h1m-1 7h1m-1 7h1"/>',
+ flag:'<path d="M5 22V3c5-4 9 4 15 0v11c-6 4-10-4-15 0"/>',
+ sound:'<path d="m11 4-6 5H2v6h3l6 5Zm4 4a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/>',
+ replay:'<path d="M4 10a8 8 0 1 1 1 8M4 4v6h6"/>',
+ send:'<path d="m21 3-7 18-4-8-8-4Zm0 0L10 13"/>',
+ circle:'<circle cx="12" cy="12" r="9"/>',
+ question:'<circle cx="12" cy="12" r="9"/><path d="M9 9a3 3 0 1 1 4 3v2m0 3h.01"/>',
+ calendar:'<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 2v6m10-6v6M3 11h18m-13 4h2m4 0h2"/>',
+ inbox:'<path d="M3 14 6 4h12l3 10v6H3Zm0 0h6l1 3h4l1-3h6"/>',
+ settings:'<path d="M4 7h16M4 17h16"/><circle cx="8" cy="7" r="3"/><circle cx="16" cy="17" r="3"/>',
+};
+const icon = (name, cls='') => `<svg class="${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[name] || ICONS.book}</svg>`;
+const esc = value => String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+const students = [{id:'m1',name:'明心',initial:'心',since:'10月19日开始修学'},{id:'m2',name:'明远',initial:'远',since:'10月12日开始修学'},{id:'m3',name:'静安',initial:'安',since:'10月20日开始修学'}];
+const questions = ['我能用自己的话说明本单元的主要内容。','我已结合生活中的经历，做过一次观察与反思。','对于不清楚的地方，我知道自己还需要了解什么。'];
+const answers = [['能说明','还需复习','想请教导师'],['已尝试','准备尝试','尚不清楚'],['已经清楚','还在梳理','想请教导师']];
+// Source titles and hierarchy; unit boundaries approved by the user. Content gaps stay explicit.
+const UNITS=globalThis.STUDY_MAP.units.map(u=>({...u,description:'原图位置：'+u.sourcePath.join(' → ')}));
+const unitById=id=>UNITS.find(u=>u.id===id)||UNITS.find(u=>u.title==='因缘果');
+const sourceUnit=(path,title)=>UNITS.find(u=>u.path===path&&u.title===title).id;
+const canAssignUnit=u=>!!u&&!u.opaqueDirectory;
+function definitionGaps(a){
+ const u=unitById(a.unitId),g=[];
+ if(u.opaqueDirectory)g.push('课程目录待补充');
+ if(a.required.read&&!a.materials.length)g.push('实际教材与必学范围待接入');
+ if(a.required.think||u.needsForm)g.push('具体自检表与题目待接入');
+ if(a.required.practice&&(!a.practiceInstruction?.trim()||!Number.isInteger(a.target)||a.target<=0||!a.period?.trim()))g.push('实践内容、目标与周期待导师设置');
+ return g;
+}
+function refreshDefinition(a){a.definitionGaps=definitionGaps(a);a.pendingDefinition=a.definitionGaps.length>0;return a;}
+function newAssignment(unitId,student,id,extra={}){
+ const u=unitById(unitId);
+ return refreshDefinition({id,unitId:u.id,title:u.title,path:u.path,kind:u.mode==='practice'?'practice':'unit',student,status:'active',started:false,required:{...u.required},materials:[],readConfirmed:false,bookmark:1,answers:['','',''],reflection:'',question:'',reflectionSaved:false,target:null,measureUnit:u.measureUnit,practiceInstruction:'',period:'',practiceTotal:0,records:[],guidance:'按导师本次安排学习，完成后提交，由导师确认。',assignedAt:'2026-10-22',created:'10月22日',teacher:'慧明导师',submissions:[],...extra});
+}
+function snapshotOf(a){return {materials:a.materials.map(m=>({...m})),readConfirmed:a.readConfirmed,answers:[...a.answers],reflection:a.reflection,question:a.question,practiceTotal:a.practiceTotal,records:a.records.map(r=>({...r}))};}
+const seed=()=>({version:4,assignments:[
+ newAssignment(sourceUnit('正见 · 正信','因缘果'),'m1','karma'),
+ newAssignment(sourceUnit('正行','计数念佛'),'m1','practice',{assignedAt:'2026-10-21',created:'10月21日'}),
+ newAssignment(sourceUnit('导读','皈依'),'m1','refuge',{assignedAt:'2026-10-19',created:'10月19日'}),
+ newAssignment(sourceUnit('正见 · 正信','四念处'),'m1','human-planned'),
+ newAssignment(sourceUnit('正见 · 正愿','菩提心'),'m2','bodhi',{assignedAt:'2026-10-20',created:'10月20日'}),
+ newAssignment(sourceUnit('导读','早晚定课'),'m3','quiet-refuge'),
+]});
+let recovery=false;
+let data;
+try {const raw=localStorage.getItem(KEY);data=raw?JSON.parse(raw):seed();if(data.version!==4||!Array.isArray(data.assignments))throw new Error('invalid');}catch {data=seed();recovery=true;}
+// Local HTML uses a fragment route so file URLs can navigate without a web server.
+const localFile = location.protocol==='file:';
+const routeParams=()=>new URLSearchParams(localFile?(location.hash.slice(1)||location.search):location.search);
+let params = routeParams();
+let role = params.get('role')==='teacher'?'teacher':'student';
+let page = params.get('page') || (role==='teacher'?'students':'home');
+let activeId = data.assignments.some(a=>a.id===params.get('task'))?params.get('task'):'karma';
+let activeStudent = role==='teacher' && students.some(s=>s.id===params.get('student')) ? params.get('student') : data.assignments.find(a=>a.id===activeId)?.student || 'm1';
+const studentPages=['home','task','read','think','practice','submit','sent','journey','learning','records','profile'];
+const teacherPages=['students','student','assign','unit-preview','configure','journey','review','published','arrangement-history','profile'];
+if(!(role==='teacher'?teacherPages:studentPages).includes(page))page=role==='teacher'?'students':'home';
+const ui={recordsFrom:['practice','task'].includes(params.get('from'))?params.get('from'):'journey',materialId:params.get('material'),previewUnitId:params.get('unit')||sourceUnit('正见 · 正信','因缘果'),assignFilter:'全部',assignTargets:{},configDraft:null,lotusBranch:null,modal:null,error:'',toast:'',toastError:false,listTab:'active',studentTab:'active',readerPage:null,readDraft:null,manual:false,count:0,search:'',storageError:false,searchTimer:null,assignMode:'full',assignSelected:[],assignGuidance:'按导师本次安排学习，完成后提交，由导师确认。',assignTarget:'',assignDue:'',returnText:'',reviewComment:'',published:[],infoTitle:'',infoBody:''};
+const $=s=>document.querySelector(s);
+const current=()=>data.assignments.find(a=>a.id===activeId)||data.assignments[0];
+const owned=(student='m1')=>data.assignments.filter(a=>a.student===student);
+const currentMaterial=()=>current().materials.find(m=>m.id===ui.materialId)||current().materials.find(m=>!m.confirmed)||current().materials[0]||{id:'pending',title:current().title,confirmed:false,bookmark:1};
+const person=id=>students.find(s=>s.id===id)||students[0];
+function flags(a){if(a.pendingDefinition)return [false,false,false];return [!a.required.read||(a.materials.length>0&&a.materials.every(m=>m.confirmed)),!a.required.think||a.reflectionSaved,!a.required.practice||(Number.isInteger(a.target)&&a.target>0&&a.practiceTotal>=a.target)];}
+function ready(a){if(a.pendingDefinition)return false;return flags(a).every(Boolean);}
+function phaseDone(a){const f=flags(a);return ['read','think','practice'].filter((k,i)=>a.required[k]&&f[i]).length;}
+function phaseTotal(a){return Object.values(a.required).filter(Boolean).length;}
+function status(a){if(a.pendingDefinition)return a.definitionGaps?.every(g=>g.includes('导师'))?'待导师设置':'待补资料';return a.status==='completed'?'已完成':a.status==='submitted'?'待导师确认':ready(a)?'待提交':a.started?'学习中':'已安排 · 未开始';}
+function isReadOnly(a){return !!a.pendingDefinition||a.status==='submitted'||a.status==='completed';}
+function persist(){if(recovery){ui.storageError=true;return false;}try{localStorage.setItem(KEY,JSON.stringify(data));ui.storageError=false;return true;}catch{ui.storageError=true;return false;}}
+function tag(a){const t=status(a);return `<span class="tag ${a.pendingDefinition||a.status==='submitted'?'amber':a.status==='completed'?'green':'gray'}">${esc(t)}</span>`;}
+function url(){const q=new URLSearchParams({role,page});if(!['home','students','journey','profile','learning'].includes(page))q.set('task',activeId);if(role==='teacher')q.set('student',activeStudent);if(page==='records')q.set('from',ui.recordsFrom);if(page==='read'&&current().materials.length)q.set('material',currentMaterial().id);if(page==='unit-preview')q.set('unit',ui.previewUnitId);return (localFile?'#':'?')+q.toString();}
+function navigate(next,opts={},push=true){
+ if(opts.role)role=opts.role;
+ if(opts.id){activeId=opts.id;activeStudent=current().student;}
+ if(opts.student)activeStudent=opts.student;
+ if(next==='records')ui.recordsFrom=['practice','task'].includes(page)?page:'journey';ui.materialId=opts.material||null;page=next;ui.modal=null;ui.error='';ui.toast='';ui.readerPage=null;ui.readDraft=null;ui.manual=false;ui.count=0;
+ if(role==='student'&&['task','read','think','practice'].includes(page)&&current().status==='active'&&!current().pendingDefinition){current().started=true;persist();}
+ if(push)history.pushState({role,page,activeId,activeStudent,recordsFrom:ui.recordsFrom,materialId:ui.materialId,previewUnitId:ui.previewUnitId},'',url());
+ render(false);
+}
+function switchRole(next){role=next;ui.listTab='active';if(next==='teacher'){activeStudent=current().student;navigate('students');}else{if(current().student!=='m1')activeId='karma';navigate('home');}}
+function flash(text,error=false){ui.toast=text;ui.toastError=error;render(true);setTimeout(()=>{ui.toast='';$('.toast')?.remove();},3200);}
+function openInfo(title,body){ui.infoTitle=title;ui.infoBody=body;openModal('info');}
+function openModal(name){ui.modal=name;ui.error='';render(true);requestAnimationFrame(()=>$('#dialog-title')?.focus());}
+function closeModal(){ui.modal=null;ui.error='';render(true);}
+function header(title,back='home',right=''){return `<header class="app-bar" ${ui.modal?'inert':''}><button class="back" data-go="${back}" aria-label="返回">${icon('left')}</button><div class="bar-title">${title}</div>${right||'<span style="width:28px"></span>'}</header>`;}
+function badge(roleName='慧明导师'){return `<span class="teacher-by"><span class="avatar">慧</span>${esc(roleName)}</span>`;}
+function bottom(active){const items=role==='teacher'?[['students','users','学员'],['arrangement-history','book','安排记录'],['profile','user','我的']]:[['home','home','修学'],['journey','path','历程'],['profile','user','我的']];return `<nav class="bottom-nav" aria-label="主导航">${items.map(([to,name,label])=>`<button data-go="${to}" class="${active===to?'active':''}" ${active===to?'aria-current="page"':''}>${icon(name)}<span>${label}</span></button>`).join('')}</nav>`;}
+function primary(text,action,disabled=false){return `<button class="primary" data-action="${action}" ${disabled?'disabled':''}>${text}</button>`;}
+function foot(text,action,note='',disabled=false){return `<footer class="action-footer" ${ui.modal?'inert':''}>${primary(text,action,disabled)}${note?`<p>${note}</p>`:''}</footer>`;}
+function gotoButton(to,title,sub,ico='book',id='',end=''){return `<button class="list-row" data-go="${to}" ${id?`data-id="${id}"`:''}><span class="row-icon ${ico==='lotus'?'ochre':''}">${icon(ico)}</span><span class="row-main"><strong>${esc(title)}</strong>${sub?`<small>${esc(sub)}</small>`:''}</span>${end?`<span class="row-end">${end}</span>`:icon('right','row-arrow')}</button>`;}
+function incompleteStage(a){if(a.required.read&&!a.materials.every(m=>m.confirmed))return'read';if(a.required.think&&!a.reflectionSaved)return'think';if(a.required.practice&&a.practiceTotal<a.target)return'practice';return'submit';}
+function phaseTrack(a){const f=flags(a);const phaseKeys=['read','think','practice'];return `<div class="phase-track">${[['read','闻','学理论'],['think','思','自检反思'],['practice','修','实践']].filter(x=>a.required[x[0]]).map(([key,label,name])=>`<button data-go="${key}" data-id="${a.id}" class="${f[phaseKeys.indexOf(key)]?'done':!a.pendingDefinition&&incompleteStage(a)===key?'current':''}">${f[phaseKeys.indexOf(key)]?icon('check'):`<span>${label}</span>`}${a.pendingDefinition&&key==='practice'?'实践':name}</button>`).join('')}</div>`;}
+const LOTUS_BRANCHES = [
+ {name:'正见',mode:'解',purpose:'学习理论，建立理解'},
+ {name:'正人',mode:'行',purpose:'改善人生'},
+ {name:'正信',mode:'行',purpose:'改善人生'},
+ {name:'正愿',mode:'行',purpose:'超越人生'},
+ {name:'正行',mode:'行',purpose:'圆满人生'},
+];
+const branchOf=a=>a.path.split(' · ')[0];
+function lotusState(name,focus){
+ const arr=owned().filter(a=>branchOf(a)===name),active=arr.filter(a=>a.status!=='completed');
+ const label=active.length?(active.every(a=>a.pendingDefinition)?'有学习安排':active.every(a=>a.status==='submitted')?'待导师确认':branchOf(focus)===name?'当前修学':'已有安排'):arr.length?`已学${arr.length}项`:'待安排';
+ return {arr,active,label};
+}
+function studyLotus(selected,focus,unit){
+ const petal='M190 19C182 48 135 49 128 98C121 141 147 181 190 216C233 181 259 141 252 98C245 49 198 48 190 19Z';
+ return `<div class="study-lotus"><svg class="lotus-map" viewBox="0 0 380 380" fill="none" role="group" aria-labelledby="lotus-title lotus-description">
+ <title id="lotus-title">五瓣莲花修学分类</title><desc id="lotus-description">正见为解，提供理论基础；正人、正信、正愿、正行为行，落实实践。点击花瓣查看单元，点击莲心进入学习。</desc>
+ <defs>
+  <radialGradient id="lotus-ground" cx="50%" cy="35%" r="70%"><stop stop-color="#16686a"/><stop offset="1" stop-color="#064a50"/></radialGradient>
+  <linearGradient id="lotus-gold" x1="60" y1="20" x2="290" y2="350" gradientUnits="userSpaceOnUse"><stop stop-color="#d8c58b"/><stop offset=".3" stop-color="#f4e5b2"/><stop offset=".65" stop-color="#b89b59"/><stop offset="1" stop-color="#e9d49a"/></linearGradient>
+  <radialGradient id="lotus-petal" cx="50%" cy="26%" r="82%"><stop stop-color="#286b68"/><stop offset=".55" stop-color="#105f63"/><stop offset="1" stop-color="#0b5158"/></radialGradient>
+  <radialGradient id="lotus-selected" cx="45%" cy="25%" r="85%"><stop stop-color="#197a78"/><stop offset=".55" stop-color="#0e7474"/><stop offset="1" stop-color="#075763"/></radialGradient>
+  <radialGradient id="lotus-waiting" cx="50%" cy="20%" r="85%"><stop stop-color="#335f59"/><stop offset="1" stop-color="#124e53"/></radialGradient>
+  <radialGradient id="lotus-heart" cx="40%" cy="25%" r="80%"><stop stop-color="#218486"/><stop offset="1" stop-color="#07535c"/></radialGradient>
+ </defs>
+ <circle cx="190" cy="190" r="184" fill="url(#lotus-ground)" stroke="url(#lotus-gold)" stroke-width="1.7"/>
+ <circle cx="190" cy="190" r="178" stroke="#e3cd95" stroke-opacity=".16" stroke-width=".7"/>
+ ${LOTUS_BRANCHES.map((b,i)=>{const state=lotusState(b.name,focus);const chosen=selected===b.name;const r=i*72*Math.PI/180,x=190+101*Math.sin(r),y=190-101*Math.cos(r);return `<g role="button" tabindex="0" class="lotus-petal ${chosen?'selected':''}" data-action="select-lotus" data-branch="${b.name}" aria-label="${b.name}，${b.mode==='解'?'解，理论基础':'行，落实实践'}，${state.label}" aria-pressed="${chosen}" aria-controls="lotus-arrangements">
+ <path class="petal-silhouette" d="${petal}" transform="rotate(${i*72} 190 190)" fill="url(#${chosen?'lotus-selected':state.arr.length?'lotus-petal':'lotus-waiting'})" stroke="url(#lotus-gold)" stroke-width="${chosen?'2.8':'1.5'}"/>
+ <path d="M190 34C175 60 143 68 139 100" transform="rotate(${i*72} 190 190)" stroke="#ebdfb8" stroke-opacity="${chosen?'.45':'.14'}" stroke-width="1.2" stroke-linecap="round" aria-hidden="true"/>
+ <text x="${x}" y="${y+2}" class="petal-name" text-anchor="middle" aria-hidden="true">${b.name}</text>
+ <text x="${x}" y="${y+24}" class="petal-state" text-anchor="middle" aria-hidden="true">${state.label}</text>
+ <g class="lotus-mode ${b.mode==='解'?'theory':'practice'}" aria-hidden="true"><circle cx="${x}" cy="${y-34}" r="10.5"/><text x="${x}" y="${y-30}" text-anchor="middle">${b.mode}</text></g>
+ </g>`;}).join('')}
+ <g ${unit?`role="button" tabindex="0" class="lotus-center" data-go="task" data-id="${unit.id}" aria-label="${unit.pendingDefinition?'查看原图主题':'进入学习单元'}：${esc(unit.title)}"`:'class="lotus-heart-display" aria-hidden="true"'}>
+ <circle cx="190" cy="190" r="57" fill="url(#lotus-heart)" stroke="url(#lotus-gold)" stroke-width="2.4"/>
+ <circle cx="190" cy="190" r="51.5" stroke="#e8d6a1" stroke-opacity=".22" stroke-width=".8"/>
+ <text x="190" y="202" class="lotus-awakening" text-anchor="middle" aria-hidden="true">觉</text>
+ <text x="190" y="225" class="lotus-center-label" text-anchor="middle" aria-hidden="true">${unit?unit.pendingDefinition?'查看单元':'进入单元':'修学分类'}</text>
+ </g></svg></div>`;
+}
+function home(){
+ const focus=owned().find(t=>t.kind==='unit'&&t.status!=='completed')||owned().find(t=>t.status!=='completed')||owned()[0];
+ const selected=ui.lotusBranch||(LOTUS_BRANCHES.some(b=>b.name===branchOf(focus))?branchOf(focus):'正见');
+ const branch=LOTUS_BRANCHES.find(b=>b.name===selected),state=lotusState(selected,focus);
+ const a=state.active.find(t=>t.kind==='unit')||state.active[0]||state.arr[0];
+ const pending=a?.status==='submitted',complete=a?.status==='completed';
+ const others=state.arr.filter(t=>t.id!==a?.id);
+ return {
+ bar:`<header class="app-bar" ${ui.modal?'inert':''}><div class="app-wordmark">${icon('lotus')}人间净土</div><button class="icon-btn" data-action="notices" aria-label="查看消息">${icon('bell')}</button></header>`,
+ body:`<div class="pad lotus-home"><div class="lotus-heading"><div><h1>我的修学</h1><p>导师指派单元，按个人安排修学。</p></div></div>
+ ${studyLotus(selected,focus,a)}
+ <div class="lotus-relation"><span><b>解</b>正见 · 理论基础</span><span><b>行</b>四个行门 · 实践</span></div>
+ <section id="lotus-arrangements" class="lotus-arrangements" aria-label="${selected}的修学安排"><div class="lotus-branch-head"><h2>${selected}<span>${branch.mode}</span></h2><span>${branch.purpose}</span></div>
+ ${a?`<article class="lotus-course"><div class="focus-top"><span class="breadcrumb">${esc(a.path)} · 学习单元</span>${tag(a)}</div><div class="lotus-course-title"><h3>${esc(a.title)}</h3><span>${a.pendingDefinition?status(a):phaseDone(a)+' / '+phaseTotal(a)+' 环节'}</span></div>${phaseTrack(a)}<button class="primary" data-go="task" data-id="${a.id}">${a.pendingDefinition?'查看学习单元':pending?'查看提交':complete?'复习本单元':'继续修学'} ${icon('arrow')}</button></article>${others.map(p=>gotoButton('task',p.title,`${p.path} · ${status(p)}`,p.kind==='practice'?'lotus':'book',p.id)).join('')}`:`<div class="lotus-empty"><p>本门暂未指派学习单元</p><small>导师指派后，将在这里呈现学习单元。</small></div>`}
+ </section><button class="lotus-all" data-go="learning"><span>我的学习单元</span><span>${owned().length}项安排 ${icon('right')}</span></button><p class="plain-note center lotus-note">正见建立理解，四个行门落实实践；按导师安排并行学习。</p></div>`,bottom:bottom('home')};
+}
+function sourceTree(items){return items.length?`<ul class="source-tree">${items.map(x=>`<li><span>${esc(x.title)}</span>${x.mapMarker?`<small>原图标记 ${esc(x.mapMarker)} · 下级待展开</small>`:''}${x.children?sourceTree(x.children):''}</li>`).join('')}</ul>`:'';}
+function sourceFacts(u){return `<div class="source-path">${u.sourcePath.map(esc).join(' <span>→</span> ')}</div><div class="definition-notice"><strong>${u.opaqueDirectory?'目录待补充':'单元划分已确定'}</strong><p>${u.opaqueDirectory?'原图未展开具体主题，暂不可指派。':u.mode==='theory'?'按完整理论主题划分；相关资料放在单元内部。':u.mode==='practice'?'按可独立安排的实践划分，目标与周期由导师设置。':'按导读主题安排，具体资料与要求在单元内部设置。'}</p></div>${u.mapMarker?`<p class="source-marker">原图标记：${esc(u.mapMarker)}。不据此推定资料数量或完成要求。</p>`:''}${u.children.length?`<div class="section-title"><h2>原图可见内容</h2></div>${sourceTree(u.children)}`:''}${u.practiceTitle?`<div class="source-note">配套实践：${esc(u.practiceTitle)}。对应关系依据简版功能文档，实际表单与目标需接入配置。</div>`:''}${(u.notes||[]).map(n=>`<div class="source-note">${esc(n)}</div>`).join('')}`;}
+function templateSummary(a){return `<div class="state-list">${summary('闻 · 学理论',a.required.read?'按本单元资料学习':'不适用',!a.required.read)}${summary('思 · 自检反思',a.required.think?'使用对应自检表与反思':'按需附加',!a.required.think)}${summary('修 · 实践',a.required.practice?(a.practiceInstruction||unitById(a.unitId).practiceTitle||'由导师设置'):'不适用，可由导师另行安排',!a.required.practice)}</div>${a.required.practice?`<p class="plain-note">目标：${a.target?esc(a.target)+esc(a.measureUnit):'待导师设置'} · 周期：${esc(a.period||'待导师设置')}</p>`:''}`;}
+function pendingAssignmentView(section='overview',teacher=false){
+ const a=current(),u=unitById(a.unitId),labels={overview:'学习单元',read:'闻 · 学理论',think:'思 · 自检反思',practice:'修 · 实践',submit:'提交学习情况'};
+ const phaseKey=section==='overview'||section==='submit'?null:section,applicable=!phaseKey||a.required[phaseKey];
+ return {bar:header(teacher?'查看安排':labels[section],teacher?'student':section==='overview'?'learning':'task'),body:`<div class="pad"><h1 class="detail-title">${esc(a.title)}</h1>${tag(a)}${sourceFacts(u)}${templateSummary(a)}${!applicable?'<p class="not-applicable">本次安排不要求此环节。</p>':`<div class="section-title"><h2>尚需补齐</h2></div><ul class="pending-list">${definitionGaps(a).map(t=>`<li>${esc(t)}</li>`).join('')}</ul>`}${section==='overview'&&!teacher?`<div class="pending-methods">${[['read','闻','学习资料'],['think','思','自检与反思'],['practice','修','实践要求']].filter(([key])=>a.required[key]).map(([key,label,text])=>`<button data-go="${key}"><b>${label}</b><span>${text}</span>${icon('right')}</button>`).join('')}</div>`:''}<div class="guidance"><div class="guidance-head">导师指导（演示）</div><p>${esc(a.guidance)}</p></div></div>`,footer:teacher?foot('设置本次学习要求','configure-assignment','设置目标与周期；教材和表单缺口继续保留。'):section==='overview'?foot('学习内容待补齐','open-submit','资料与导师要求齐备后可学习并提交。',true):foot('返回学习单元','return-task')};
+}
+function configure(){const saved=current(),a={...saved,...(ui.configDraft?.id===saved.id?ui.configDraft:{})},u=unitById(a.unitId);return {bar:header('设置学习要求','review'),body:`<div class="pad"><h1 class="detail-title">${esc(a.title)}</h1><p class="sub">单元模板已按理论／实践设置，以下要求仅用于本次指派。</p>${templateSummary(a)}${a.required.practice?`<div class="field"><label for="config-instruction">实践内容 · 必填</label><textarea id="config-instruction" maxlength="500" placeholder="说明本次要完成的实践内容">${esc(a.practiceInstruction)}</textarea></div><div class="field"><label for="config-target">累计目标 · 必填</label><input id="config-target" type="number" min="1" max="10000000" inputmode="numeric" value="${a.target||''}" placeholder="由导师填写，不预设次数"></div><div class="field"><label for="config-unit">计量单位</label><select id="config-unit">${['次','遍','拜','分钟'].map(v=>`<option ${a.measureUnit===v?'selected':''}>${v}</option>`).join('')}</select></div><div class="field"><label for="config-period">周期 · 必填</label><input id="config-period" maxlength="80" value="${esc(a.period)}" placeholder="如：本周，或长期累计"></div>`:''}<div class="field"><label for="config-guidance">导师指导</label><textarea id="config-guidance" maxlength="500">${esc(a.guidance)}</textarea></div><div class="source-note">默认无硬性前置，可与其他单元并行。${u.required.read?'实际教材待接入。':''}${u.required.think||u.needsForm?'实际自检表待接入。':''}导师确认后才记为完成。</div>${ui.error?`<p class="error" role="alert">${esc(ui.error)}</p>`:''}</div>`,footer:foot('保存本次学习要求','save-configuration')};}
+function task(){if(current().pendingDefinition)return pendingAssignmentView();const a=current(),f=flags(a),ro=isReadOnly(a);return {bar:header('学习单元','learning'),body:`<div class="pad"><div class="breadcrumb">${esc(a.path)}</div><h1 class="detail-title">${esc(a.title)}</h1>${tag(a)}${a.returnNote?`<div class="revision-note">导师建议：${esc(a.returnNote)}</div>`:''}<div class="guidance"><div class="guidance-head">${esc(a.teacher)}的单元指导</div><p>${esc(a.guidance)}</p></div>${a.required.read?stage('闻','学理论','资料学习',gotoButton('read','本单元资料','按资料分别确认学完')):'<p class="not-applicable">闻 · 本次不要求</p>'}${a.required.think?stage('思','自检反思',f[1]?'已完成':'待完成',gotoButton('think','本单元自检与反思','使用本单元对应表单')):'<p class="not-applicable">思 · 本次不要求</p>'}${a.required.practice?stage('修','实践',`${a.practiceTotal} / ${a.target} ${esc(a.measureUnit)}`,gotoButton('practice',a.practiceInstruction,`周期：${a.period}`,'lotus')):'<p class="not-applicable">修 · 本次不要求</p>'}${ro?'<p class="plain-note">已提交或已完成，当前只读查看。</p>':''}</div>`,footer:a.status==='submitted'?foot('查看本次提交','view-submission'):a.status==='completed'?foot('复习本单元','continue-task'):foot(ready(a)?'提交单元学习':'继续学习',ready(a)?'open-submit':'continue-task',`${phaseDone(a)} / ${phaseTotal(a)} 个学习环节完成`)};}
+function stage(symbol,title,label,content){return `<section class="stage-block"><div class="stage-head"><span class="stage-symbol">${symbol}</span><h2>${title}</h2><small>${label}</small></div>${content}</section>`;}
+const readerContent=[['学习之前','先看导师对本单元的指导，明确这次学习需要完成的内容。','带着问题学习','阅读时记下希望进一步理解的地方。稍后可以在自检与反思中整理自己的观察。'],['联系自己的生活','回顾最近的一件事情：当时自己有什么想法，又采取了什么行动？','记录真实的观察','反思可以从一个具体片段开始，不急于给自己一个结论。把尚不清楚的地方留作向导师请教的问题。'],['学习之后','合上资料，用自己的话回顾本单元最想记住的内容。','接下来做什么','完成自检和反思，再进行本单元中的念佛实践。所有环节完成后，提交给导师查看。']];
+function read(){if(current().pendingDefinition||!current().required.read)return pendingAssignmentView('read');
+ const a=current(),m=currentMaterial(),n=ui.readerPage||m.bookmark||1,c=readerContent[n-1],ro=isReadOnly(a);
+ return {bar:header('闻 · 学理论','task',`<button class="icon-btn" data-action="reader-menu" aria-label="单元资料目录">${icon('list')}</button>`),body:`<div class="pad"><div class="breadcrumb">${esc(a.title)} · 资料${a.materials.findIndex(x=>x.id===m.id)+1} / ${a.materials.length}</div><h1 class="reader-title">${esc(m.title)}</h1><p class="sub">讲义示例 · 共3页</p><div class="reader-toolbar"><button class="chip active" aria-current="true">讲义</button><button class="chip" data-action="audio-info">音频资料</button></div><article class="reader-paper"><h2>${esc(m.title)}</h2><p class="paper-sub">学习页交互示例</p><h3>${c[0]}</h3><p>${c[1]}</p><div class="paper-line"></div><h3>${c[2]}</h3><p>${c[3]}</p></article><div class="reader-pagination"><button class="text-button" data-action="reader-prev" ${n===1?'disabled':''}>${icon('left')} 上一页</button><span>${n} / 3</span><button class="text-button" data-action="reader-next" ${n===3?'disabled':''}>下一页 ${icon('right')}</button></div>${!ro?`<label class="checkbox-row"><input type="checkbox" id="read-confirm" ${(ui.readDraft??m.confirmed)?'checked':''}><span>我已学完这份资料</span></label><p class="plain-note">单元内每份资料分别确认，全部学完后完成“闻”。</p>`:`<div class="banner success">${a.status==='completed'?'本单元已完成，当前为复习。':'本单元已提交，当前为只读查看。'}</div>`}${ui.error?`<p class="error" role="alert">${esc(ui.error)}</p>`:''}</div>`,footer:foot(ro?'返回学习单元':'保存并返回单元',ro?'return-task':'save-read',ro?'':'阅读记录仅属于本次指派的单元。')};
+}
+function think(){if(current().pendingDefinition||!current().required.think)return pendingAssignmentView('think');const a=current(),ro=isReadOnly(a);return {bar:header('自检与反思','task'),body:`<div class="pad"><h1 class="page-heading">想一想，今天所学</h1><p class="sub" style="margin-top:7px">围绕「${esc(a.title)}」如实记录，供自己和导师回看。</p>${questions.map((q,i)=>`<fieldset class="question"><legend>${i+1}. ${q}</legend><div class="radio-options">${answers[i].map(v=>`<label class="radio-label"><input type="radio" name="answer-${i}" value="${v}" ${a.answers[i]===v?'checked':''} ${ro?'disabled':''}>${v}</label>`).join('')}</div></fieldset>`).join('')}<div class="field"><label for="reflection">我的反思 <small>必填</small></label><textarea id="reflection" maxlength="600" placeholder="结合一件具体的事，写下自己的观察与体会……" ${ro?'readonly':''}>${esc(a.reflection)}</textarea><p class="sub" style="margin-top:6px">不求长短，写下真实的观察。</p></div><div class="field"><label for="question">想请教导师的问题 <small>选填</small></label><textarea id="question" maxlength="400" placeholder="还有哪些地方希望导师指导？" ${ro?'readonly':''}>${esc(a.question)}</textarea></div>${ui.error?`<p class="error" role="alert" id="form-error">${esc(ui.error)}</p>`:''}${ro?'<p class="plain-note">查看已保存的自检与反思。</p>':''}</div>`,footer:foot(ro?'返回本单元':'保存自检与反思',ro?'return-task':'save-think',ro?'':'保存后可继续念佛实践。')};}
+function practice(){if(current().pendingDefinition||!current().required.practice)return pendingAssignmentView('practice');const a=current(),ro=isReadOnly(a);return {bar:header('实践记录','task',`<button class="icon-btn" data-go="records" aria-label="查看实践记录">${icon('clock')}</button>`),body:`<div class="pad"><div class="practice-hero"><span><strong>${esc(a.title)} · 单元实践</strong><small>${esc(a.practiceInstruction)} · ${a.target}${esc(a.measureUnit)} · ${esc(a.period)}</small></span><b>${a.practiceTotal}<span style="font-size:11px;color:var(--muted)"> / ${a.target}</span></b></div><div class="counter-area"><button id="count-tap" class="count-button" data-action="count-one" ${ro?'disabled':''} aria-label="本次实践增加一单位">${icon('lotus')}<strong>${ui.count}</strong><small>本次实践 · 点击记录一${esc(a.measureUnit)}</small></button>${!ro?`<div class="count-tools"><button data-action="count-undo" ${ui.count===0?'disabled':''} aria-label="撤回一单位">−1</button><button data-action="count-ten" aria-label="增加十单位">+10</button><button data-action="manual-toggle">补记</button></div>`:''}</div>${ui.manual&&!ro?`<div class="field"><label for="manual-count">本次实际完成数量（${esc(a.measureUnit)}）</label><div class="manual-entry"><input id="manual-count" type="number" min="1" max="100000" inputmode="numeric" value="${ui.count||''}" placeholder="填写数量"><button class="small-primary" data-action="manual-apply">确认数量</button></div></div>`:''}<div class="section-title"><h2>本单元进度</h2><span class="sub">${Math.min(100,Math.round(a.practiceTotal/a.target*100))}%</span></div><div class="progress-line" aria-label="本单元已记录${a.practiceTotal}${esc(a.measureUnit)}，目标${a.target}${esc(a.measureUnit)}"><span style="width:${Math.min(100,a.practiceTotal/a.target*100)}%"></span></div><p class="plain-note">按实际完成情况记录，可分次完成。每个单元独立累计。</p>${a.records.length?`<div class="section-title"><h2>最近一次记录</h2></div><div class="summary-row"><span>${a.records.at(-1).date} ${a.records.at(-1).time}</span><span class="value">${a.records.at(-1).count} ${esc(a.measureUnit)}</span></div>`:''}${ro?'<div class="banner success">本单元记录已确认或已提交，当前为只读查看。</div>':''}${ui.error?`<p class="error" role="alert">${esc(ui.error)}</p>`:''}</div>`,footer:foot(ro?'返回本单元':'保存本次记录',ro?'return-task':'save-practice',ro?'':'保存后计入本单元。',!ro&&ui.count===0)};}
+function submit(){if(current().pendingDefinition)return pendingAssignmentView('submit');const a=current();const sent=a.status==='submitted'||a.status==='completed';const s=sent?(a.snapshot||a):a;return {bar:header(sent?'本次提交':'提交已学完','task'),body:`<div class="pad"><h1 class="detail-title">${esc(a.title)}</h1><p class="sub">${sent?'已提交的学习记录':'提交前，再回顾本次安排的学习与实践。'}</p><div class="state-list">${a.required.read?summary('闻 · 学理论',`${s.materials.filter(m=>m.confirmed).length} / ${s.materials.length} 份资料已学完`,s.materials.every(m=>m.confirmed)):''}${a.required.think?summary('思 · 自检与反思',a.reflectionSaved?'已完成并保存':'尚未完成',a.reflectionSaved):''}${a.required.practice?summary('修 · 实践',`${s.practiceTotal} / ${a.target} ${a.measureUnit}`,s.practiceTotal>=a.target):''}</div><div class="submission-materials">${s.materials.map(m=>`<div>${icon(m.confirmed?'check':'circle')}<span>${esc(m.title)}</span><small>${m.confirmed?'已确认学完':'尚未确认'}</small></div>`).join('')}</div>${a.required.think?`<div class="section-title"><h2>我的反思</h2>${!sent?'<button class="text-button" data-go="think">修改</button>':''}</div><p class="summary-prose">${esc(s.reflection)||'还没有保存反思。'}</p>${s.question?`<div class="section-title"><h2>想请教导师的问题</h2></div><p class="summary-prose">${esc(s.question)}</p>`:''}`:''}${!sent?'<label class="checkbox-row"><input id="submit-confirm" type="checkbox"><span>我确认以上记录属实，本单元要求的学习与实践已经完成。</span></label>':''}${a.teacherComment?`<div class="guidance"><h2 style="font-size:14px;margin-bottom:8px">导师回应</h2><p>${esc(a.teacherComment)}</p></div>`:''}<div class="banner ${a.status==='completed'?'success':''}">${a.status==='completed'?'导师已确认本单元完成，可以继续复习。':'提交后由导师查看并确认是否完成，不会自动开放下一学习单元。'}</div>${ui.error?`<p class="error" role="alert">${esc(ui.error)}</p>`:''}</div>`,footer:foot(sent?'返回本单元':'提交给导师',sent?'return-task':'submit-assignment',sent?'':'提交后保留本次学习记录。',!sent&&!ready(a))};}
+function summary(title,value,done=true){return `<div class="summary-row"><span>${title}</span><span class="value">${done?icon('check'):icon('circle')}${esc(value)}</span></div>`;}
+function sent(){const a=current();return {bar:header('提交结果','home'),body:`<div class="pad"><div class="success-state"><div class="success-mark">${icon('send')}</div><h1>已提交，等待导师确认</h1><p>「${esc(a.title)}」的学习记录已提交。<br>你可以继续其他已安排的修学。</p></div><div class="state-list">${summary('提交给',a.teacher)}${summary('学习单元',a.title)}${summary('当前状态','待导师确认',false)}</div><p class="plain-note center">导师确认后，本单元才会标记为已完成。</p><div class="space-top">${primary('返回今日修学','home')}</div><button class="text-button" style="display:flex;margin:12px auto" data-go="submit">查看本次提交 ${icon('right')}</button></div>`};}
+function journey(){
+ const student=role==='teacher'?activeStudent:'m1',arr=owned(student).slice().sort((a,b)=>(a.assignedAt||'').localeCompare(b.assignedAt||'')),done=arr.filter(a=>a.status==='completed').length,pending=arr.filter(a=>a.pendingDefinition).length;
+ return {bar:header(role==='teacher'?person(student).name+'的修学历程':'修学历程',role==='teacher'?'student':'home'),body:`<div class="pad personal-journey"><h1 class="page-heading">${role==='teacher'?person(student).name+'的':'我的'}修学历程</h1><p class="sub space-top-sm">主题沿用原图；以下为演示安排，不代表规定的学习先后。</p><div class="journey-summary"><span>已安排 <b>${arr.length}</b> 个单元</span><span>${pending?`待补齐 <b>${pending}</b> 项`:`已完成 <b>${done}</b> 个`}</span></div><div class="personal-route">${arr.map((a,i)=>`<div class="route-node ${a.status==='completed'?'completed':a.status==='submitted'?'submitted':a.started?'current':'planned'}"><span class="route-dot">${a.status==='completed'?icon('check'):a.status==='submitted'?icon('send'):a.started?'<span></span>':''}</span><button class="route-content" data-go="${role==='teacher'?'review':'records'}" data-id="${a.id}"><span class="route-meta">${esc(a.created)} · 导师指派</span><span class="route-title">${esc(a.title)} ${icon('right')}</span><span class="route-path">${esc(a.path)}</span><span class="route-state">${tag(a)}<small>${a.status==='completed'?a.completedAt+'导师确认':a.status==='submitted'?'等待导师查看':a.pendingDefinition?'资料与导师要求待补齐':`${phaseDone(a)} / ${phaseTotal(a)} 个学习环节`}</small></span></button></div>`).join('')}</div>${!arr.length?'<div class="empty"><h2>尚无学习安排</h2><p>导师指派单元后，将在这里留下修学记录。</p></div>':''}<p class="plain-note center">历程按实际指派时间排列，各方向可并行学习。<br>点开单元可回顾学习、提交与导师确认记录。</p></div>`,bottom:bottom(role==='teacher'?'students':'journey')};
+}
+function learning(){const all=owned();const arr=all.filter(a=>ui.listTab==='completed'?a.status==='completed':ui.listTab==='submitted'?a.status==='submitted':a.status==='active');return {bar:header('学习单元','home'),body:`<div class="pad"><h1 class="page-heading">我的学习单元</h1><div class="tabs">${[['active','进行中'],['submitted','待审核'],['completed','已完成']].map(([key,title])=>`<button class="${ui.listTab===key?'active':''}" data-action="learning-tab" data-value="${key}">${title}${key==='submitted'&&all.some(a=>a.status==='submitted')?' · '+all.filter(a=>a.status==='submitted').length:''}</button>`).join('')}</div>${arr.length?arr.map(a=>gotoButton('task',a.title,`${a.path} · ${status(a)}`,'book',a.id)).join(''):`<div class="empty">${icon('inbox')}<h2>${ui.listTab==='submitted'?'没有待确认的单元':'暂无相关单元'}</h2><p>${ui.listTab==='submitted'?'完成闻思修后，可在单元内提交。':'导师指派的学习单元会显示在这里。'}</p></div>`}</div>`,bottom:bottom('home')};}
+function records(){const a=current(),back=['practice','task'].includes(ui.recordsFrom)?ui.recordsFrom:'journey';const rows=[['book','导师指派本单元',`${a.created} · ${a.teacher}`]];a.materials.filter(m=>m.confirmed).forEach(m=>rows.push(['book',`学完资料：${m.title}`,`${a.title} · 本人确认已学完`]));if(a.reflectionSaved)rows.push(['edit','完成自检与反思',`${a.title} · ${a.answers.filter(Boolean).length}项自检`]);a.records.forEach(r=>rows.push(['lotus',`实践 ${r.count} ${a.measureUnit}`,`${r.date} ${r.time}`]));if(a.status==='submitted')rows.push(['send','提交单元学习',a.submittedAt||'10月22日']);if(a.status==='completed')rows.push(['check','导师确认完成',`${a.teacher} · ${a.completedAt}`]);return {bar:header('单元记录',back),body:`<div class="pad"><h1 class="page-heading">${esc(a.title)}</h1><p class="sub" style="margin-top:7px">${esc(a.path)} · ${status(a)}</p>${rows.reverse().map(([ic,title,desc])=>`<div class="record-line"><span class="row-icon">${icon(ic)}</span><div><strong>${esc(title)}</strong><p>${esc(desc)}</p></div></div>`).join('')}</div>`,bottom:back==='journey'?bottom('journey'):undefined};}
+function profile(){const teacher=role==='teacher';return {bar:header('我的',teacher?'students':'home'),body:`<div class="pad"><div class="profile"><span class="avatar">${teacher?'慧':'心'}</span><div><h1>${teacher?'慧明导师':'明心'}</h1><p>${teacher?'导师端 · 个人修学指导':'学员端 · 导师指导修学'}</p></div></div>${teacher?gotoButton('students','我的学员','查看负责学员的独立安排','users'):''}${teacher?gotoButton('arrangement-history','安排记录','按学员回看安排与确认情况','clock'):''}<button class="list-row" data-action="about"><span class="row-icon gray">${icon('question')}</span><span class="row-main"><strong>关于本次预览</strong><small>查看演示范围</small></span>${icon('right','row-arrow')}</button></div>`,bottom:bottom('profile')};}
+function teacherHome(){const query=ui.search.trim();const filtered=students.filter(s=>!query||s.name.includes(query));const total=data.assignments.filter(a=>a.status==='submitted').length;return {bar:`<header class="app-bar" ${ui.modal?'inert':''}><div class="app-wordmark">${icon('lotus')}修学指导</div><button class="icon-btn" data-go="profile" aria-label="导师个人资料">${icon('user')}</button></header>`,body:`<div class="pad"><div class="greeting"><h1>我的学员</h1><p class="date">慧明导师 · 个人修学指导</p></div>${total?`<button class="list-row" data-action="open-next-review" style="background:var(--ochre-soft);border:0;padding:14px;border-radius:12px;margin-bottom:18px"><span class="row-icon ochre">${icon('inbox')}</span><span class="row-main"><strong>${total}项安排等待确认</strong><small>查看学员提交的闻思修记录</small></span>${icon('right','row-arrow')}</button>`:''}<label class="search">${icon('search')}<input id="student-search" placeholder="搜索学员法名" value="${esc(ui.search)}" aria-label="搜索学员"></label><div id="student-results">${filtered.length?filtered.map(s=>studentRow(s)).join(''):`<div class="empty">${icon('search')}<h2>未找到相关学员</h2><p>请尝试其他法名。</p></div>`}</div><p class="plain-note">仅显示当前负责的学员。</p></div>`,bottom:bottom('students')};}
+function studentRow(s){const arr=owned(s.id);const pending=arr.filter(a=>a.status==='submitted').length;const ongoing=arr.filter(a=>a.status!=='completed').length;return `<button class="list-row student-row" data-go="student" data-student="${s.id}"><span class="avatar">${s.initial}</span><span class="row-main"><strong>${s.name}</strong><small>${ongoing}项进行中 · ${arr.find(a=>a.status!=='completed')?.title||'暂无进行中安排'}</small></span>${pending?`<span class="tag amber">${pending}项待确认</span>`:icon('right','row-arrow')}</button>`;}
+function teacherStudent(){const st=person(activeStudent),all=owned(st.id),arr=all.filter(a=>ui.studentTab==='completed'?a.status==='completed':a.status!=='completed');return {bar:header('学员修学','students',`<button class="icon-btn" data-go="assign" aria-label="指派学习单元">${icon('plus')}</button>`),body:`<div class="pad"><div class="profile"><span class="avatar">${st.initial}</span><div><h1>${st.name}</h1><p>${st.since}</p></div></div><button class="primary" data-go="assign">${icon('plus')} 指派学习单元</button><button class="list-row" data-go="journey"><span class="row-icon">${icon('path')}</span><span class="row-main"><strong>查看修学历程</strong><small>只展示${st.name}实际收到的单元安排</small></span>${icon('right','row-arrow')}</button><div class="tabs"><button class="${ui.studentTab==='active'?'active':''}" data-action="student-tab" data-value="active">进行中 ${all.filter(a=>a.status!=='completed').length}</button><button class="${ui.studentTab==='completed'?'active':''}" data-action="student-tab" data-value="completed">已完成 ${all.filter(a=>a.status==='completed').length}</button></div>${arr.length?arr.map(a=>`<button class="list-row" data-go="review" data-id="${a.id}"><span class="row-icon">${icon('book')}</span><span class="row-main"><strong>${esc(a.title)}</strong><small>${a.pendingDefinition?status(a):phaseDone(a)+' / '+phaseTotal(a)+' 环节'} · ${esc(a.path)}</small></span>${tag(a)}</button>`).join(''):'<div class="empty"><h2>暂无相关单元</h2><p>可为学员指派新的学习单元。</p></div>'}</div>`,bottom:bottom('students')};}
+function assign(){
+ const existing=owned(activeStudent).filter(a=>a.status!=='completed').map(a=>a.unitId),selected=ui.assignSelected.filter(id=>!existing.includes(id)&&canAssignUnit(unitById(id))),units=UNITS.filter(u=>ui.assignFilter==='全部'||u.path.split(' · ')[0]===ui.assignFilter),paths=[...new Set(units.map(u=>u.path))];
+ return {bar:header('按导图指派','student'),body:`<div class="pad"><h1 class="page-heading">给${person(activeStudent).name}指派单元</h1><p class="sub space-top-sm">沿用导图原名和层级。按完整理论主题或独立实践选择单元，发布后可设置本次目标与周期。</p><div class="unit-filters" aria-label="按原图分类筛选">${['全部','导读','正见','正人','正信','正愿','正行'].map(name=>`<button class="chip ${ui.assignFilter===name?'active':''}" data-action="unit-filter" data-value="${name}" aria-pressed="${ui.assignFilter===name}">${name}</button>`).join('')}</div><div class="section-title"><h2>原图主题目录</h2><span class="sub">${UNITS.filter(canAssignUnit).length}个单元</span></div>${paths.map((path,i)=>`<details class="source-group" ${ui.assignFilter!=='全部'||i===0?'open':''}><summary>${esc(path)}<small>${units.filter(u=>u.path===path).length}项</small></summary>${units.filter(u=>u.path===path).map(u=>`<div class="unit-choice"><label><input type="checkbox" name="assign-unit" value="${u.id}" ${selected.includes(u.id)?'checked':''} ${existing.includes(u.id)||!canAssignUnit(u)?'disabled':''}><span><strong>${esc(u.title)}</strong><small>${existing.includes(u.id)?'已指派':u.opaqueDirectory?'目录未展开 · 暂不可指派':u.mode==='practice'?'独立实践 · 以修为主':'理论／导读主题 · 按模板学习'}</small></span></label><div class="unit-choice-foot"><span>${u.children.length?'可见下级 '+u.children.length+'项':u.mapMarker?'原图标记 '+esc(u.mapMarker):'资料待补齐'}</span><button class="text-button" data-go="unit-preview" data-unit="${u.id}">核对原图 ${icon('right')}</button></div></div>`).join('')}</details>`).join('')}${selected.length?`<div class="section-title"><h2>本次指派 ${selected.length}个单元</h2></div>${selected.map(id=>`<div class="selected-source"><span>${esc(unitById(id).path)} · ${esc(unitById(id).title)}</span><button class="icon-btn" data-action="remove-unit" data-unit="${id}" aria-label="移除${esc(unitById(id).title)}">${icon('close')}</button></div>`).join('')}`:''}<div class="field"><label for="assign-guidance">本次说明</label><textarea id="assign-guidance" maxlength="500">${esc(ui.assignGuidance)}</textarea></div><div class="definition-notice"><strong>按已确定的单元划分安排学习</strong><p>单元模板提供默认学习环节。指派后设置实践内容、目标与周期；真实教材和自检表缺口继续标注。</p></div>${ui.error?`<p class="error" role="alert">${esc(ui.error)}</p>`:''}</div>`,footer:foot(selected.length?`指派${selected.length}个学习单元`:'请选择原图主题','publish-assignment','按个人实际安排，不自动解锁下一单元。',!selected.length)};
+}
+function unitPreview(){const u=unitById(ui.previewUnitId),exists=owned(activeStudent).some(a=>a.unitId===u.id&&a.status!=='completed');return {bar:header('原图主题核对','assign'),body:`<div class="pad"><h1 class="detail-title">${esc(u.title)}</h1>${sourceFacts(u)}<div class="section-title"><h2>待补充内容</h2></div><ul class="pending-list">${u.pending.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>${u.opaqueDirectory?'<div class="source-note">原图仅显示目录及省略标记，缺少具体内容，暂不作为可指派的学习单元。</div>':''}</div>`,footer:foot(u.opaqueDirectory?'目录未展开，暂不可指派':exists?'此单元已安排':'选择此学习单元','choose-unit','单元已划定，教材和本次要求单独配置。',exists||u.opaqueDirectory)};}
+function review(){if(current().pendingDefinition)return pendingAssignmentView('overview',true);const a=current(),s=person(a.student),snap=a.snapshot||a;const submitted=a.status==='submitted',complete=a.status==='completed';return {bar:header('查看修学情况','student'),body:`<div class="pad"><div class="breadcrumb">${s.name} ${icon('right')} ${esc(a.path)}</div><h1 class="review-title">${esc(a.title)}</h1>${a.status==='active'?'<button class="text-button" data-go="configure">调整本次学习要求</button>':''}<div class="focus-top">${tag(a)}<span class="sub">${submitted?esc(a.submittedAt||'10月22日提交'):complete?esc(a.completedAt||'10月22日')+'确认':''}</span></div>${!submitted&&!complete?`<div class="banner">${a.returnNote?'本单元已发回继续学习。以下为上次提交记录，等待学员补充后再次提交。':'学员尚未提交本单元，可先查看已保存的学习情况。'}</div>`:''}${a.required.read?`<section class="review-section"><h2><span>闻</span>学理论</h2><p>${esc(a.title)}学习资料</p>${(snap.materials||a.materials).map(m=>`<div class="review-answer">${esc(m.title)}<br><b>${m.confirmed?'本人已确认学完':'尚未确认'}</b> · 第${m.bookmark}页</div>`).join('')}</section>`:''}${a.required.think?`<section class="review-section"><h2><span>思</span>自检与反思</h2>${questions.map((q,i)=>`<div class="review-answer">${i+1}. ${q}<br><b>${esc(snap.answers?.[i]||'尚未填写')}</b></div>`).join('')}<div class="section-title"><h2 style="font-size:13px;margin:0">学员反思</h2></div><p>${esc(snap.reflection||'尚未保存反思。')}</p>${snap.question?`<div class="section-title"><h2 style="font-size:13px;margin:0">向导师请教</h2></div><p>${esc(snap.question)}</p>`:''}</section>`:''}${a.required.practice?`<section class="review-section"><h2><span>修</span>实践</h2><p>累计实践 ${snap.practiceTotal} / ${a.target} ${esc(a.measureUnit)}</p><small>共${(snap.records||a.records).length}次记录，周期：${esc(a.period)}。</small></section>`:''}<div class="guidance space-top"><div class="guidance-head">本次指导</div><p>${esc(a.guidance)}</p></div>${complete?`<div class="banner success">已确认本单元完成。${a.teacherComment?'<br>'+esc(a.teacherComment):''}</div><button class="primary" data-go="assign">安排后续学习 ${icon('arrow')}</button>`:''}${a.returnNote?`<div class="revision-note">上次继续学习建议：${esc(a.returnNote)}</div>`:''}</div>`,footer:submitted?`<footer class="action-footer dual" ${ui.modal?'inert':''}><button class="secondary" data-action="return-review">继续学习</button><button class="primary" data-action="approve-review">确认完成</button></footer>`:undefined};}
+function published(){const arr=ui.published.length?ui.published:data.lastPublished?.student===activeStudent?data.assignments.filter(a=>data.lastPublished.ids.includes(a.id)):[];return {bar:header('单元已指派','student'),body:`<div class="pad"><div class="success-state"><div class="success-mark">${icon('check')}</div><h1>已为${person(activeStudent).name}指派</h1><p>主题沿用修学导图原名。<br>可在学员安排中设置目标与周期。</p></div><div class="state-list">${arr.map(a=>summary(a.title,'资料与导师要求待补齐',false)).join('')}</div><div class="space-top"><button class="primary" data-go="student">查看学员安排 ${icon('arrow')}</button></div></div>`};}
+function historyPage(){return {bar:header('安排记录','students'),body:`<div class="pad"><h1 class="page-heading">历次安排</h1><p class="sub" style="margin-top:7px">按学员回看安排与完成情况</p>${[...data.assignments].reverse().map(a=>`<button class="list-row" data-go="review" data-id="${a.id}"><span class="row-icon">${icon(a.status==='completed'?'check':'book')}</span><span class="row-main"><strong>${esc(a.title)}</strong><small>${person(a.student).name} · ${a.created||'10月22日'}安排</small></span>${tag(a)}</button>`).join('')}</div>`,bottom:bottom('arrangement-history')};}
+function pageInfo(){return {
+ home:['从分类进入学习单元','莲花保留五大分类。导师指派完整学习单元，单元按模板与本次要求组织学习或实践。正见标为“解”，四个行门标为“行”。首页进入单元学习，历程集中展示个人进度与学习记录。',0],
+ configure:['导师设置本次要求','模板确定学习环节；导师设置实践内容、目标和周期。默认并行，资料与表单缺口保留。',0],
+ task:['按原图核对主题与范围','名称和路径来自原图。具体单元划分已按用户确认的主题和实践粒度执行。实际资料和本次导师要求单独配置。',0],
+ read:['资料未接入，明确标记','保留原图名称与层级。未拿到实际教材及必学范围前，不编造讲义，也不提供学完确认。',1],
+ think:['具体自检与反思待确认','原图部分主题写有自检名称，但未提供实际表单，不套用统一题目或完成分数。',2],
+ practice:['按导师本次要求实践','实践内容、累计目标与周期由导师设置，按实际完成情况记录；达标后提交，由导师确认完成。',3],
+ submit:['提交学习情况','要求齐备后由学员主动提交。提交保留快照，等待导师确认。',4],
+ sent:['提交之后，等待确认','学员可以继续其他已安排的内容。当前课程不会自动晋级或解锁下一单元。',4],
+ journey:['个人安排形成修学历程','将实际指派的单元、当前进度和学习记录整合在一个独立入口。只呈现个人安排，不预设五瓣依次解锁的路线。',0],
+ profile:['个人信息与关于','学员底部为修学、历程、我的。学习记录统一整合在历程中，这里保留个人信息与关于。',0],
+ learning:['多项并行，各自完成','学习单元并列进行；已完成安排可复习，复习不改变确认结果。',0],
+ students:['导师主导，逐项指导','查看自己负责的学员，优先处理已经提交的修学安排。',0],
+ student:['先看学员，再学习单元','同一学员可以有多项安排；新增安排不覆盖旧内容。',0],
+ assign:['按完整主题或独立实践指派','按原图层级浏览和核对，理论主题和独立实践分别安排，资料缺口单独标注。专修、选修目录未展开，暂不可指派。',0],
+ review:['要求补齐后再确认完成','实际资料及导师要求齐备后，学员提交，导师确认。达标不自动完成。',4],
+ published:['安排已进入学员端','切换到学员端，即可看到明心新增的安排。所有数据仅在本浏览器内联动。',0],
+ }[page]||['回看修学记录','保留每项安排的学习、提交和确认情况。',0];}
+function sidebar(){const links=role==='student'?[['home','home','今日修学'],['task','book','本单元'],['read','note','闻 · 学理论'],['think','edit','思 · 自检反思'],['practice','lotus','修 · 实践记录'],['submit','send','提交与确认'],['learning','list','学习单元'],['profile','user','我的'],['journey','path','修学历程']]:[['students','users','我的学员'],['student','user','学员修学情况'],['assign','plus','指派学习单元'],['review','check','提交审核'],['arrangement-history','clock','安排记录']];return `<aside class="preview-sidebar"><div class="preview-brand"><div class="brand-mark">${icon('lotus')}</div><div><strong>人间净土</strong><p>修学流程 · 手机交互原型</p></div></div><div class="role-switch" aria-label="预览角色"><button data-role="student" class="${role==='student'?'active':''}">学员端</button><button data-role="teacher" class="${role==='teacher'?'active':''}">导师端</button></div><div class="side-heading">页面导航</div><nav class="preview-links" aria-label="原型页面切换">${links.map(([to,ic,label])=>`<button data-shortcut="${to}" class="${page===to?'active':''}">${icon(ic)}${label}</button>`).join('')}</nav><div class="preview-note">人物与指派为演示；主题名称来自原图。<br>${recovery?'本地记录无法读取，重置后可重新保存。':ui.storageError?'暂未保存成功，请保留页面并重试。':'操作仅保存在本浏览器，刷新可继续。'}</div><div class="side-actions"><button data-action="map-gaps">划分规则与资料缺口</button><button data-action="reset-demo">重置示例</button></div>${ui.storageError?'<button class="text-button" data-action="retry-storage">重试保存</button>':''}</aside>`;}
+function statusBar(){return `<div class="statusbar" aria-hidden="true"><span>9:41</span><div class="status-icons"><svg viewBox="0 0 18 12" fill="currentColor"><rect y="8" width="3" height="4" rx=".7"/><rect x="5" y="5" width="3" height="7" rx=".7"/><rect x="10" y="2" width="3" height="10" rx=".7"/><rect x="15" width="3" height="12" rx=".7"/></svg><svg viewBox="0 0 17 12" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 3a12 12 0 0 1 15 0M4 6a7 7 0 0 1 9 0m-6 3a2.4 2.4 0 0 1 3 0"/><circle cx="8.5" cy="11" r=".6" fill="currentColor"/></svg><svg viewBox="0 0 27 13" fill="currentColor"><rect x=".6" y=".6" width="23" height="11.8" rx="3" fill="none" stroke="currentColor" stroke-opacity=".4"/><rect x="2.5" y="2.5" width="19" height="8" rx="1.5"/><path d="M25 4v5a2.5 2.5 0 0 0 0-5Z"/></svg></div></div>`;}
+function modal(){if(!ui.modal)return'';let title='',body='',actions='';switch(ui.modal){
+ case'materials':title='本单元学习资料';body=`<p>${esc(current().title)} · 每份资料分别确认学完</p>${current().materials.map(m=>`<button class="list-row" data-go="read" data-material="${m.id}"><span class="row-main"><strong>${esc(m.title)}</strong><small>${m.confirmed?'已确认学完':'第'+m.bookmark+'页'}</small></span>${icon('right')}</button>`).join('')}`;break;
+ case'info':title=ui.infoTitle;body=`<p>${esc(ui.infoBody)}</p>`;actions=primary('知道了','close-modal');break;
+ case'approve':title='确认本单元已完成';body=`<p>确认「${esc(current().title)}」已完成后，${person(current().student).name}可以复习本单元内容。后续安排由你另行发布。</p><div class="field"><label for="review-comment">给学员的回应 <small>选填</small></label><textarea id="review-comment" placeholder="记录本次指导或下一步建议……">${esc(ui.reviewComment)}</textarea></div>`;actions=`<div class="sheet-actions"><button class="secondary" data-action="close-modal">再看看</button><button class="primary" data-action="confirm-approve">确认完成</button></div>`;break;
+ case'return':title='请学员继续学习';body=`<p>补充需要继续观察或反思的地方。既有阅读与念佛记录保留，学员继续实践或补充反思后可再次提交。</p><label for="return-text" class="muted-label">继续学习的建议 · 必填</label><textarea id="return-text" maxlength="400" placeholder="请具体说明需要补充的内容……">${esc(ui.returnText)}</textarea>${ui.error?`<p class="error" role="alert">${esc(ui.error)}</p>`:''}`;actions=`<div class="sheet-actions"><button class="secondary" data-action="close-modal">取消</button><button class="primary" data-action="confirm-return">发回继续学习</button></div>`;break;
+ case'reset':title='重置演示记录';body='<p>将清除这份原型中保存的操作，恢复初始样例。不会影响真实APP及课程资料。</p>';actions=`<div class="sheet-actions"><button class="secondary" data-action="close-modal">取消</button><button class="primary" data-action="confirm-reset">重置示例</button></div>`;break;
+ case'pending':title='载入待确认示例';body='<p>将明心的“因缘果”单元替换为已提交样例，方便直接预览导师确认流程。其他安排不变。</p>';actions=`<div class="sheet-actions"><button class="secondary" data-action="close-modal">取消</button><button class="primary" data-action="confirm-pending">载入示例</button></div>`;break;
+ case'pages':title='切换原型页面';body=`<div class="role-switch"><button data-role="student" class="${role==='student'?'active':''}">学员端</button><button data-role="teacher" class="${role==='teacher'?'active':''}">导师端</button></div><nav class="preview-links">${(role==='student'?[['home','今日修学'],['task','本单元'],['read','闻 · 学理论'],['think','思 · 自检反思'],['practice','修 · 实践记录'],['submit','提交与确认'],['learning','学习单元'],['profile','我的'],['journey','修学历程']]:[['students','我的学员'],['student','学员进度'],['assign','指派学习单元'],['review','提交审核']]).map(([to,label])=>`<button data-shortcut="${to}">${label}${icon('right','row-arrow')}</button>`).join('')}</nav><div class="side-actions"><button data-action="map-gaps">划分规则与资料缺口</button><button data-action="reset-demo">重置示例</button></div>`;break;
+ }
+ return `<div class="modal" data-action="modal-backdrop"><section class="sheet" role="dialog" aria-modal="true" aria-labelledby="dialog-title"><div class="sheet-head"><h2 id="dialog-title" tabindex="-1">${title}</h2><button class="icon-btn" data-action="close-modal" aria-label="关闭">${icon('close')}</button></div>${body}${actions}</section></div>`;
+}
+function render(preserve=false){
+ const old=$('.phone-content');const scroll=preserve&&old?old.scrollTop:0;const focusId=preserve?document.activeElement?.id:'';
+ const views={home,task,read,think,practice,submit,sent,journey,learning,records,profile,students:teacherHome,student:teacherStudent,assign,review,published,'arrangement-history':historyPage,'unit-preview':unitPreview,configure};
+ const view=(views[page]||home)();const [title,desc,index]=pageInfo();
+ $('#app').innerHTML=`<div class="mobile-tools"><span class="mini-brand">人间净土 · 交互原型</span><button data-action="page-menu">${role==='teacher'?'导师端':'学员端'} · 页面导航</button></div><main class="preview">${sidebar()}<div class="phone-wrap"><section class="phone" aria-label="${role==='teacher'?'导师':'学员'}端手机原型">${statusBar()}<div class="phone-viewport">${view.bar||''}<div class="phone-content" id="screen-content" ${ui.modal?'inert':''}>${view.body}</div>${view.footer||''}${view.bottom||''}${ui.toast?`<div class="toast ${ui.toastError?'error-toast':''}" role="status">${esc(ui.toast)}</div>`:''}${modal()}</div><div class="gesture" aria-hidden="true"></div></section></div><aside class="preview-context"><div class="context-line"></div><h2>${title}</h2><p>${desc}</p><div class="flow-index">${['导师安排','闻 · 学理论','思 · 自检反思','修 · 实践','提交与导师确认'].map((v,i)=>`<span class="${i===index?'active':''}"><i>${i+1}</i>${v}</span>`).join('')}</div><p class="scope-note">主题与层级来自2024-04-13修学导图。单元划分已采纳；折叠目录、教材和自检表待补充。实践目标与周期由导师设置，各单元默认并行。</p></aside></main>`;
+ $('.phone-content').scrollTop=scroll;
+ if(focusId&&$('#'+focusId))$('#'+focusId).focus({preventScroll:true});
+ if(ui.modal)document.querySelectorAll('.bottom-nav,.app-bar,.action-footer').forEach(x=>x.inert=true);
+ scalePhone();
+}
+function scalePhone(){const wide=innerWidth>1080,side=innerWidth>700;const availableW=side?innerWidth-(wide?220+205+116+68:205+45+68):innerWidth-36;const availableH=innerHeight-(side?54:76);const scale=Math.min(1,availableW/413,availableH/852);document.documentElement.style.setProperty('--phone-scale',Math.max(.35,scale).toFixed(4));}
+function validationError(message){ui.error=message;render(true);requestAnimationFrame(()=>{document.querySelector('[role="alert"]')?.scrollIntoView({block:'center',behavior:'smooth'});});}
+function shortcut(next){if(role==='student'){if(current().student!=='m1')activeId='karma';if(['read','think','submit'].includes(next)&&current().kind==='practice')activeId='karma';navigate(next);}else{
+ if(next==='review'){const a=data.assignments.find(a=>a.id===activeId&&a.status==='submitted')||owned(activeStudent).find(a=>a.status==='submitted')||data.assignments.find(a=>a.status==='submitted')||current();activeId=a.id;activeStudent=a.student;}
+ navigate(next);
+}}
+const actions={
+ 'select-lotus':btn=>{if(!LOTUS_BRANCHES.some(b=>b.name===btn.dataset.branch))return;ui.lotusBranch=btn.dataset.branch;render(true);requestAnimationFrame(()=>document.querySelector(`[data-branch="${ui.lotusBranch}"]`)?.focus({preventScroll:true}));},
+ 'map-gaps':()=>openInfo('划分规则与资料缺口','理论按完整主题、实践按可独立安排的事项划分；七信自检保留原目录名称，8项分别安排。默认无硬性前置，目标和周期由导师设置。专修／选修目录、真实教材及自检表仍待补充。'),
+ 'configure-assignment':()=>navigate('configure'),
+ 'save-configuration':()=>{const a=current();if(a.status!=='active')return;const instruction=$('#config-instruction')?.value.trim()||'',rawTarget=$('#config-target')?.value.trim()||'',target=Number(rawTarget),period=$('#config-period')?.value.trim()||'';if(a.required.practice&&(!instruction||!period||!Number.isInteger(target)||target<1||target>10000000))return validationError('请填写实践内容、1至10000000之间的整数目标及周期。');a.practiceInstruction=instruction;a.target=a.required.practice?target:null;a.measureUnit=$('#config-unit')?.value||a.measureUnit;a.period=period;a.guidance=$('#config-guidance')?.value.trim()||a.guidance;ui.configDraft=null;refreshDefinition(a);persist();navigate('review');flash('已保存本次学习要求');},
+ 'home':()=>navigate('home'), 'return-task':()=>navigate('task'), 'close-modal':closeModal, 'page-menu':()=>openModal('pages'),
+ 'continue-task':()=>navigate(current().status==='completed'?['read','think','practice'].find(k=>current().required[k]):incompleteStage(current())),
+ 'open-submit':()=>navigate('submit'), 'view-submission':()=>navigate('submit'),
+ 'notices':()=>openInfo('修学消息',`导师已为你指派${owned().length}个学习单元，其中${owned().filter(a=>a.status==='submitted').length}个待确认。可在“历程”中查看进度与学习记录。`),
+ 'public-guide':()=>openInfo('导读', '导读用于认识人间净土修学体系，可随时查看。课程资料将在接入原有课程库后呈现。'),
+ 'locked':()=>openInfo('该内容尚未安排','每个人的修学情况不同，请按导师当前的安排学习。已安排和已完成的内容可从“我的修学”进入。'),
+ 'audio-info':()=>openInfo('音频资料','本原型未接入真实音频。当前可阅读课程讲义示例，演示阅读进度与本人学完确认。'),
+ 'reader-menu':()=>openModal('materials'),
+ 'reader-prev':()=>{const a=current(),m=currentMaterial();ui.readerPage=Math.max(1,(ui.readerPage||m.bookmark||1)-1);if(!isReadOnly(a)){m.bookmark=ui.readerPage;persist();}render(false);},
+ 'reader-next':()=>{const a=current(),m=currentMaterial();ui.readerPage=Math.min(3,(ui.readerPage||m.bookmark||1)+1);if(!isReadOnly(a)){m.bookmark=ui.readerPage;persist();}render(false);},
+ 'save-read':()=>{const a=current();if(isReadOnly(a))return;const m=currentMaterial();m.confirmed=!!$('#read-confirm')?.checked;a.readConfirmed=a.materials.every(x=>x.confirmed);persist();navigate('task');flash(`已保存资料进度（${a.materials.filter(x=>x.confirmed).length}/${a.materials.length}）`);},
+ 'save-think':()=>{const a=current();if(isReadOnly(a))return;if(a.answers.some(x=>!x))return validationError('请完成上面的3项自检。');if(!a.reflection.trim())return validationError('请写下本次学习的反思。');a.reflectionSaved=true;a.returnNote='';persist();navigate('task');flash('自检与反思已保存');},
+ 'count-one':()=>{if(!isReadOnly(current())){ui.count=Math.min(100000,ui.count+1);render(true);}},
+ 'count-ten':()=>{if(!isReadOnly(current())){ui.count=Math.min(100000,ui.count+10);render(true);}},
+ 'count-undo':()=>{ui.count=Math.max(0,ui.count-1);render(true);},
+ 'manual-toggle':()=>{ui.manual=!ui.manual;ui.error='';render(true);if(ui.manual)$('#manual-count')?.focus();},
+ 'manual-apply':()=>{const n=Number($('#manual-count')?.value);if(!Number.isInteger(n)||n<1||n>100000)return validationError('请填写1至100000之间的整数数量。');ui.count=n;ui.manual=false;ui.error='';render(true);},
+ 'save-practice':()=>{const a=current();if(isReadOnly(a)||!Number.isInteger(ui.count)||ui.count<1)return;const n=ui.count;a.practiceTotal+=n;a.records.push({count:n,date:'10月22日',time:new Intl.DateTimeFormat('zh-CN',{hour:'2-digit',minute:'2-digit',hour12:false,timeZone:'Asia/Shanghai'}).format(new Date())});ui.count=0;persist();navigate('task');flash(`已记录实践${n}${a.measureUnit}`);},
+ 'submit-assignment':()=>{const a=current();if(isReadOnly(a))return;if(!ready(a))return validationError('请先完成本次安排要求的学习与实践。');if(!$('#submit-confirm')?.checked)return validationError('请先确认以上学习记录属实。');a.snapshot=snapshotOf(a);a.submissions.push(JSON.parse(JSON.stringify(a.snapshot)));a.status='submitted';a.submittedAt='10月22日 '+new Intl.DateTimeFormat('zh-CN',{hour:'2-digit',minute:'2-digit',hour12:false,timeZone:'Asia/Shanghai'}).format(new Date());persist();navigate('sent');},
+ 'learning-tab':btn=>{ui.listTab=btn.dataset.value;render(false);},'student-tab':btn=>{ui.studentTab=btn.dataset.value;render(false);},
+ 'approve-review':()=>{ui.reviewComment='';openModal('approve');},
+ 'confirm-approve':()=>{const a=current();if(a.status!=='submitted'||a.pendingDefinition||!ready(a))return;a.status='completed';a.completedAt='10月22日';a.teacherComment=ui.reviewComment.trim();a.returnNote='';persist();ui.modal=null;render(false);flash('已确认本单元完成');},
+ 'return-review':()=>{ui.returnText='';openModal('return');},
+ 'confirm-return':()=>{const a=current();if(a.status!=='submitted')return;if(!ui.returnText.trim()){ui.error='请填写需要继续学习的具体建议。';render(true);return;}a.returnNote=ui.returnText.trim();a.status='active';if(a.required.think)a.reflectionSaved=false;persist();ui.modal=null;render(false);flash('已发回，等待学员继续学习');},
+ 'open-next-review':()=>{const a=data.assignments.find(a=>a.status==='submitted');if(a)navigate('review',{id:a.id});},
+ 'publish-assignment':()=>{const ids=ui.assignSelected.filter(id=>canAssignUnit(unitById(id))&&!owned(activeStudent).some(a=>a.unitId===id&&a.status!=='completed'));if(!ids.length)return validationError('请选择尚未登记且内容可辨识的原图主题。');const created=ids.map((id,i)=>newAssignment(id,activeStudent,'new-'+Date.now()+'-'+i,{guidance:ui.assignGuidance.trim()||'按导师本次安排学习，完成后提交。'}));data.assignments.push(...created);ui.published=created;data.lastPublished={student:activeStudent,ids:created.map(a=>a.id)};ui.assignSelected=[];persist();navigate('published');},
+ 'unit-filter':btn=>{ui.assignFilter=btn.dataset.value;render(true);},
+ 'remove-unit':btn=>{ui.assignSelected=ui.assignSelected.filter(id=>id!==btn.dataset.unit);render(true);},
+ 'choose-unit':()=>{if(!canAssignUnit(unitById(ui.previewUnitId)))return;if(owned(activeStudent).some(a=>a.unitId===ui.previewUnitId&&a.status!=='completed'))return;ui.assignSelected=[...new Set([...ui.assignSelected,ui.previewUnitId])];navigate('assign');},
+ 'load-pending':()=>openInfo('资料或导师要求待补齐','当前原图没有给出完整资料与完成标准，不生成已完成或待审核样例。'),
+ 'confirm-pending':()=>openInfo('资料或导师要求待补齐','当前原图没有给出完整资料与完成标准，不生成已完成或待审核样例。'),
+ 'reset-demo':()=>openModal('reset'),
+ 'confirm-reset':()=>{ui.published=[];ui.assignSelected=[];ui.assignTargets={};ui.assignFilter='全部';data=seed();recovery=false;ui.storageError=false;activeId='karma';activeStudent='m1';ui.listTab='active';ui.lotusBranch=null;persist();navigate(role==='teacher'?'students':'home');},
+ 'retry-storage':()=>{if(persist())flash('演示记录已保存');else flash('暂时无法保存，请保持页面并重试。',true);},
+ 'about':()=>openInfo('手机交互原型','用于预览导师安排、学员闻思修、提交与导师确认。主题名称与层级依据修学导图。人物及指派为演示，单元划分已确定，实际资料未接入，实践要求由导师设置。操作仅在本浏览器保存。'),
+};
+document.addEventListener('click',event=>{
+ const roleBtn=event.target.closest('[data-role]');if(roleBtn){switchRole(roleBtn.dataset.role);return;}
+ const shortcutBtn=event.target.closest('[data-shortcut]');if(shortcutBtn){shortcut(shortcutBtn.dataset.shortcut);return;}
+ const go=event.target.closest('[data-go]');if(go){if(go.disabled)return;const next=go.dataset.go;if(role==='teacher'&&next==='profile'){navigate('profile');return;}if(role==='teacher'&&next==='records'){navigate('arrangement-history');return;}if(go.dataset.student)activeStudent=go.dataset.student;const id=go.dataset.id;if(id){activeId=id;activeStudent=current().student;}if(go.dataset.unit)ui.previewUnitId=go.dataset.unit;navigate(next,{material:go.dataset.material});return;}
+ const btn=event.target.closest('[data-action]');if(!btn||btn.disabled)return;
+ if(btn.dataset.action==='modal-backdrop'){if(event.target===btn)closeModal();return;}
+ actions[btn.dataset.action]?.(btn);
+});
+document.addEventListener('input',event=>{
+ const e=event.target,a=current();
+ const configKeys={'config-instruction':'practiceInstruction','config-target':'target','config-unit':'measureUnit','config-period':'period','config-guidance':'guidance'};if(configKeys[e.id])ui.configDraft={...(ui.configDraft?.id===a.id?ui.configDraft:{}),id:a.id,[configKeys[e.id]]:e.value};
+ if(e.id==='reflection'&&!isReadOnly(a)){a.reflection=e.value;a.reflectionSaved=false;persist();}
+ if(e.id==='question'&&!isReadOnly(a)){a.question=e.value;a.reflectionSaved=false;persist();}
+ if(e.id==='assign-guidance')ui.assignGuidance=e.value;
+ if(e.dataset.unitTarget)ui.assignTargets[e.dataset.unitTarget]=e.value;
+ if(e.id==='assign-due')ui.assignDue=e.value;
+ if(e.id==='return-text')ui.returnText=e.value;
+ if(e.id==='review-comment')ui.reviewComment=e.value;
+ if(e.id==='student-search'){ui.search=e.value;const filtered=students.filter(s=>!ui.search.trim()||s.name.includes(ui.search.trim()));$('#student-results').innerHTML=filtered.length?filtered.map(studentRow).join(''):'<div class="empty"><h2>未找到相关学员</h2><p>请尝试其他法名。</p></div>';}
+});
+document.addEventListener('change',event=>{const e=event.target,a=current();if(e.id==='read-confirm')ui.readDraft=e.checked;if(e.name?.startsWith('answer-')&&!isReadOnly(a)){a.answers[Number(e.name.slice(-1))]=e.value;a.reflectionSaved=false;persist();}if(e.name==='assign-unit'){ui.assignSelected=e.checked?[...new Set([...ui.assignSelected,e.value])]:ui.assignSelected.filter(v=>v!==e.value);render(true);}if(e.id==='assign-mode'){ui.assignMode=e.value;render(true);}});
+document.addEventListener('keydown',event=>{const svgButton=event.target.closest?.('svg [role="button"]');if(svgButton&&['Enter',' '].includes(event.key)){event.preventDefault();svgButton.dispatchEvent(new MouseEvent('click',{bubbles:true}));return;}if(!ui.modal)return;if(event.key==='Escape'){event.preventDefault();closeModal();return;}if(event.key==='Tab'){const nodes=[...document.querySelectorAll('.sheet button:not(:disabled),.sheet input,.sheet textarea,.sheet select')];const first=nodes[0],last=nodes.at(-1);if(event.shiftKey&&(document.activeElement===first||document.activeElement?.id==='dialog-title')){event.preventDefault();last?.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first?.focus();}}});
+addEventListener('resize',scalePhone);
+addEventListener('popstate',event=>{if(event.state){({role,page,activeId,activeStudent}=event.state);ui.recordsFrom=event.state.recordsFrom||'journey';ui.materialId=event.state.materialId||null;ui.previewUnitId=event.state.previewUnitId||ui.previewUnitId;}else{const q=routeParams();role=q.get('role')==='teacher'?'teacher':'student';page=q.get('page')||(role==='teacher'?'students':'home');activeId=q.get('task')||'karma';ui.recordsFrom=['practice','task'].includes(q.get('from'))?q.get('from'):'journey';ui.materialId=q.get('material');ui.previewUnitId=q.get('unit')||ui.previewUnitId;activeStudent=role==='teacher'&&students.some(s=>s.id===q.get('student'))?q.get('student'):current().student;}ui.modal=null;ui.error='';ui.readerPage=null;ui.readDraft=null;ui.count=0;render(false);});
+history.replaceState({role,page,activeId,activeStudent,recordsFrom:ui.recordsFrom,materialId:ui.materialId,previewUnitId:ui.previewUnitId},'',url());
+render(false);
+})();
+
+</script>
+</body>
+</html>

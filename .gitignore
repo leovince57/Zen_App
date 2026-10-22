@@ -1,0 +1,45 @@
+# Local operating-system and development files
+.DS_Store
+._*
+.venv/
+venv/
+node_modules/
+__pycache__/
+*.py[cod]
+tmp/
+prototype/.impeccable/
+research/.document-work/
+
+# Credentials, signing material, and local account state
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.jks
+*.keystore
+private-runtime/
+*.log
+
+# Original captures can contain account details; keep them local.
+research/screens/
+research/ui/
+research/页面记录.json
+research/reverse-analysis/evidence/
+research/reverse-analysis/sources/
+research/reverse-analysis/diagnostic/
+research/reverse-analysis/apk-preflight.json
+research/reverse-analysis/rea-doctor.json
+research/reverse-analysis/evidence-index.json
+research/reverse-analysis/runtime-status.json
+
+# Downloaded or generated application binaries are not source files.
+*.apk
+*.apk.idsig
+*.dex
+*.jar
+*.dylib
+*.so
+
+# Personal desktop troubleshooting screenshots are not project assets.
+delivery/*.png

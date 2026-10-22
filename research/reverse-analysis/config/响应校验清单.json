@@ -1,0 +1,125 @@
+{
+  "source": "正常读取协议响应；原始文件保存在工作区外本机私有目录",
+  "responses": [
+    {
+      "local_private_filename": "getMindLevelName-authenticated.json",
+      "sha256": "5cd34732bc566f66a9f863f86ac8c99afe0025c47e065a2b75ce119fc57320f6"
+    },
+    {
+      "local_private_filename": "getMindPracticeListNew-authenticated.json",
+      "sha256": "7823dc9d5aac99ebeb5fee5fa2d26a3629c1c2dfe206acc57e45f331a5522bd2"
+    },
+    {
+      "local_private_filename": "getMindPracticeAllNew-authenticated.json",
+      "sha256": "14f10c9fc3159033a7cff35ba497401efa4e5bea7b362a26c15cd23cb5f74320"
+    },
+    {
+      "local_private_filename": "getLifeOceanVideo-authenticated.json",
+      "sha256": "dd2d7d35b805f80909deceda97dd85e026c196d79a5ecc28b2d3d06459350f5f"
+    },
+    {
+      "local_private_filename": "score-1.json",
+      "sha256": "7eb3670dd26ff888921b08d06d09e40038fb3a0ee050f745b102ad87a01f604c"
+    },
+    {
+      "local_private_filename": "score-2.json",
+      "sha256": "07e1f9b11a5bc3e5d0c353a2598bb7d529a2e3b6934d8d89a2b7a74a099dbaea"
+    },
+    {
+      "local_private_filename": "score-5.json",
+      "sha256": "9818ca5b8247493c71f79886fea4d3a53773b67c88e6d6fd3d963624752d106e"
+    },
+    {
+      "local_private_filename": "score-7.json",
+      "sha256": "29c0e482d339efaba8c0de1edffd089c0100b7a57030c3191d70280b32f28a05"
+    },
+    {
+      "local_private_filename": "score-8.json",
+      "sha256": "ec6a93c98000148fe25f8ab125876444206a84e44d77a6306507c9bdb1e13d73"
+    },
+    {
+      "local_private_filename": "score-9.json",
+      "sha256": "8cbc21742eff18bcc305f2e46ffd0e8ac60812ed40d6ae88a8f498b1d752ed2d"
+    },
+    {
+      "local_private_filename": "score-10.json",
+      "sha256": "1ae74475b591582bf6f81992ff608f8ea69126bb26a14f7fe8f7a6261cf90419"
+    },
+    {
+      "local_private_filename": "score-121.json",
+      "sha256": "adef449fbdf1ad6718b8c06005eed9d254f043514dca565210ae5096fe19e4b5"
+    },
+    {
+      "local_private_filename": "score-11.json",
+      "sha256": "e60077862832f5e894279d912c1c674defaa71181bc29fb1c04c8a08cc370238"
+    },
+    {
+      "local_private_filename": "score-20.json",
+      "sha256": "700bb8bc4fdc5f93ea64402517995ac38b4de47c4e2e52400a47655d0621f705"
+    },
+    {
+      "local_private_filename": "score-21.json",
+      "sha256": "9ee7beb0cae9c2d054c1515f6827bd1757a526d7a39e143cc5c5cf5346a9b36a"
+    },
+    {
+      "local_private_filename": "score-35.json",
+      "sha256": "07fa58c8712d2d62bf6368e2a28526a2f4aac8d10e0c9335a8670c229332fb06"
+    },
+    {
+      "local_private_filename": "score-39.json",
+      "sha256": "5a82d8308c583db11441e899516530b1ac83c1cbc5bb83cc9bef4f99a0c63f00"
+    },
+    {
+      "local_private_filename": "score-40.json",
+      "sha256": "8f239668cd4b1ce2cc7e07007fb2aeee7281228ab967f98140c4dee2674f8d08"
+    },
+    {
+      "local_private_filename": "score-42.json",
+      "sha256": "61e917699216c158cad8abc99e5a94712c9b22309cbe1e7c62b67f9f83ef283f"
+    },
+    {
+      "local_private_filename": "score-43.json",
+      "sha256": "acfd5b654133d7998a9031526ff0c7df7e3d1ae2872f9ef6316fc7c92a3d2952"
+    },
+    {
+      "local_private_filename": "score-44.json",
+      "sha256": "2770e41e1bad0a9e301c6710300c3d13bf87693ac97980f20cbb297a4060e8af"
+    },
+    {
+      "local_private_filename": "score-45.json",
+      "sha256": "7326536a57d6af69e95c8ee5fbf1f20b1f96a224c06d40b98b14d14bd5b28617"
+    },
+    {
+      "local_private_filename": "score-49.json",
+      "sha256": "c362f85639c3abda84a50756e2f85b44cf95b6fa5cd7af5f94ec3aebd4de62dd"
+    },
+    {
+      "local_private_filename": "score-80.json",
+      "sha256": "f6b5d6555a0159ab389ab55a928a6ea00410b788d2ef40f5e5ca949bcf77cee9"
+    },
+    {
+      "local_private_filename": "score-81.json",
+      "sha256": "1d445e3f861b06a27b47a7db0d62dd2065e5575cefe095fbef4c22c29ff3fada"
+    },
+    {
+      "local_private_filename": "score-91.json",
+      "sha256": "ab699ed7787cd93a2e375ff2ded588c1f42fc52a8562e135796c0cb1c135fea2"
+    },
+    {
+      "local_private_filename": "score-92.json",
+      "sha256": "293508417aae2af491f895d1bd51d3eb0effd74df3b934b0e1e6ccf7496409ba"
+    },
+    {
+      "local_private_filename": "score-93.json",
+      "sha256": "b858a2b984001aa8bf879f1372ed299d62c1664122627d72448d110001bfc2ac"
+    },
+    {
+      "local_private_filename": "score-98.json",
+      "sha256": "0fb24e5db00b0a928b2845395c907d81542d1bdd075af7272120b487d99429a9"
+    },
+    {
+      "local_private_filename": "score-94.json",
+      "sha256": "5c52e938ca76954ec1e67c4f228c42875ed6671af155db5d24412d26c60685d5"
+    }
+  ]
+}

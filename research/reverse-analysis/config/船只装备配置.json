@@ -1,0 +1,41 @@
+{
+  "source_action": "getUserBoatList",
+  "rows": [
+    {
+      "boat_id": 1,
+      "boat_title": "动力",
+      "boat_intro": "信心",
+      "ishas": 2
+    },
+    {
+      "boat_id": 2,
+      "boat_title": "方向",
+      "boat_intro": "愿力",
+      "ishas": 2
+    },
+    {
+      "boat_id": 3,
+      "boat_title": "指南",
+      "boat_intro": "正见",
+      "ishas": 2
+    },
+    {
+      "boat_id": 4,
+      "boat_title": "资粮",
+      "boat_intro": "利他",
+      "ishas": 2
+    },
+    {
+      "boat_id": 5,
+      "boat_title": "浮囊",
+      "boat_intro": "持戒",
+      "ishas": 2
+    },
+    {
+      "boat_id": 6,
+      "boat_title": "除障",
+      "boat_intro": "忏悔",
+      "ishas": 2
+    }
+  ]
+}

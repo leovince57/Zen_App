@@ -1,0 +1,177 @@
+{
+  "responses": [
+    {
+      "private_filename": "UserDetectionList-pass4.json",
+      "sha256": "08dfc74d0715fc57f85908cd10d40759e8b9770ad217764fe4bc36757c14422f"
+    },
+    {
+      "private_filename": "getLifeOceanVideo-pass4.json",
+      "sha256": "26fb59da3ec25376de0934740ea658e972840b178e1d4672df72bcca5ea6712f"
+    },
+    {
+      "private_filename": "getMindAccumulateCurveNew-pass4.json",
+      "sha256": "0b67cb6d08435072ec16c46dcf10332e2783ce308c678220bcb99f0e51bd42a2"
+    },
+    {
+      "private_filename": "getMindSixDetection-pass4.json",
+      "sha256": "8ed074998fa618e40b95e3d91b4f933f0232a14ce999e030bec1982733aadaf9"
+    },
+    {
+      "private_filename": "getUserBoatList-pass4.json",
+      "sha256": "9a8a97a795c06aab9da894654001814e2d3ca31f9337728189380920782465b1"
+    },
+    {
+      "private_filename": "getUserMedalList-pass4.json",
+      "sha256": "280df1fe21ea91d2eb1f56be90d48abcee46e65db755cd06c5fb6294f8733105"
+    },
+    {
+      "private_filename": "getUserMpDetectionChannel-pass4.json",
+      "sha256": "5e23764b7b816ad06d68f8a3b6f3586791a111f7107b2f0acc8b5c3938d33033"
+    },
+    {
+      "private_filename": "knowledge-search-0.json",
+      "sha256": "151c4951ae992dbf99f0d70efaed004f46c27983a56bb585989cbfae73f2cdde"
+    },
+    {
+      "private_filename": "knowledge-search-1.json",
+      "sha256": "410073989f1a5b5cc3cbe03b7b388880acffc6d1a7a9e5965ca6d6743704f8dc"
+    },
+    {
+      "private_filename": "knowledge-search-2.json",
+      "sha256": "862a297699e2cf34e99c47e754caca31bff07eefe604bfa7cba73f93be27065f"
+    },
+    {
+      "private_filename": "knowledge-search-3.json",
+      "sha256": "1b051b3b63835b2c0cac6842daf1c78a4cf9094fae69f9de3fdb236e89fd164d"
+    },
+    {
+      "private_filename": "knowledge-followup-0.json",
+      "sha256": "2fb74ff49ad5d318bb6b5732a03930977e33d32e2d2fb54bfa42e2fb7749fc6f"
+    },
+    {
+      "private_filename": "knowledge-followup-1.json",
+      "sha256": "4655bcce3e355992fdb2e9c17b785d9e7d6e976af77f7855e2a86b1ed7d803d5"
+    },
+    {
+      "private_filename": "knowledge-followup-2.json",
+      "sha256": "758f403c73a66b047e6062806becee65d0479e1217031cecd84fa47f4504c421"
+    },
+    {
+      "private_filename": "knowledge-followup-3.json",
+      "sha256": "789222bbb8acce29ab39e6ff48e46cdcd30b480d62f7688765d6414e465831cf"
+    },
+    {
+      "private_filename": "knowledge-followup-4.json",
+      "sha256": "ad2c5e9482d1d6f3e3cea0e99c820ae9482deea26c84897550595f811426d86d"
+    },
+    {
+      "private_filename": "knowledge-followup-5.json",
+      "sha256": "e6ca19c99f136e3d493100cf1d70e3fb86b870a7e904f7f1ec0f638fba1aea31"
+    },
+    {
+      "private_filename": "knowledge-followup-6.json",
+      "sha256": "5f631c1fbd8defb68c07ab698538e64e15461ba365f0e5a7cc5ab8f565a461d2"
+    },
+    {
+      "private_filename": "knowledge-followup-7.json",
+      "sha256": "9076a7c89692a3183f2a9582fb700fa7f05178093ea41ba0e4e034cabaf317a3"
+    },
+    {
+      "private_filename": "knowledge-followup-8.json",
+      "sha256": "211a7e72887eb29d9188c782e799f7cdadee08696d9dec3be4eb03e88bf2b1f3"
+    },
+    {
+      "private_filename": "knowledge-followup-9.json",
+      "sha256": "f13663526f1abe2d7e517a1d27ba359f1c8a2913fc9d131dea6d3d371bd584a0"
+    },
+    {
+      "private_filename": "knowledge-detail-0.json",
+      "sha256": "601fff0f23c9ecba9d7c4ad17370b886499e267d87d8bd0ee238c23546311f79"
+    },
+    {
+      "private_filename": "knowledge-detail-1.json",
+      "sha256": "ded8488828e0f8edda5b25ca7c6b887693d50c22645994c4cc975cee2b1eddf4"
+    },
+    {
+      "private_filename": "knowledge-detail-2.json",
+      "sha256": "df1e84e9ccfa814928edcac55152a614fb8db4974a623114e11716a70df033b4"
+    },
+    {
+      "private_filename": "knowledge-detail-3.json",
+      "sha256": "4b3265aeeec7dee4884155a16857ca6661a35ff49cd6ca7f468c1224436de06a"
+    },
+    {
+      "private_filename": "knowledge-detail-4.json",
+      "sha256": "0a60ad6edb1eb37660c4303e976c8509150a8f7c3ba3b866bb9e04ef9cec0575"
+    },
+    {
+      "private_filename": "knowledge-detail-5.json",
+      "sha256": "b992ff9c247f16a89251e253e122a90805a145400f29e0dc393e2843f9f5871c"
+    },
+    {
+      "private_filename": "knowledge-detail-6.json",
+      "sha256": "3786ecc1ce1e4438cba515a457165ac2153e69db075a83a534a5a0e84ca6b1a6"
+    },
+    {
+      "private_filename": "knowledge-detail-7.json",
+      "sha256": "17b04cfa2e6482a41ca85e5e6a3f227b6d5e6433df82499d46d2577cab6838f2"
+    },
+    {
+      "private_filename": "knowledge-detail-8.json",
+      "sha256": "de51062392b787602abbb7a9cdf1164191d4d3cfe9bed8c22191dd278cafe9cd"
+    },
+    {
+      "private_filename": "knowledge-target-0.json",
+      "sha256": "04e21da4bdf7d7dd9b849e23f6885676309311485de1c09cc9db2bdab1b6ad80"
+    },
+    {
+      "private_filename": "knowledge-target-1.json",
+      "sha256": "0166b717e69ecb3001696c81f400b6a8c7d98029122e998f9d3267673620604e"
+    },
+    {
+      "private_filename": "knowledge-target-2.json",
+      "sha256": "8e0183fe7b5a0b51a22ef908cde87dcd053708845cbe7cb7e14f052e01a3b4dd"
+    },
+    {
+      "private_filename": "knowledge-target-3.json",
+      "sha256": "3586538763a7803dfb3b757ac68ce76b862a06666fc38a033cb6aa2ad000395b"
+    },
+    {
+      "private_filename": "knowledge-target-4.json",
+      "sha256": "b82f8b116a46812dffad65daf2303ee0fe59f06057518362286f16c1f03115ca"
+    },
+    {
+      "private_filename": "knowledge-target-5.json",
+      "sha256": "93f9171c5d752f6629844b4b81ae2c198ea1eb4f5cb63554c7ce5850f617e433"
+    },
+    {
+      "private_filename": "knowledge-target-6.json",
+      "sha256": "ad0582c21d8460ad5f9c1612928bf869b65dc452c0cdbd453ff215a1bc3d74dd"
+    },
+    {
+      "private_filename": "knowledge-standard-0.json",
+      "sha256": "17831faf83664d4e7e080d682bb564431a0699fe8d9684752bb588f5d019affd"
+    },
+    {
+      "private_filename": "knowledge-standard-1.json",
+      "sha256": "3eed1ea4de96db73f6193efb921d750b9cc146d2c9e2b1efaaddb3edb54a5f73"
+    },
+    {
+      "private_filename": "knowledge-standard-2.json",
+      "sha256": "21856c21d4285b30e8cf8002c2d1c9d71aaaf40aebe71e669f5e83b05a0ff5b0"
+    },
+    {
+      "private_filename": "knowledge-standard-3.json",
+      "sha256": "86547600f0eaaad930759384fa3606d9870b02c78cfd26c395780ea31c8457b3"
+    },
+    {
+      "private_filename": "upgrade-type4-score-1.json",
+      "sha256": "7eb3670dd26ff888921b08d06d09e40038fb3a0ee050f745b102ad87a01f604c"
+    },
+    {
+      "private_filename": "upgrade-catalog-type4.json",
+      "sha256": "7823dc9d5aac99ebeb5fee5fa2d26a3629c1c2dfe206acc57e45f331a5522bd2"
+    }
+  ],
+  "raw_files_shared": false
+}

@@ -1,0 +1,3066 @@
+/* Source names plus user-approved unit boundaries. */
+globalThis.STUDY_MAP = {
+  "source": "001_人间净土修学导图_20240413(2).pdf",
+  "sourcePage": 1,
+  "scope": "用户已同意按完整理论主题、独立实践划分学习单元。原图分组保留为目录；实际教材、自检表、导师实践目标另行配置。",
+  "markerPolicy": "保留原图圆圈数字或省略号，具体下级未展开；不将其推定为课时、目标数量或完成标准。",
+  "units": [
+    {
+      "id": "map-3e095b6eeb",
+      "title": "导读",
+      "path": "导读",
+      "sourcePath": [
+        "导读",
+        "导读"
+      ],
+      "children": [
+        {
+          "title": "回归“人间净土”",
+          "mapMarker": "4"
+        },
+        {
+          "title": "《“人间净土”修学体系》导读",
+          "mapMarker": "1"
+        },
+        {
+          "title": "人间净土修学导图",
+          "mapMarker": "1"
+        },
+        {
+          "title": "平板使用帮助",
+          "mapMarker": "1"
+        },
+        {
+          "title": "雨花长老开示",
+          "mapMarker": "1"
+        },
+        {
+          "title": "觉光普明"
+        },
+        {
+          "title": "觉醒教育专访",
+          "mapMarker": "1"
+        }
+      ],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入"
+      ],
+      "mode": "intro",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": false,
+        "practice": false
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "map-5a5658591d",
+      "title": "皈依",
+      "path": "导读",
+      "sourcePath": [
+        "导读",
+        "皈依"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入",
+        "具体自检表与题目待接入"
+      ],
+      "mapMarker": "6",
+      "mode": "intro",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": false
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "map-0829893317",
+      "title": "早晚定课",
+      "path": "导读",
+      "sourcePath": [
+        "导读",
+        "早晚定课"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mapMarker": "2",
+      "mode": "intro",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "map-b1f629fa42",
+      "title": "入门自检",
+      "path": "导读",
+      "sourcePath": [
+        "导读",
+        "入门自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mapMarker": "6",
+      "mode": "intro",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "map-a26152b80e",
+      "title": "专修",
+      "path": "正见 · 正人",
+      "sourcePath": [
+        "正见",
+        "正人",
+        "专修"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": true,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "专修／选修下的实际课程目录待补充"
+      ],
+      "mapMarker": "…",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": false
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "map-6ec3be3d36",
+      "title": "选修",
+      "path": "正见 · 正人",
+      "sourcePath": [
+        "正见",
+        "正人",
+        "选修"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": true,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "专修／选修下的实际课程目录待补充"
+      ],
+      "mapMarker": "…",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": false
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "map-366640e7b9",
+      "title": "因缘果",
+      "path": "正见 · 正信",
+      "sourcePath": [
+        "正见",
+        "正信",
+        "因缘果"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入",
+        "具体自检表与题目待接入",
+        "配套实践要求由导师设置：因缘果自检"
+      ],
+      "mapMarker": "12",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": [],
+      "practiceUnitId": "unit-318a86d69a",
+      "practiceTitle": "因缘果自检"
+    },
+    {
+      "id": "map-687546f7b1",
+      "title": "轮回路险",
+      "path": "正见 · 正信",
+      "sourcePath": [
+        "正见",
+        "正信",
+        "轮回路险"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入",
+        "具体自检表与题目待接入",
+        "配套实践要求由导师设置：轮回路险自检"
+      ],
+      "mapMarker": "19",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": [],
+      "practiceUnitId": "unit-fabed64d22",
+      "practiceTitle": "轮回路险自检"
+    },
+    {
+      "id": "map-2ab6693dea",
+      "title": "四正勤",
+      "path": "正见 · 正信",
+      "sourcePath": [
+        "正见",
+        "正信",
+        "四正勤"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入",
+        "具体自检表与题目待接入",
+        "配套实践要求由导师设置：四正勤自检"
+      ],
+      "mapMarker": "2",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": [],
+      "practiceUnitId": "unit-3cf6c78ae7",
+      "practiceTitle": "四正勤自检"
+    },
+    {
+      "id": "map-579e1f9d20",
+      "title": "四念处",
+      "path": "正见 · 正信",
+      "sourcePath": [
+        "正见",
+        "正信",
+        "四念处"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入",
+        "具体自检表与题目待接入",
+        "配套实践要求由导师设置：四念处自检"
+      ],
+      "mapMarker": "20",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": [],
+      "practiceUnitId": "unit-0ac8a7e270",
+      "practiceTitle": "四念处自检"
+    },
+    {
+      "id": "map-9e0920be1d",
+      "title": "四如意足",
+      "path": "正见 · 正信",
+      "sourcePath": [
+        "正见",
+        "正信",
+        "四如意足"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入",
+        "具体自检表与题目待接入",
+        "配套实践要求由导师设置：四如意足自检"
+      ],
+      "mapMarker": "1",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": [],
+      "practiceUnitId": "unit-d629c2f277",
+      "practiceTitle": "四如意足自检"
+    },
+    {
+      "id": "map-14eda2c4fc",
+      "title": "人间净土",
+      "path": "正见 · 正信",
+      "sourcePath": [
+        "正见",
+        "正信",
+        "人间净土"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入",
+        "具体自检表与题目待接入",
+        "配套实践要求由导师设置：人间净土自检"
+      ],
+      "mapMarker": "…",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": [],
+      "practiceUnitId": "unit-b2d06f557e",
+      "practiceTitle": "人间净土自检"
+    },
+    {
+      "id": "map-9a1e5f290d",
+      "title": "信自信他",
+      "path": "正见 · 正信",
+      "sourcePath": [
+        "正见",
+        "正信",
+        "信自信他"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入",
+        "具体自检表与题目待接入",
+        "配套实践要求由导师设置：信自信他自检"
+      ],
+      "mapMarker": "8",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": [],
+      "practiceUnitId": "unit-e07a801be1",
+      "practiceTitle": "信自信他自检"
+    },
+    {
+      "id": "map-90be21dcb9",
+      "title": "菩提心",
+      "path": "正见 · 正愿",
+      "sourcePath": [
+        "正见",
+        "正愿",
+        "菩提心"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入",
+        "具体自检表与题目待接入",
+        "配套实践要求由导师设置：菩提心自检"
+      ],
+      "mapMarker": "18",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": [],
+      "practiceUnitId": "map-5127318d9f",
+      "practiceTitle": "菩提心自检"
+    },
+    {
+      "id": "map-c5ca14f9bf",
+      "title": "菩萨行",
+      "path": "正见 · 正愿",
+      "sourcePath": [
+        "正见",
+        "正愿",
+        "菩萨行"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入",
+        "具体自检表与题目待接入"
+      ],
+      "mapMarker": "27",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": false
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": [],
+      "practiceUnitId": null,
+      "practiceTitle": null
+    },
+    {
+      "id": "map-c44ab9e96d",
+      "title": "弥陀功德",
+      "path": "正见 · 正行",
+      "sourcePath": [
+        "正见",
+        "正行",
+        "弥陀功德"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入",
+        "具体自检表与题目待接入"
+      ],
+      "mapMarker": "4",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": false
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": [],
+      "practiceUnitId": null,
+      "practiceTitle": null
+    },
+    {
+      "id": "map-8779f647d2",
+      "title": "念佛原理",
+      "path": "正见 · 正行",
+      "sourcePath": [
+        "正见",
+        "正行",
+        "念佛原理"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入",
+        "具体自检表与题目待接入"
+      ],
+      "mapMarker": "1",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": false
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": [],
+      "practiceUnitId": null,
+      "practiceTitle": null
+    },
+    {
+      "id": "map-d3aee29f94",
+      "title": "舍命念佛",
+      "path": "正见 · 正行",
+      "sourcePath": [
+        "正见",
+        "正行",
+        "舍命念佛"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入",
+        "具体自检表与题目待接入",
+        "配套实践要求由导师设置：舍命念佛"
+      ],
+      "mapMarker": "3",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": [],
+      "practiceUnitId": "unit-3f80851fdc",
+      "practiceTitle": "舍命念佛"
+    },
+    {
+      "id": "map-7a68baa6d4",
+      "title": "闭关念佛",
+      "path": "正见 · 正行",
+      "sourcePath": [
+        "正见",
+        "正行",
+        "闭关念佛"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入",
+        "具体自检表与题目待接入"
+      ],
+      "mapMarker": "3",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": false
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": [],
+      "practiceUnitId": null,
+      "practiceTitle": null
+    },
+    {
+      "id": "map-57e71bb362",
+      "title": "定时念佛",
+      "path": "正见 · 正行",
+      "sourcePath": [
+        "正见",
+        "正行",
+        "定时念佛"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入",
+        "具体自检表与题目待接入"
+      ],
+      "mapMarker": "4",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": false
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": [],
+      "practiceUnitId": null,
+      "practiceTitle": null
+    },
+    {
+      "id": "map-40e529fccc",
+      "title": "临终开示",
+      "path": "正见 · 正行",
+      "sourcePath": [
+        "正见",
+        "正行",
+        "临终开示"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入",
+        "具体自检表与题目待接入"
+      ],
+      "mapMarker": "8",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": false
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": [],
+      "practiceUnitId": null,
+      "practiceTitle": null
+    },
+    {
+      "id": "map-429ab882a1",
+      "title": "荼毗开示",
+      "path": "正见 · 正行",
+      "sourcePath": [
+        "正见",
+        "正行",
+        "荼毗开示"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实际教材与必学范围待接入",
+        "具体自检表与题目待接入"
+      ],
+      "mapMarker": "1",
+      "mode": "theory",
+      "needsForm": false,
+      "required": {
+        "read": true,
+        "think": true,
+        "practice": false
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": [],
+      "practiceUnitId": null,
+      "practiceTitle": null
+    },
+    {
+      "id": "unit-b1648c939d",
+      "title": "《佛说阿弥陀经》",
+      "path": "正人 · 诵",
+      "sourcePath": [
+        "正人",
+        "诵",
+        "《佛说阿弥陀经》"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-7737403a0a",
+      "title": "《无量寿经》",
+      "path": "正人 · 诵",
+      "sourcePath": [
+        "正人",
+        "诵",
+        "《无量寿经》"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mapMarker": "3",
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-aaa04accca",
+      "title": "《大势至菩萨念佛圆通章》",
+      "path": "正人 · 诵",
+      "sourcePath": [
+        "正人",
+        "诵",
+        "《大势至菩萨念佛圆通章》"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-949266dc57",
+      "title": "《般若波罗蜜多心经》",
+      "path": "正人 · 诵",
+      "sourcePath": [
+        "正人",
+        "诵",
+        "《般若波罗蜜多心经》"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-07cf8dd2a3",
+      "title": "《八大人觉经》",
+      "path": "正人 · 诵",
+      "sourcePath": [
+        "正人",
+        "诵",
+        "《八大人觉经》"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-09003840d3",
+      "title": "《慈经》",
+      "path": "正人 · 诵",
+      "sourcePath": [
+        "正人",
+        "诵",
+        "《慈经》"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-667248a842",
+      "title": "大悲咒、十小咒（出家众）",
+      "path": "正人 · 诵",
+      "sourcePath": [
+        "正人",
+        "诵",
+        "大悲咒、十小咒（出家众）"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-8c31b93586",
+      "title": "《弟子规》",
+      "path": "正人 · 诵",
+      "sourcePath": [
+        "正人",
+        "诵",
+        "《弟子规》"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-f91142acb6",
+      "title": "《太上感应篇》",
+      "path": "正人 · 诵",
+      "sourcePath": [
+        "正人",
+        "诵",
+        "《太上感应篇》"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-4c69768606",
+      "title": "《十善业道经》",
+      "path": "正人 · 诵",
+      "sourcePath": [
+        "正人",
+        "诵",
+        "《十善业道经》"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-45bf1686cd",
+      "title": "净土宗纲宗、人间净土理念、净土十信、净土文",
+      "path": "正人 · 诵",
+      "sourcePath": [
+        "正人",
+        "诵",
+        "净土宗纲宗、人间净土理念、净土十信、净土文"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-fff1fd4c09",
+      "title": "三福、三学、六度、六和、普贤十愿",
+      "path": "正人 · 诵",
+      "sourcePath": [
+        "正人",
+        "诵",
+        "三福、三学、六度、六和、普贤十愿"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-95fd0e2e5c",
+      "title": "《劝发菩提心文》",
+      "path": "正人 · 诵",
+      "sourcePath": [
+        "正人",
+        "诵",
+        "《劝发菩提心文》"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-e89cbc3765",
+      "title": "印光大师开示",
+      "path": "正人 · 诵",
+      "sourcePath": [
+        "正人",
+        "诵",
+        "印光大师开示"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-1f81915795",
+      "title": "长者悲愿、雨花长老人生十六最",
+      "path": "正人 · 诵",
+      "sourcePath": [
+        "正人",
+        "诵",
+        "长者悲愿、雨花长老人生十六最"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-553276f002",
+      "title": "唤醒生命中的净土三宝",
+      "path": "正人 · 诵",
+      "sourcePath": [
+        "正人",
+        "诵",
+        "唤醒生命中的净土三宝"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-7062272aab",
+      "title": "礼拜普贤十愿十万拜",
+      "path": "正人 · 拜",
+      "sourcePath": [
+        "正人",
+        "拜",
+        "礼拜普贤十愿十万拜"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "notes": [
+        "“十万拜”是原图名称；本次指派目标与周期由导师设置。"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "拜",
+      "prerequisites": []
+    },
+    {
+      "id": "unit-d783cef2c6",
+      "title": "六念自检",
+      "path": "正人 · 念",
+      "sourcePath": [
+        "正人",
+        "念",
+        "六念自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-3a657b9dc4",
+      "title": "忏悔发愿文",
+      "path": "正人 · 忏",
+      "sourcePath": [
+        "正人",
+        "忏",
+        "忏悔发愿文"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mapMarker": "2",
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-bd8db0d934",
+      "title": "家训自检",
+      "path": "正人 · 忏",
+      "sourcePath": [
+        "正人",
+        "忏",
+        "家训自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mapMarker": "18",
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-308d4af20b",
+      "title": "蒙正养德",
+      "path": "正人 · 自检（习）",
+      "sourcePath": [
+        "正人",
+        "自检（习）",
+        "蒙正养德"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mapMarker": "2",
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-6f7f731de8",
+      "title": "趋吉避凶",
+      "path": "正人 · 自检（习）",
+      "sourcePath": [
+        "正人",
+        "自检（习）",
+        "趋吉避凶"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mapMarker": "13",
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-5aec1e51b4",
+      "title": "生命觉醒",
+      "path": "正人 · 自检（习）",
+      "sourcePath": [
+        "正人",
+        "自检（习）",
+        "生命觉醒"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mapMarker": "2",
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-5af44994d0",
+      "title": "习劳",
+      "path": "正人 · 自检（习）",
+      "sourcePath": [
+        "正人",
+        "自检（习）",
+        "习劳"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mapMarker": "3",
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "map-dd9fbfdc54",
+      "title": "定课自检",
+      "path": "正信",
+      "sourcePath": [
+        "正信",
+        "定课自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mapMarker": "1",
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-318a86d69a",
+      "title": "因缘果自检",
+      "path": "正信 · 七信自检",
+      "sourcePath": [
+        "正信",
+        "七信自检",
+        "因缘果自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "notes": [
+        "保留原图“七信自检”目录名称，8个可见条目分别作为实践单元；不改名为“八信”。"
+      ],
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": []
+    },
+    {
+      "id": "unit-fabed64d22",
+      "title": "轮回路险自检",
+      "path": "正信 · 七信自检",
+      "sourcePath": [
+        "正信",
+        "七信自检",
+        "轮回路险自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "notes": [
+        "保留原图“七信自检”目录名称，8个可见条目分别作为实践单元；不改名为“八信”。"
+      ],
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": []
+    },
+    {
+      "id": "unit-3cf6c78ae7",
+      "title": "四正勤自检",
+      "path": "正信 · 七信自检",
+      "sourcePath": [
+        "正信",
+        "七信自检",
+        "四正勤自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "notes": [
+        "保留原图“七信自检”目录名称，8个可见条目分别作为实践单元；不改名为“八信”。"
+      ],
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": []
+    },
+    {
+      "id": "unit-0ac8a7e270",
+      "title": "四念处自检",
+      "path": "正信 · 七信自检",
+      "sourcePath": [
+        "正信",
+        "七信自检",
+        "四念处自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "notes": [
+        "保留原图“七信自检”目录名称，8个可见条目分别作为实践单元；不改名为“八信”。"
+      ],
+      "mapMarker": "4",
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": []
+    },
+    {
+      "id": "unit-d629c2f277",
+      "title": "四如意足自检",
+      "path": "正信 · 七信自检",
+      "sourcePath": [
+        "正信",
+        "七信自检",
+        "四如意足自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "notes": [
+        "保留原图“七信自检”目录名称，8个可见条目分别作为实践单元；不改名为“八信”。"
+      ],
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": []
+    },
+    {
+      "id": "unit-e07a801be1",
+      "title": "信自信他自检",
+      "path": "正信 · 七信自检",
+      "sourcePath": [
+        "正信",
+        "七信自检",
+        "信自信他自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "notes": [
+        "保留原图“七信自检”目录名称，8个可见条目分别作为实践单元；不改名为“八信”。"
+      ],
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": []
+    },
+    {
+      "id": "unit-b2d06f557e",
+      "title": "人间净土自检",
+      "path": "正信 · 七信自检",
+      "sourcePath": [
+        "正信",
+        "七信自检",
+        "人间净土自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "notes": [
+        "保留原图“七信自检”目录名称，8个可见条目分别作为实践单元；不改名为“八信”。"
+      ],
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": []
+    },
+    {
+      "id": "unit-eae5a96ce3",
+      "title": "十信自检",
+      "path": "正信 · 七信自检",
+      "sourcePath": [
+        "正信",
+        "七信自检",
+        "十信自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "notes": [
+        "保留原图“七信自检”目录名称，8个可见条目分别作为实践单元；不改名为“八信”。"
+      ],
+      "mapMarker": "2",
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": []
+    },
+    {
+      "id": "map-dceb548656",
+      "title": "八关斋戒自检",
+      "path": "正信",
+      "sourcePath": [
+        "正信",
+        "八关斋戒自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mapMarker": "1",
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "map-8b00d4d005",
+      "title": "定课自检",
+      "path": "正愿",
+      "sourcePath": [
+        "正愿",
+        "定课自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "map-5127318d9f",
+      "title": "菩提心自检",
+      "path": "正愿",
+      "sourcePath": [
+        "正愿",
+        "菩提心自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "map-00fb6937da",
+      "title": "菩提心戒自检",
+      "path": "正愿",
+      "sourcePath": [
+        "正愿",
+        "菩提心戒自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "map-4055eeb26b",
+      "title": "沙弥十戒自检",
+      "path": "正愿",
+      "sourcePath": [
+        "正愿",
+        "沙弥十戒自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-c2a62c72f6",
+      "title": "菩萨戒自检",
+      "path": "正愿 · 菩萨戒忏悔与自检",
+      "sourcePath": [
+        "正愿",
+        "菩萨戒忏悔与自检",
+        "菩萨戒自检"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-803fb7dfd4",
+      "title": "瑜伽菩萨戒的悔犯",
+      "path": "正愿 · 菩萨戒忏悔与自检",
+      "sourcePath": [
+        "正愿",
+        "菩萨戒忏悔与自检",
+        "瑜伽菩萨戒的悔犯"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "具体自检表与题目待接入",
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": true,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-b9fb951226",
+      "title": "早晚念佛功课",
+      "path": "正行 · 定课自检",
+      "sourcePath": [
+        "正行",
+        "定课自检",
+        "早晚念佛功课"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-3f80851fdc",
+      "title": "舍命念佛",
+      "path": "正行 · 定课自检",
+      "sourcePath": [
+        "正行",
+        "定课自检",
+        "舍命念佛"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-8eac92eed3",
+      "title": "报时念佛",
+      "path": "正行 · 定课自检",
+      "sourcePath": [
+        "正行",
+        "定课自检",
+        "报时念佛"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "map-6a5acf87d6",
+      "title": "计数念佛",
+      "path": "正行",
+      "sourcePath": [
+        "正行",
+        "计数念佛"
+      ],
+      "children": [
+        {
+          "title": "念佛总数"
+        }
+      ],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "notes": [
+        "“念佛总数”为原图可见下级，属于记录指标；不擅自定为独立学习单元，不推定目标遍数。"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "遍",
+      "prerequisites": []
+    },
+    {
+      "id": "map-9d67339b95",
+      "title": "助念",
+      "path": "正行",
+      "sourcePath": [
+        "正行",
+        "助念"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": [],
+      "notes": []
+    },
+    {
+      "id": "unit-6e91d928c5",
+      "title": "31种梵音圣号",
+      "path": "正行 · 佛号",
+      "sourcePath": [
+        "正行",
+        "佛号",
+        "31种梵音圣号"
+      ],
+      "children": [],
+      "boundaryPending": false,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "实践内容、目标与周期由导师设置"
+      ],
+      "notes": [
+        "31为原图标题中的文字；未展开实际音频目录。"
+      ],
+      "mode": "practice",
+      "needsForm": false,
+      "required": {
+        "read": false,
+        "think": false,
+        "practice": true
+      },
+      "measureUnit": "次",
+      "prerequisites": []
+    }
+  ],
+  "version": 4,
+  "sourceGroups": [
+    {
+      "id": "map-3e095b6eeb",
+      "title": "导读",
+      "path": "导读",
+      "sourcePath": [
+        "导读",
+        "导读"
+      ],
+      "children": [
+        {
+          "title": "回归“人间净土”",
+          "mapMarker": "4"
+        },
+        {
+          "title": "《“人间净土”修学体系》导读",
+          "mapMarker": "1"
+        },
+        {
+          "title": "人间净土修学导图",
+          "mapMarker": "1"
+        },
+        {
+          "title": "平板使用帮助",
+          "mapMarker": "1"
+        },
+        {
+          "title": "雨花长老开示",
+          "mapMarker": "1"
+        },
+        {
+          "title": "觉光普明"
+        },
+        {
+          "title": "觉醒教育专访",
+          "mapMarker": "1"
+        }
+      ],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ]
+    },
+    {
+      "id": "map-5a5658591d",
+      "title": "皈依",
+      "path": "导读",
+      "sourcePath": [
+        "导读",
+        "皈依"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "6"
+    },
+    {
+      "id": "map-0829893317",
+      "title": "早晚定课",
+      "path": "导读",
+      "sourcePath": [
+        "导读",
+        "早晚定课"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "2"
+    },
+    {
+      "id": "map-b1f629fa42",
+      "title": "入门自检",
+      "path": "导读",
+      "sourcePath": [
+        "导读",
+        "入门自检"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "6"
+    },
+    {
+      "id": "map-a26152b80e",
+      "title": "专修",
+      "path": "正见 · 正人",
+      "sourcePath": [
+        "正见",
+        "正人",
+        "专修"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": true,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "…"
+    },
+    {
+      "id": "map-6ec3be3d36",
+      "title": "选修",
+      "path": "正见 · 正人",
+      "sourcePath": [
+        "正见",
+        "正人",
+        "选修"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": true,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "…"
+    },
+    {
+      "id": "map-366640e7b9",
+      "title": "因缘果",
+      "path": "正见 · 正信",
+      "sourcePath": [
+        "正见",
+        "正信",
+        "因缘果"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "12"
+    },
+    {
+      "id": "map-687546f7b1",
+      "title": "轮回路险",
+      "path": "正见 · 正信",
+      "sourcePath": [
+        "正见",
+        "正信",
+        "轮回路险"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "19"
+    },
+    {
+      "id": "map-2ab6693dea",
+      "title": "四正勤",
+      "path": "正见 · 正信",
+      "sourcePath": [
+        "正见",
+        "正信",
+        "四正勤"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "2"
+    },
+    {
+      "id": "map-579e1f9d20",
+      "title": "四念处",
+      "path": "正见 · 正信",
+      "sourcePath": [
+        "正见",
+        "正信",
+        "四念处"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "20"
+    },
+    {
+      "id": "map-9e0920be1d",
+      "title": "四如意足",
+      "path": "正见 · 正信",
+      "sourcePath": [
+        "正见",
+        "正信",
+        "四如意足"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "1"
+    },
+    {
+      "id": "map-14eda2c4fc",
+      "title": "人间净土",
+      "path": "正见 · 正信",
+      "sourcePath": [
+        "正见",
+        "正信",
+        "人间净土"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "…"
+    },
+    {
+      "id": "map-9a1e5f290d",
+      "title": "信自信他",
+      "path": "正见 · 正信",
+      "sourcePath": [
+        "正见",
+        "正信",
+        "信自信他"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "8"
+    },
+    {
+      "id": "map-90be21dcb9",
+      "title": "菩提心",
+      "path": "正见 · 正愿",
+      "sourcePath": [
+        "正见",
+        "正愿",
+        "菩提心"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "18"
+    },
+    {
+      "id": "map-c5ca14f9bf",
+      "title": "菩萨行",
+      "path": "正见 · 正愿",
+      "sourcePath": [
+        "正见",
+        "正愿",
+        "菩萨行"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "27"
+    },
+    {
+      "id": "map-c44ab9e96d",
+      "title": "弥陀功德",
+      "path": "正见 · 正行",
+      "sourcePath": [
+        "正见",
+        "正行",
+        "弥陀功德"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "4"
+    },
+    {
+      "id": "map-8779f647d2",
+      "title": "念佛原理",
+      "path": "正见 · 正行",
+      "sourcePath": [
+        "正见",
+        "正行",
+        "念佛原理"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "1"
+    },
+    {
+      "id": "map-d3aee29f94",
+      "title": "舍命念佛",
+      "path": "正见 · 正行",
+      "sourcePath": [
+        "正见",
+        "正行",
+        "舍命念佛"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "3"
+    },
+    {
+      "id": "map-7a68baa6d4",
+      "title": "闭关念佛",
+      "path": "正见 · 正行",
+      "sourcePath": [
+        "正见",
+        "正行",
+        "闭关念佛"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "3"
+    },
+    {
+      "id": "map-57e71bb362",
+      "title": "定时念佛",
+      "path": "正见 · 正行",
+      "sourcePath": [
+        "正见",
+        "正行",
+        "定时念佛"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "4"
+    },
+    {
+      "id": "map-40e529fccc",
+      "title": "临终开示",
+      "path": "正见 · 正行",
+      "sourcePath": [
+        "正见",
+        "正行",
+        "临终开示"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "8"
+    },
+    {
+      "id": "map-429ab882a1",
+      "title": "荼毗开示",
+      "path": "正见 · 正行",
+      "sourcePath": [
+        "正见",
+        "正行",
+        "荼毗开示"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "1"
+    },
+    {
+      "id": "map-55edc7e675",
+      "title": "诵",
+      "path": "正人",
+      "sourcePath": [
+        "正人",
+        "诵"
+      ],
+      "children": [
+        {
+          "title": "《佛说阿弥陀经》"
+        },
+        {
+          "title": "《无量寿经》",
+          "mapMarker": "3"
+        },
+        {
+          "title": "《大势至菩萨念佛圆通章》"
+        },
+        {
+          "title": "《般若波罗蜜多心经》"
+        },
+        {
+          "title": "《八大人觉经》"
+        },
+        {
+          "title": "《慈经》"
+        },
+        {
+          "title": "大悲咒、十小咒（出家众）"
+        },
+        {
+          "title": "《弟子规》《太上感应篇》《十善业道经》"
+        },
+        {
+          "title": "净土宗纲宗、人间净土理念、净土十信、净土文"
+        },
+        {
+          "title": "三福、三学、六度、六和、普贤十愿"
+        },
+        {
+          "title": "《劝发菩提心文》"
+        },
+        {
+          "title": "印光大师开示"
+        },
+        {
+          "title": "长者悲愿、雨花长老人生十六最"
+        },
+        {
+          "title": "唤醒生命中的净土三宝"
+        }
+      ],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ]
+    },
+    {
+      "id": "map-09a27132e2",
+      "title": "拜",
+      "path": "正人",
+      "sourcePath": [
+        "正人",
+        "拜"
+      ],
+      "children": [
+        {
+          "title": "礼拜普贤十愿十万拜"
+        }
+      ],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "notes": [
+        "“十万拜”为原图标题中的文字；完成周期、记录与验收方式待确认。"
+      ]
+    },
+    {
+      "id": "map-b6ea5d25c7",
+      "title": "念",
+      "path": "正人",
+      "sourcePath": [
+        "正人",
+        "念"
+      ],
+      "children": [
+        {
+          "title": "六念自检"
+        }
+      ],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ]
+    },
+    {
+      "id": "map-14643e212f",
+      "title": "忏",
+      "path": "正人",
+      "sourcePath": [
+        "正人",
+        "忏"
+      ],
+      "children": [
+        {
+          "title": "忏悔发愿文",
+          "mapMarker": "2"
+        },
+        {
+          "title": "家训自检",
+          "mapMarker": "18"
+        }
+      ],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ]
+    },
+    {
+      "id": "map-3287d2b49a",
+      "title": "自检（习）",
+      "path": "正人",
+      "sourcePath": [
+        "正人",
+        "自检（习）"
+      ],
+      "children": [
+        {
+          "title": "蒙正养德",
+          "mapMarker": "2"
+        },
+        {
+          "title": "趋吉避凶",
+          "mapMarker": "13"
+        },
+        {
+          "title": "生命觉醒",
+          "mapMarker": "2"
+        },
+        {
+          "title": "习劳",
+          "mapMarker": "3"
+        }
+      ],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ]
+    },
+    {
+      "id": "map-dd9fbfdc54",
+      "title": "定课自检",
+      "path": "正信",
+      "sourcePath": [
+        "正信",
+        "定课自检"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "1"
+    },
+    {
+      "id": "map-38c5cbaa9c",
+      "title": "七信自检",
+      "path": "正信",
+      "sourcePath": [
+        "正信",
+        "七信自检"
+      ],
+      "children": [
+        {
+          "title": "因缘果自检"
+        },
+        {
+          "title": "轮回路险自检"
+        },
+        {
+          "title": "四正勤自检"
+        },
+        {
+          "title": "四念处自检",
+          "mapMarker": "4"
+        },
+        {
+          "title": "四如意足自检"
+        },
+        {
+          "title": "信自信他自检"
+        },
+        {
+          "title": "人间净土自检"
+        },
+        {
+          "title": "十信自检",
+          "mapMarker": "2"
+        }
+      ],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "notes": [
+        "原图标题为“七信自检”，可见8个下级条目；保留原名，范围与命名待确认。"
+      ]
+    },
+    {
+      "id": "map-dceb548656",
+      "title": "八关斋戒自检",
+      "path": "正信",
+      "sourcePath": [
+        "正信",
+        "八关斋戒自检"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "mapMarker": "1"
+    },
+    {
+      "id": "map-8b00d4d005",
+      "title": "定课自检",
+      "path": "正愿",
+      "sourcePath": [
+        "正愿",
+        "定课自检"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ]
+    },
+    {
+      "id": "map-5127318d9f",
+      "title": "菩提心自检",
+      "path": "正愿",
+      "sourcePath": [
+        "正愿",
+        "菩提心自检"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ]
+    },
+    {
+      "id": "map-00fb6937da",
+      "title": "菩提心戒自检",
+      "path": "正愿",
+      "sourcePath": [
+        "正愿",
+        "菩提心戒自检"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ]
+    },
+    {
+      "id": "map-4055eeb26b",
+      "title": "沙弥十戒自检",
+      "path": "正愿",
+      "sourcePath": [
+        "正愿",
+        "沙弥十戒自检"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ]
+    },
+    {
+      "id": "map-451b9ec850",
+      "title": "菩萨戒忏悔与自检",
+      "path": "正愿",
+      "sourcePath": [
+        "正愿",
+        "菩萨戒忏悔与自检"
+      ],
+      "children": [
+        {
+          "title": "菩萨戒自检"
+        },
+        {
+          "title": "瑜伽菩萨戒的悔犯"
+        }
+      ],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ]
+    },
+    {
+      "id": "map-2b56e643b5",
+      "title": "定课自检",
+      "path": "正行",
+      "sourcePath": [
+        "正行",
+        "定课自检"
+      ],
+      "children": [
+        {
+          "title": "早晚念佛功课"
+        },
+        {
+          "title": "舍命念佛"
+        },
+        {
+          "title": "报时念佛"
+        }
+      ],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ]
+    },
+    {
+      "id": "map-6a5acf87d6",
+      "title": "计数念佛",
+      "path": "正行",
+      "sourcePath": [
+        "正行",
+        "计数念佛"
+      ],
+      "children": [
+        {
+          "title": "念佛总数"
+        }
+      ],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "notes": [
+        "“念佛总数”为原图可见下级，属于记录指标；不擅自定为独立学习单元，不推定目标遍数。"
+      ]
+    },
+    {
+      "id": "map-9d67339b95",
+      "title": "助念",
+      "path": "正行",
+      "sourcePath": [
+        "正行",
+        "助念"
+      ],
+      "children": [],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ]
+    },
+    {
+      "id": "map-3035e422d7",
+      "title": "佛号",
+      "path": "正行",
+      "sourcePath": [
+        "正行",
+        "佛号"
+      ],
+      "children": [
+        {
+          "title": "31种梵音圣号"
+        }
+      ],
+      "boundaryPending": true,
+      "opaqueDirectory": false,
+      "target": null,
+      "materials": [],
+      "pending": [
+        "是否作为独立学习单元，或继续按下级拆分",
+        "实际资料与必学范围",
+        "本主题的闻思修配置及完成标准",
+        "先后关系、实践数量及周期"
+      ],
+      "notes": [
+        "31为原图标题中的文字；未展开实际音频目录。"
+      ]
+    }
+  ],
+  "decisions": {
+    "theoryBoundary": "完整主题",
+    "practiceBoundary": "可独立安排的实践",
+    "sevenChecks": "保留原目录名称，8个可见条目独立安排",
+    "requirements": "单元模板提供默认环节，导师设置实践目标与周期",
+    "prerequisites": "默认无硬性前置、允许并行；以后仅按明确依据配置",
+    "opaqueDirectories": "目录待补充，暂不可指派"
+  }
+};

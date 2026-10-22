@@ -1,0 +1,619 @@
+{
+  "source_action": "getMindPracticeAllNew",
+  "request_identity": "1",
+  "rows": [
+    {
+      "mp_tag_id": 1,
+      "mp_tag_name": "共同基础心理",
+      "mind_practice_id": 1,
+      "mind_practice_name": "信心",
+      "mind_practice_short_name": "信心",
+      "isHas": 1,
+      "mind_standard_score": 1
+    },
+    {
+      "mp_tag_id": 1,
+      "mp_tag_name": "共同基础心理",
+      "mind_practice_id": 2,
+      "mind_practice_name": "惭愧",
+      "mind_practice_short_name": "惭愧",
+      "isHas": 1,
+      "mind_standard_score": 1
+    },
+    {
+      "mp_tag_id": 1,
+      "mp_tag_name": "共同基础心理",
+      "mind_practice_id": 5,
+      "mind_practice_name": "向善心",
+      "mind_practice_short_name": "向善心",
+      "isHas": 1,
+      "mind_standard_score": 1
+    },
+    {
+      "mp_tag_id": 1,
+      "mp_tag_name": "共同基础心理",
+      "mind_practice_id": 7,
+      "mind_practice_name": "忏悔",
+      "mind_practice_short_name": "忏悔",
+      "isHas": 1,
+      "mind_standard_score": 1
+    },
+    {
+      "mp_tag_id": 1,
+      "mp_tag_name": "共同基础心理",
+      "mind_practice_id": 8,
+      "mind_practice_name": "真诚",
+      "mind_practice_short_name": "真诚",
+      "isHas": 1,
+      "mind_standard_score": 1
+    },
+    {
+      "mp_tag_id": 1,
+      "mp_tag_name": "共同基础心理",
+      "mind_practice_id": 9,
+      "mind_practice_name": "认真",
+      "mind_practice_short_name": "认真",
+      "isHas": 1,
+      "mind_standard_score": 1
+    },
+    {
+      "mp_tag_id": 1,
+      "mp_tag_name": "共同基础心理",
+      "mind_practice_id": 10,
+      "mind_practice_name": "老实",
+      "mind_practice_short_name": "老实",
+      "isHas": 1,
+      "mind_standard_score": 1
+    },
+    {
+      "mp_tag_id": 1,
+      "mp_tag_name": "共同基础心理",
+      "mind_practice_id": 121,
+      "mind_practice_name": "主动",
+      "mind_practice_short_name": "主动",
+      "isHas": 1,
+      "mind_standard_score": 1
+    },
+    {
+      "mp_tag_id": 1,
+      "mp_tag_name": "共同基础心理",
+      "mind_practice_id": 11,
+      "mind_practice_name": "利他心",
+      "mind_practice_short_name": "利他心",
+      "isHas": 1,
+      "mind_standard_score": 1
+    },
+    {
+      "mp_tag_id": 1,
+      "mp_tag_name": "共同基础心理",
+      "mind_practice_id": 3,
+      "mind_practice_name": "出离心",
+      "mind_practice_short_name": "出离心",
+      "isHas": 2,
+      "mind_standard_score": 0
+    },
+    {
+      "mp_tag_id": 1,
+      "mp_tag_name": "共同基础心理",
+      "mind_practice_id": 6,
+      "mind_practice_name": "持戒",
+      "mind_practice_short_name": "持戒",
+      "isHas": 2,
+      "mind_standard_score": 0
+    },
+    {
+      "mp_tag_id": 1,
+      "mp_tag_name": "共同基础心理",
+      "mind_practice_id": 51,
+      "mind_practice_name": "精进",
+      "mind_practice_short_name": "精进",
+      "isHas": 2,
+      "mind_standard_score": 0
+    },
+    {
+      "mp_tag_id": 2,
+      "mp_tag_name": "解脱相应心理",
+      "mind_practice_id": 20,
+      "mind_practice_name": "正见",
+      "mind_practice_short_name": "正见",
+      "isHas": 1,
+      "mind_standard_score": 1
+    },
+    {
+      "mp_tag_id": 2,
+      "mp_tag_name": "解脱相应心理",
+      "mind_practice_id": 21,
+      "mind_practice_name": "正念",
+      "mind_practice_short_name": "正念",
+      "isHas": 1,
+      "mind_standard_score": 1
+    },
+    {
+      "mp_tag_id": 2,
+      "mp_tag_name": "解脱相应心理",
+      "mind_practice_id": 35,
+      "mind_practice_name": "作意",
+      "mind_practice_short_name": "作意",
+      "isHas": 1,
+      "mind_standard_score": 1
+    },
+    {
+      "mp_tag_id": 2,
+      "mp_tag_name": "解脱相应心理",
+      "mind_practice_id": 24,
+      "mind_practice_name": "胜解",
+      "mind_practice_short_name": "胜解",
+      "isHas": 2,
+      "mind_standard_score": 0
+    },
+    {
+      "mp_tag_id": 2,
+      "mp_tag_name": "解脱相应心理",
+      "mind_practice_id": 27,
+      "mind_practice_name": "定",
+      "mind_practice_short_name": "定",
+      "isHas": 2,
+      "mind_standard_score": 0
+    },
+    {
+      "mp_tag_id": 2,
+      "mp_tag_name": "解脱相应心理",
+      "mind_practice_id": 28,
+      "mind_practice_name": "慧",
+      "mind_practice_short_name": "慧",
+      "isHas": 2,
+      "mind_standard_score": 0
+    },
+    {
+      "mp_tag_id": 2,
+      "mp_tag_name": "解脱相应心理",
+      "mind_practice_id": 29,
+      "mind_practice_name": "无贪",
+      "mind_practice_short_name": "无贪",
+      "isHas": 2,
+      "mind_standard_score": 0
+    },
+    {
+      "mp_tag_id": 2,
+      "mp_tag_name": "解脱相应心理",
+      "mind_practice_id": 30,
+      "mind_practice_name": "无嗔",
+      "mind_practice_short_name": "无嗔",
+      "isHas": 2,
+      "mind_standard_score": 0
+    },
+    {
+      "mp_tag_id": 2,
+      "mp_tag_name": "解脱相应心理",
+      "mind_practice_id": 31,
+      "mind_practice_name": "无痴",
+      "mind_practice_short_name": "无痴",
+      "isHas": 2,
+      "mind_standard_score": 0
+    },
+    {
+      "mp_tag_id": 2,
+      "mp_tag_name": "解脱相应心理",
+      "mind_practice_id": 32,
+      "mind_practice_name": "轻安",
+      "mind_practice_short_name": "轻安",
+      "isHas": 2,
+      "mind_standard_score": 0
+    },
+    {
+      "mp_tag_id": 2,
+      "mp_tag_name": "解脱相应心理",
+      "mind_practice_id": 33,
+      "mind_practice_name": "不放逸",
+      "mind_practice_short_name": "不放逸",
+      "isHas": 2,
+      "mind_standard_score": 0
+    },
+    {
+      "mp_tag_id": 2,
+      "mp_tag_name": "解脱相应心理",
+      "mind_practice_id": 34,
+      "mind_practice_name": "行舍",
+      "mind_practice_short_name": "行舍",
+      "isHas": 2,
+      "mind_standard_score": 0
+    },
+    {
+      "mp_tag_id": 2,
+      "mp_tag_name": "解脱相应心理",
+      "mind_practice_id": 36,
+      "mind_practice_name": "无念",
+      "mind_practice_short_name": "无念",
+      "isHas": 2,
+      "mind_standard_score": 0
+    },
+    {
+      "mp_tag_id": 2,
+      "mp_tag_name": "解脱相应心理",
+      "mind_practice_id": 37,
+      "mind_practice_name": "平常心",
+      "mind_practice_short_name": "平常心",
+      "isHas": 2,
+      "mind_standard_score": 0
+    },
+    {
+      "mp_tag_id": 2,
+      "mp_tag_name": "解脱相应心理",
+      "mind_practice_id": 59,
+      "mind_practice_name": "无所得心",
+      "mind_practice_short_name": "无所得心",
+      "isHas": 2,
+      "mind_standard_score": 0
+    },
+    {
+      "mp_tag_id": 3,
+      "mp_tag_name": "慈悲相应心理",
+      "mind_practice_id": 39,
+      "mind_practice_name": "慈心",
+      "mind_practice_short_name": "慈心",
+      "isHas": 1,
+      "mind_standard_score": 1
+    },
+    {
+      "mp_tag_id": 3,
+      "mp_tag_name": "慈悲相应心理",
+      "mind_practice_id": 40,
+      "mind_practice_name": "感恩",
+      "mind_practice_short_name": "感恩",
+      "isHas": 1,
+      "mind_standard_score": 1
+    },
+    {
+      "mp_tag_id": 3,
+      "mp_tag_name": "慈悲相应心理",
+      "mind_practice_id": 42,
+      "mind_practice_name": "随喜",
+      "mind_practice_short_name": "随喜",
+      "isHas": 1,
+      "mind_standard_score": 1
+    },
+    {
+      "mp_tag_id": 3,
+      "mp_tag_name": "慈悲相应心理",
+      "mind_practice_id": 43,
+      "mind_practice_name": "理解",
+      "mind_practice_short_name": "理解",
+      "isHas": 1,
+      "mind_standard_score": 1
+    },
+    {
+      "mp_tag_id": 3,
+      "mp_tag_name": "慈悲相应心理",
+      "mind_practice_id": 44,
+      "mind_practice_name": "同情",
+      "mind_practice_short_name": "同情",
+      "isHas": 1,
+      "mind_standard_score": 1
+    },
+    {
+      "mp_tag_id": 3,
+      "mp_tag_name": "慈悲相应心理",
+      "mind_practice_id": 45,
+      "mind_practice_name": "接纳",
+      "mind_practice_short_name": "接纳",
+      "isHas": 1,
+      "mind_standard_score": 1
+    },
+    {
+      "mp_tag_id": 3,
+      "mp_tag_name": "慈悲相应心理",
+      "mind_practice_id": 49,
+      "mind_practice_name": "布施",
+      "mind_practice_short_name": "布施",
+      "isHas": 1,
+      "mind_standard_score": 1
+    },
+    {
+      "mp_tag_id": 3,
+      "mp_tag_name": "慈悲相应心理",
+      "mind_practice_id": 41,
+      "mind_practice_name": "悲悯心",
+      "mind_practice_short_name": "悲悯心",
+      "isHas": 2,
+      "mind_standard_score": 0
+    },
+    {
+      "mp_tag_id": 3,
+      "mp_tag_name": "慈悲相应心理",
+      "mind_practice_id": 46,
+      "mind_practice_name": "陪伴",
+      "mind_practice_short_name": "陪伴",
+      "isHas": 2,
+      "mind_standard_score": 0
+    },
+    {
+      "mp_tag_id": 3,
+      "mp_tag_name": "慈悲相应心理",
+      "mind_practice_id": 47,
+      "mind_practice_name": "关爱",
+      "mind_practice_short_name": "关爱",
+      "isHas": 2,
+      "mind_standard_score": 0
+    },
+    {
+      "mp_tag_id": 3,
+      "mp_tag_name": "慈悲相应心理",
+      "mind_practice_id": 48,
+      "mind_practice_name": "引导",
+      "mind_practice_short_name": "引导",
+      "isHas": 2,
+      "mind_standard_score": 0
+    },
+    {
+      "mp_tag_id": 3,
+      "mp_tag_name": "慈悲相应心理",
+      "mind_practice_id": 50,
+      "mind_practice_name": "忍辱",
+      "mind_practice_short_name": "忍辱",
+      "isHas": 2,
+      "mind_standard_score": 0
+    },
+    {
+      "mp_tag_id": 3,
+      "mp_tag_name": "慈悲相应心理",
+      "mind_practice_id": 52,
+      "mind_practice_name": "平等心",
+      "mind_practice_short_name": "平等心",
+      "isHas": 2,
+      "mind_standard_score": 0
+    },
+    {
+      "mp_tag_id": 3,
+      "mp_tag_name": "慈悲相应心理",
+      "mind_practice_id": 53,
+      "mind_practice_name": "大悲心",
+      "mind_practice_short_name": "大悲心",
+      "isHas": 2,
+      "mind_standard_score": 0
+    },
+    {
+      "mp_tag_id": 3,
+      "mp_tag_name": "慈悲相应心理",
+      "mind_practice_id": 54,
+      "mind_practice_name": "爱语",
+      "mind_practice_short_name": "爱语",
+      "isHas": 2,
+      "mind_standard_score": 0
+    },
+    {
+      "mp_tag_id": 3,
+      "mp_tag_name": "慈悲相应心理",
+      "mind_practice_id": 55,
+      "mind_practice_name": "利行",
+      "mind_practice_short_name": "利行",
+      "isHas": 2,
+      "mind_standard_score": 0
+    },
+    {
+      "mp_tag_id": 3,
+      "mp_tag_name": "慈悲相应心理",
+      "mind_practice_id": 56,
+      "mind_practice_name": "同事",
+      "mind_practice_short_name": "同事",
+      "isHas": 2,
+      "mind_standard_score": 0
+    },
+    {
+      "mp_tag_id": 3,
+      "mp_tag_name": "慈悲相应心理",
+      "mind_practice_id": 57,
+      "mind_practice_name": "无我利他心",
+      "mind_practice_short_name": "无我利他心",
+      "isHas": 2,
+      "mind_standard_score": 0
+    },
+    {
+      "mp_tag_id": 3,
+      "mp_tag_name": "慈悲相应心理",
+      "mind_practice_id": 58,
+      "mind_practice_name": "无住心",
+      "mind_practice_short_name": "无住心",
+      "isHas": 2,
+      "mind_standard_score": 0
+    },
+    {
+      "mp_tag_id": 3,
+      "mp_tag_name": "慈悲相应心理",
+      "mind_practice_id": 59,
+      "mind_practice_name": "无所得心",
+      "mind_practice_short_name": "无所得心",
+      "isHas": 2,
+      "mind_standard_score": 0
+    },
+    {
+      "mp_tag_id": 4,
+      "mp_tag_name": "轮回相应心理",
+      "mind_practice_id": 80,
+      "mind_practice_name": "放逸",
+      "mind_practice_short_name": "放逸",
+      "isHas": 1,
+      "mind_standard_score": 12
+    },
+    {
+      "mp_tag_id": 4,
+      "mp_tag_name": "轮回相应心理",
+      "mind_practice_id": 81,
+      "mind_practice_name": "懈怠",
+      "mind_practice_short_name": "懈怠",
+      "isHas": 1,
+      "mind_standard_score": 12
+    },
+    {
+      "mp_tag_id": 4,
+      "mp_tag_name": "轮回相应心理",
+      "mind_practice_id": 91,
+      "mind_practice_name": "忿",
+      "mind_practice_short_name": "忿",
+      "isHas": 1,
+      "mind_standard_score": 12
+    },
+    {
+      "mp_tag_id": 4,
+      "mp_tag_name": "轮回相应心理",
+      "mind_practice_id": 92,
+      "mind_practice_name": "恨",
+      "mind_practice_short_name": "恨",
+      "isHas": 1,
+      "mind_standard_score": 12
+    },
+    {
+      "mp_tag_id": 4,
+      "mp_tag_name": "轮回相应心理",
+      "mind_practice_id": 93,
+      "mind_practice_name": "恼",
+      "mind_practice_short_name": "恼",
+      "isHas": 1,
+      "mind_standard_score": 12
+    },
+    {
+      "mp_tag_id": 4,
+      "mp_tag_name": "轮回相应心理",
+      "mind_practice_id": 98,
+      "mind_practice_name": "害",
+      "mind_practice_short_name": "害",
+      "isHas": 1,
+      "mind_standard_score": 12
+    },
+    {
+      "mp_tag_id": 4,
+      "mp_tag_name": "轮回相应心理",
+      "mind_practice_id": 94,
+      "mind_practice_name": "嫉",
+      "mind_practice_short_name": "嫉",
+      "isHas": 1,
+      "mind_standard_score": 12
+    },
+    {
+      "mp_tag_id": 4,
+      "mp_tag_name": "轮回相应心理",
+      "mind_practice_id": 70,
+      "mind_practice_name": "贪",
+      "mind_practice_short_name": "贪",
+      "isHas": 2,
+      "mind_standard_score": 12
+    },
+    {
+      "mp_tag_id": 4,
+      "mp_tag_name": "轮回相应心理",
+      "mind_practice_id": 71,
+      "mind_practice_name": "嗔",
+      "mind_practice_short_name": "嗔",
+      "isHas": 2,
+      "mind_standard_score": 12
+    },
+    {
+      "mp_tag_id": 4,
+      "mp_tag_name": "轮回相应心理",
+      "mind_practice_id": 72,
+      "mind_practice_name": "痴",
+      "mind_practice_short_name": "痴",
+      "isHas": 2,
+      "mind_standard_score": 12
+    },
+    {
+      "mp_tag_id": 4,
+      "mp_tag_name": "轮回相应心理",
+      "mind_practice_id": 73,
+      "mind_practice_name": "重要感",
+      "mind_practice_short_name": "重要感",
+      "isHas": 2,
+      "mind_standard_score": 12
+    },
+    {
+      "mp_tag_id": 4,
+      "mp_tag_name": "轮回相应心理",
+      "mind_practice_id": 74,
+      "mind_practice_name": "优越感",
+      "mind_practice_short_name": "优越感",
+      "isHas": 2,
+      "mind_standard_score": 12
+    },
+    {
+      "mp_tag_id": 4,
+      "mp_tag_name": "轮回相应心理",
+      "mind_practice_id": 75,
+      "mind_practice_name": "主宰欲",
+      "mind_practice_short_name": "主宰欲",
+      "isHas": 2,
+      "mind_standard_score": 12
+    },
+    {
+      "mp_tag_id": 4,
+      "mp_tag_name": "轮回相应心理",
+      "mind_practice_id": 82,
+      "mind_practice_name": "散乱",
+      "mind_practice_short_name": "散乱",
+      "isHas": 2,
+      "mind_standard_score": 12
+    },
+    {
+      "mp_tag_id": 4,
+      "mp_tag_name": "轮回相应心理",
+      "mind_practice_id": 83,
+      "mind_practice_name": "昏沉",
+      "mind_practice_short_name": "昏沉",
+      "isHas": 2,
+      "mind_standard_score": 12
+    },
+    {
+      "mp_tag_id": 4,
+      "mp_tag_name": "轮回相应心理",
+      "mind_practice_id": 84,
+      "mind_practice_name": "失念",
+      "mind_practice_short_name": "失念",
+      "isHas": 2,
+      "mind_standard_score": 12
+    },
+    {
+      "mp_tag_id": 4,
+      "mp_tag_name": "轮回相应心理",
+      "mind_practice_id": 85,
+      "mind_practice_name": "不正知",
+      "mind_practice_short_name": "不正知",
+      "isHas": 2,
+      "mind_standard_score": 12
+    },
+    {
+      "mp_tag_id": 4,
+      "mp_tag_name": "轮回相应心理",
+      "mind_practice_id": 90,
+      "mind_practice_name": "悭",
+      "mind_practice_short_name": "悭",
+      "isHas": 2,
+      "mind_standard_score": 12
+    },
+    {
+      "mp_tag_id": 4,
+      "mp_tag_name": "轮回相应心理",
+      "mind_practice_id": 95,
+      "mind_practice_name": "覆",
+      "mind_practice_short_name": "覆",
+      "isHas": 2,
+      "mind_standard_score": 12
+    },
+    {
+      "mp_tag_id": 4,
+      "mp_tag_name": "轮回相应心理",
+      "mind_practice_id": 96,
+      "mind_practice_name": "谄",
+      "mind_practice_short_name": "谄",
+      "isHas": 2,
+      "mind_standard_score": 12
+    },
+    {
+      "mp_tag_id": 4,
+      "mp_tag_name": "轮回相应心理",
+      "mind_practice_id": 97,
+      "mind_practice_name": "诳",
+      "mind_practice_short_name": "诳",
+      "isHas": 2,
+      "mind_standard_score": 12
+    }
+  ],
+  "note": "保留isHas原始值，不把2一概解释为服务器拒绝。仅26个普通检测目录项被请求；其余未强行请求。"
+}

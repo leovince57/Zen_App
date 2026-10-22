@@ -1,0 +1,26 @@
+{
+  "scope": "调研副本当前账号返回，不代表所有用户",
+  "tasks": [
+    {
+      "course_id": 0,
+      "user_mp_detection_type": 16,
+      "content": "您尚未完成定期测",
+      "is_detection": 2,
+      "detection_id": 0,
+      "detection_name": ""
+    },
+    {
+      "user_mp_detection_type": 100,
+      "content": "您尚未完成初级正念禅修自检",
+      "is_detection": 1,
+      "detection_id": 1,
+      "detection_name": "初级正念禅修自检"
+    }
+  ],
+  "channel": [
+    {
+      "is_open": 2
+    }
+  ],
+  "note": "本次没有类型4升级测任务；通道is_open=2，客户端仅在值1时进入已追踪的开放分支，不能把它泛化为升级权限总开关。"
+}

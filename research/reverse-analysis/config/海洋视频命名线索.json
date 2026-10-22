@@ -1,0 +1,31 @@
+{
+  "returned_samples": [
+    {
+      "response": "getLifeOceanVideo-authenticated.json",
+      "filename": "11111.mp4"
+    },
+    {
+      "response": "getLifeOceanVideo-pass4.json",
+      "filename": "11111.mp4"
+    }
+  ],
+  "known_unique_names": [
+    "11111.mp4"
+  ],
+  "cached_apps_same_name": [
+    "com.sanjixiuxue.app",
+    "com.metanoteglobal.app"
+  ],
+  "confirmed_visual_dimensions": [
+    "动静",
+    "清浊",
+    "冷暖",
+    "明暗"
+  ],
+  "hypothesis": "五位名可能编码身份状态与四个画面维度，也可能只是素材编号；各位顺序、取值范围和分数映射均未验证。",
+  "not_performed": [
+    "未枚举或猜测OSS对象名",
+    "未改写身份参数查询其他身份",
+    "未伪造检测提交制造场景变化"
+  ]
+}

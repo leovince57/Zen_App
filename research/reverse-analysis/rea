@@ -1,0 +1,7 @@
+#!/bin/sh
+ZEN_REA_ROOT=/Users/chenliu/.local/share/zen-rea
+export JAVA_HOME="$ZEN_REA_ROOT/jdk-21.0.12.1+1/Contents/Home"
+export REA_JADX_MCP_JAR="$ZEN_REA_ROOT/jadx-headless-mcp-0.7.1-all.jar"
+export REA_JADX_HEAP_MIB=3072
+export REA_JADX_OPERATION_TIMEOUT_MS=300000
+exec "$ZEN_REA_ROOT/npm/node_modules/.bin/rea" "$@"

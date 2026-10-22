@@ -1,0 +1,13 @@
+{
+  "rea_version": "6.7.0",
+  "node_version": "22.22.0",
+  "jdk_version": "Temurin 21.0.12.1+1",
+  "java_home": "/Users/chenliu/.local/share/zen-rea/jdk-21.0.12.1+1/Contents/Home",
+  "jdk_archive_url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.12.1%2B1/OpenJDK21U-jdk_aarch64_mac_hotspot_21.0.12.1_1.tar.gz",
+  "jdk_archive_sha256": "3623232f33a9c3baadf304480b2535f9a3cba8a58d42ecbb438ba267315d9998",
+  "jadx_version": "0.7.1",
+  "jadx_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+  "mode": "Local REA MCP stdio through CLI launcher; no Codex configuration changes",
+  "scope": "Static REA/JADX inspection plus read-only configuration requests using owner login in a separate debuggable research copy; no assessment submissions",
+  "npm_install_scripts": "disabled; Frida runtime module not required for static JADX analysis"
+}

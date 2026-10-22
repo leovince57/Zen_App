@@ -1,0 +1,269 @@
+{
+  "source": "Original app cached file; read-only adb pull",
+  "filename": "11111.mp4",
+  "size_bytes": 3230084,
+  "sha256": "065e21be48227a9bba11a0ead42435a4d8781665322b11a0a8256ead2e0a6679",
+  "media": {
+    "duration_seconds": 12.125,
+    "tracks_width_height": [
+      [
+        1080.9448852539062,
+        1920.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "encoder_metadata": "Lavf58.20.100",
+    "interpretation": "12.125-second MP4; track header display dimensions recorded as encoded; no scene-rule fields observed in the inspected metadata."
+  },
+  "atoms": [
+    {
+      "path": "/ftyp",
+      "size": 32
+    },
+    {
+      "path": "/free",
+      "size": 8
+    },
+    {
+      "path": "/mdat",
+      "size": 3219142
+    },
+    {
+      "path": "/moov",
+      "size": 10902
+    },
+    {
+      "path": "/moov/mvhd",
+      "size": 108
+    },
+    {
+      "path": "/moov/trak",
+      "size": 5038
+    },
+    {
+      "path": "/moov/trak/tkhd",
+      "size": 92
+    },
+    {
+      "path": "/moov/trak/edts",
+      "size": 36
+    },
+    {
+      "path": "/moov/trak/tref",
+      "size": 20
+    },
+    {
+      "path": "/moov/trak/mdia",
+      "size": 4882
+    },
+    {
+      "path": "/moov/trak/mdia/mdhd",
+      "size": 32
+    },
+    {
+      "path": "/moov/trak/mdia/hdlr",
+      "size": 45
+    },
+    {
+      "path": "/moov/trak/mdia/minf",
+      "size": 4797
+    },
+    {
+      "path": "/moov/trak/mdia/minf/vmhd",
+      "size": 20
+    },
+    {
+      "path": "/moov/trak/mdia/minf/dinf",
+      "size": 36
+    },
+    {
+      "path": "/moov/trak/mdia/minf/stbl",
+      "size": 4733
+    },
+    {
+      "path": "/moov/trak/mdia/minf/stbl/stsd",
+      "size": 173
+    },
+    {
+      "path": "/moov/trak/mdia/minf/stbl/stts",
+      "size": 24
+    },
+    {
+      "path": "/moov/trak/mdia/minf/stbl/stss",
+      "size": 48
+    },
+    {
+      "path": "/moov/trak/mdia/minf/stbl/ctts",
+      "size": 2080
+    },
+    {
+      "path": "/moov/trak/mdia/minf/stbl/stsc",
+      "size": 40
+    },
+    {
+      "path": "/moov/trak/mdia/minf/stbl/stsz",
+      "size": 1184
+    },
+    {
+      "path": "/moov/trak/mdia/minf/stbl/stco",
+      "size": 1176
+    },
+    {
+      "path": "/moov/trak",
+      "size": 5221
+    },
+    {
+      "path": "/moov/trak/tkhd",
+      "size": 92
+    },
+    {
+      "path": "/moov/trak/edts",
+      "size": 36
+    },
+    {
+      "path": "/moov/trak/mdia",
+      "size": 5085
+    },
+    {
+      "path": "/moov/trak/mdia/mdhd",
+      "size": 32
+    },
+    {
+      "path": "/moov/trak/mdia/hdlr",
+      "size": 45
+    },
+    {
+      "path": "/moov/trak/mdia/minf",
+      "size": 5000
+    },
+    {
+      "path": "/moov/trak/mdia/minf/smhd",
+      "size": 16
+    },
+    {
+      "path": "/moov/trak/mdia/minf/dinf",
+      "size": 36
+    },
+    {
+      "path": "/moov/trak/mdia/minf/stbl",
+      "size": 4940
+    },
+    {
+      "path": "/moov/trak/mdia/minf/stbl/stsd",
+      "size": 106
+    },
+    {
+      "path": "/moov/trak/mdia/minf/stbl/stts",
+      "size": 32
+    },
+    {
+      "path": "/moov/trak/mdia/minf/stbl/stsc",
+      "size": 1456
+    },
+    {
+      "path": "/moov/trak/mdia/minf/stbl/stsz",
+      "size": 2108
+    },
+    {
+      "path": "/moov/trak/mdia/minf/stbl/stco",
+      "size": 1176
+    },
+    {
+      "path": "/moov/trak/mdia/minf/stbl/sgpd",
+      "size": 26
+    },
+    {
+      "path": "/moov/trak/mdia/minf/stbl/sbgp",
+      "size": 28
+    },
+    {
+      "path": "/moov/trak",
+      "size": 429
+    },
+    {
+      "path": "/moov/trak/tkhd",
+      "size": 92
+    },
+    {
+      "path": "/moov/trak/edts",
+      "size": 36
+    },
+    {
+      "path": "/moov/trak/mdia",
+      "size": 293
+    },
+    {
+      "path": "/moov/trak/mdia/mdhd",
+      "size": 32
+    },
+    {
+      "path": "/moov/trak/mdia/hdlr",
+      "size": 45
+    },
+    {
+      "path": "/moov/trak/mdia/minf",
+      "size": 208
+    },
+    {
+      "path": "/moov/trak/mdia/minf/nmhd",
+      "size": 12
+    },
+    {
+      "path": "/moov/trak/mdia/minf/dinf",
+      "size": 36
+    },
+    {
+      "path": "/moov/trak/mdia/minf/stbl",
+      "size": 152
+    },
+    {
+      "path": "/moov/trak/mdia/minf/stbl/stsd",
+      "size": 52
+    },
+    {
+      "path": "/moov/trak/mdia/minf/stbl/stts",
+      "size": 24
+    },
+    {
+      "path": "/moov/trak/mdia/minf/stbl/stsc",
+      "size": 28
+    },
+    {
+      "path": "/moov/trak/mdia/minf/stbl/stsz",
+      "size": 20
+    },
+    {
+      "path": "/moov/trak/mdia/minf/stbl/stco",
+      "size": 20
+    },
+    {
+      "path": "/moov/udta",
+      "size": 98
+    },
+    {
+      "path": "/moov/udta/meta",
+      "size": 90
+    },
+    {
+      "path": "/moov/udta/meta/hdlr",
+      "size": 33
+    },
+    {
+      "path": "/moov/udta/meta/ilst",
+      "size": 45
+    },
+    {
+      "path": "/moov/udta/meta/ilst/©too",
+      "size": 37
+    }
+  ],
+  "meta_note_cache_same_sha256": true,
+  "cache_observation": "Both original Bodhi and Meta Note caches contain only 11111.mp4; identical SHA-256, no second scene sample."
+}

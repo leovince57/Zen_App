@@ -1,0 +1,12 @@
+{
+  "source_action": "getMindAccumulateCurveNew",
+  "groups": 4,
+  "rows": 68,
+  "percentage_fields": [
+    "percentage",
+    "percentage2",
+    "percentage3"
+  ],
+  "all_percentages_zero": true,
+  "note": "本次是全零样本，不能用于反推积累权重或海洋阈值；未导出逐项历史。"
+}

@@ -1,0 +1,74 @@
+{
+  "request_identity": "1",
+  "mind_practice_id": "1",
+  "type1_vs_type4_different_fields": [],
+  "ordinary_and_upgrade_standard_score": 2,
+  "option_count": 13,
+  "recent_six_endpoint": {
+    "mind_practice_id": 1,
+    "mp_tag_id": 1,
+    "mind_standard_score": 1,
+    "detection_score": -1,
+    "detection_score2": -1,
+    "detection_score3": -1,
+    "detection_score4": -1,
+    "detection_score5": -1,
+    "detection_score6": -1
+  },
+  "note": "相同项目两种检测返回相同选项与阈值不证明账号升级门槛为2；六次结果接口又返回标准分1，字段不可跨接口直接混用。",
+  "type4_catalog_group_count": 4,
+  "type4_catalog_item_count": 26,
+  "type4_catalog_ids_equal_ordinary": true,
+  "catalog_groups": [
+    {
+      "mp_tag_id": 1,
+      "mp_tag_name": "共同基础心理",
+      "mind_practice_ids": [
+        1,
+        2,
+        5,
+        7,
+        8,
+        9,
+        10,
+        121,
+        11
+      ]
+    },
+    {
+      "mp_tag_id": 2,
+      "mp_tag_name": "解脱相应心理",
+      "mind_practice_ids": [
+        20,
+        21,
+        35
+      ]
+    },
+    {
+      "mp_tag_id": 3,
+      "mp_tag_name": "慈悲相应心理",
+      "mind_practice_ids": [
+        39,
+        40,
+        42,
+        43,
+        44,
+        45,
+        49
+      ]
+    },
+    {
+      "mp_tag_id": 4,
+      "mp_tag_name": "轮回相应心理",
+      "mind_practice_ids": [
+        80,
+        81,
+        91,
+        92,
+        93,
+        98,
+        94
+      ]
+    }
+  ]
+}

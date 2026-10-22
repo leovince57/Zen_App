@@ -1,0 +1,63 @@
+{
+  "source_action": "getMindLevelName",
+  "captured_date": "2026-10-20",
+  "list1": [
+    {
+      "level": 1,
+      "score": 1,
+      "level_name": "认识"
+    },
+    {
+      "level": 2,
+      "score": 2,
+      "level_name": "建立"
+    },
+    {
+      "level": 3,
+      "score": 4,
+      "level_name": "培养"
+    },
+    {
+      "level": 4,
+      "score": 6,
+      "level_name": "训练"
+    },
+    {
+      "level": 5,
+      "score": 8,
+      "level_name": "熟悉"
+    },
+    {
+      "level": 6,
+      "score": 10,
+      "level_name": "提升"
+    },
+    {
+      "level": 7,
+      "score": 12,
+      "level_name": "圆满"
+    }
+  ],
+  "list2": [
+    {
+      "level": 1,
+      "score": 0,
+      "level_name": "零度"
+    },
+    {
+      "level": 2,
+      "score": 4,
+      "level_name": "轻度"
+    },
+    {
+      "level": 3,
+      "score": 10,
+      "level_name": "中度"
+    },
+    {
+      "level": 4,
+      "score": 12,
+      "level_name": "重度"
+    }
+  ]
+}

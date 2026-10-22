@@ -1,0 +1,19 @@
+{
+  "top_level_items": 26,
+  "nested_items": 8,
+  "items_with_options": 33,
+  "option_rows": 429,
+  "can_detect_items_with_options": 26,
+  "blocked_nested_items": [
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117
+  ],
+  "model_directory_rows": 68,
+  "model_unique_ids": 67,
+  "fetch_errors": 0
+}

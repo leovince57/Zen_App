@@ -1,0 +1,166 @@
+{
+  "source_action": "getUserMedalList",
+  "note": "保留原始“超过”文案；勋章等级不是账号身份等级，未验证边界日含义。",
+  "rows": [
+    {
+      "medal_id": 1,
+      "medal_intro": "定课勋章",
+      "medal_title": "定课勋章",
+      "medal_detail": [
+        {
+          "medal_info_level": 1,
+          "medal_info_title": "7天定课勋章",
+          "medal_info_intro": "连续定课超过7天可获得"
+        },
+        {
+          "medal_info_level": 2,
+          "medal_info_title": "21天定课勋章",
+          "medal_info_intro": "连续定课超过21天可获得"
+        },
+        {
+          "medal_info_level": 3,
+          "medal_info_title": "42天定课勋章",
+          "medal_info_intro": "连续定课超过42天可获得"
+        },
+        {
+          "medal_info_level": 4,
+          "medal_info_title": "100天定课勋章",
+          "medal_info_intro": "连续定课超过100天可获得"
+        },
+        {
+          "medal_info_level": 5,
+          "medal_info_title": "365天定课勋章",
+          "medal_info_intro": "连续定课超过365天可获得"
+        }
+      ]
+    },
+    {
+      "medal_id": 2,
+      "medal_intro": "自修勋章",
+      "medal_title": "自修勋章",
+      "medal_detail": [
+        {
+          "medal_info_level": 1,
+          "medal_info_title": "7天自修勋章",
+          "medal_info_intro": "连续自修超过7天可获得"
+        },
+        {
+          "medal_info_level": 2,
+          "medal_info_title": "21天自修勋章",
+          "medal_info_intro": "连续自修超过21天可获得"
+        },
+        {
+          "medal_info_level": 3,
+          "medal_info_title": "42天自修勋章",
+          "medal_info_intro": "连续自修超过42天可获得"
+        },
+        {
+          "medal_info_level": 4,
+          "medal_info_title": "100天自修勋章",
+          "medal_info_intro": "连续自修超过100天可获得"
+        },
+        {
+          "medal_info_level": 5,
+          "medal_info_title": "365天自修勋章",
+          "medal_info_intro": "连续自修超过365天可获得"
+        }
+      ]
+    },
+    {
+      "medal_id": 3,
+      "medal_intro": "小组交流勋章",
+      "medal_title": "小组交流勋章",
+      "medal_detail": [
+        {
+          "medal_info_level": 1,
+          "medal_info_title": "4次小组共修勋章",
+          "medal_info_intro": "小组共修连续出勤超过4次可获得"
+        },
+        {
+          "medal_info_level": 2,
+          "medal_info_title": "8次小组共修勋章",
+          "medal_info_intro": "小组共修连续出勤超过8次可获得"
+        },
+        {
+          "medal_info_level": 3,
+          "medal_info_title": "16次小组共修勋章",
+          "medal_info_intro": "小组共修连续出勤超过16次可获得"
+        },
+        {
+          "medal_info_level": 4,
+          "medal_info_title": "32次小组共修勋章",
+          "medal_info_intro": "小组共修连续出勤超过32次可获得"
+        },
+        {
+          "medal_info_level": 5,
+          "medal_info_title": "52次小组共修勋章",
+          "medal_info_intro": "小组共修连续出勤超过52次可获得"
+        }
+      ]
+    },
+    {
+      "medal_id": 4,
+      "medal_intro": "班级交流勋章",
+      "medal_title": "班级交流勋章",
+      "medal_detail": [
+        {
+          "medal_info_level": 1,
+          "medal_info_title": "4次班级共修勋章",
+          "medal_info_intro": "班级共修连续出勤超过4次可获得"
+        },
+        {
+          "medal_info_level": 2,
+          "medal_info_title": "8次班级共修勋章",
+          "medal_info_intro": "班级共修连续出勤超过8次可获得"
+        },
+        {
+          "medal_info_level": 3,
+          "medal_info_title": "16次班级共修勋章",
+          "medal_info_intro": "班级共修连续出勤超过16次可获得"
+        },
+        {
+          "medal_info_level": 4,
+          "medal_info_title": "32次班级共修勋章",
+          "medal_info_intro": "班级共修连续出勤超过32次可获得"
+        },
+        {
+          "medal_info_level": 5,
+          "medal_info_title": "52次班级共修勋章",
+          "medal_info_intro": "班级共修连续出勤超过52次可获得"
+        }
+      ]
+    },
+    {
+      "medal_id": 5,
+      "medal_intro": "义工勋章",
+      "medal_title": "义工勋章",
+      "medal_detail": [
+        {
+          "medal_info_level": 1,
+          "medal_info_title": "1次义工勋章",
+          "medal_info_intro": "累计义工行超过1次可获得"
+        },
+        {
+          "medal_info_level": 2,
+          "medal_info_title": "4次义工勋章",
+          "medal_info_intro": "累计义工行超过4次可获得"
+        },
+        {
+          "medal_info_level": 3,
+          "medal_info_title": "12次义工勋章",
+          "medal_info_intro": "累计义工行超过12次可获得"
+        },
+        {
+          "medal_info_level": 4,
+          "medal_info_title": "28次义工勋章",
+          "medal_info_intro": "累计义工行超过28次可获得"
+        },
+        {
+          "medal_info_level": 5,
+          "medal_info_title": "52次义工勋章",
+          "medal_info_intro": "累计义工行超过52次可获得"
+        }
+      ]
+    }
+  ]
+}
