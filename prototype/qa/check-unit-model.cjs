@@ -5,9 +5,9 @@ const toolsSource=fs.readFileSync(path.join(root,'study-tools.js'),'utf8');
 const noticesSource=fs.readFileSync(path.join(root,'study-notices.js'),'utf8');
 const toolsContext={};vm.createContext(toolsContext);vm.runInContext(toolsSource,toolsContext);
 const app=fs.readFileSync(path.join(root,'app.js'),'utf8');
-const source=app.replace(/\nrender\(\);\n\}\)\(\);\s*$/,`\nglobalThis.model={COURSES,seed,newAssignment,courseById,definitionGaps,canSubmit,publishCourses,checkOptions,url,current,normalizeRoute,resumeStudy,recordStudy,actualStudyPosition,reflectionValues,saveReflectionSnapshot,flushReflection,noticeItems,markNoticeRead,saveGuidance,categoryCourses,setCategory:branch=>{ui.categoryBranch=branch;},
+const source=app.replace(/\nrender\(\);\n\}\)\(\);\s*$/,`\nglobalThis.model={COURSES,seed,newAssignment,courseById,definitionGaps,canSubmit,publishCourses,url,current,normalizeRoute,resumeStudy,recordStudy,actualStudyPosition,reflectionValues,saveReflectionSnapshot,flushReflection,noticeItems,markNoticeRead,saveGuidance,categoryCourses,setCategory:branch=>{ui.categoryBranch=branch;},
  routeGroups,courseRoute,courseProgress,courseNext,isOpened,T,timeline,recordTitle,recordDescription,timerDaySummary,historyPanel,pathEntries,pathKind,matchesPath,eventTime,learningContext,syncLearningTimer,timerRibbon,setHidden:hidden=>{document.hidden=hidden;},DEMO_ARTICLE,ui,getData:()=>data,go:(r,p,id='karma',student='m1',c='karma')=>{role=r;page=p;activeId=id;activeStudent=student;courseId=c;normalizeRoute();prepareArticle();syncLearningTimer();},
- views:{home,category,tools,reader,article,reflect,timer,'timer-review':timerReview,'timer-saved':timerSaved,counter,'course-progress':courseProgress,'record-detail':recordDetail,course,task,read,think,practice,submit,daily,journey,records,learning,guide,directory,pending,profile,students:teacherHome,student:teacherStudent,assign,review,configure,published,'arrangement-history':historyPage}};\n})();`);
+ views:{home,category,tools,reader,article,reflect,timer,'timer-review':timerReview,'timer-saved':timerSaved,counter,'course-progress':courseProgress,'record-detail':recordDetail,course,task,read,think,practice,submit,journey,records,learning,guide,directory,pending,profile,students:teacherHome,student:teacherStudent,assign,review,configure,published,'arrangement-history':historyPage}};\n})();`);
 assert.notEqual(source,app);
 function load(search='',protocol='http:',hash='',raw=null,storage={}){const writes=[];const c={STUDY_MAP:map,URLSearchParams,Intl,Date,setTimeout(){},location:{search,protocol,hash},localStorage:{getItem(){return raw;},setItem(k,v){if(storage.fail)throw Error('storage full');writes.push(k);}},document:{addEventListener(){},querySelector(){return null;}},addEventListener(){},history:{replaceState(){}}};vm.createContext(c);vm.runInContext(toolsSource,c);vm.runInContext(noticesSource,c);vm.runInContext(source,c);return c.model;}
 const model=load(),courses=model.COURSES;
@@ -29,14 +29,12 @@ assert.equal(created.length,2,'deduplicate and preserve existing courses');asser
 assert.equal(model.getData().assignments.filter(a=>a.student==='m2').length,1,'assignments remain isolated by learner');
 assert.ok(created.every(a=>a.status==='active'&&a.requirements==='requirements'));
 assert.ok(model.getData().assignments.some(a=>a.id==='karma'));
-const options=model.checkOptions();assert.equal(options.length,6,'karma + four mindfulness items + opened bodhi');
-assert.ok(!options.some(o=>/戒|轮回|定课/.test(o.title)),'no guessed forms or unopened permissions');
-const untouched=JSON.stringify(model.courseById('karma'));model.getData().daily.selected=[];assert.equal(JSON.stringify(model.courseById('karma')),untouched,'personal daily choices cannot cancel course checks');
+const untouched=JSON.stringify(model.courseById('karma'));model.getData().daily.selected=[];assert.equal(JSON.stringify(model.courseById('karma')),untouched,'archived daily choices cannot change course checks');
 model.go('student','task','bodhi');assert.equal(model.current().student,'m1','direct links cannot expose another learner assignment');
 model.go('student','course','karma','m1','cremation');assert.match(model.views.course().body,/内容锁定/);assert.doesNotMatch(model.views.course().body,/正见 → 正行/,'locked course exposes no learning contents');
 model.go('student','task','karma');assert.match(model.views.task().body,/闻/);assert.match(model.views.think().body,/课程专项自检/);assert.doesNotMatch(model.views.think().body,/type="radio"/,'no fabricated generic self-check questions');
 assert.match(model.views.submit().footer,/disabled/);assert.match(model.views.practice().body,/待法师确认/);
-for(const role of ['student','teacher'])for(const [page,view] of Object.entries(model.views)){model.go(role,page);if((role==='student'&&['students','assign','review','configure','student','pending','arrangement-history','published'].includes(page))||(role==='teacher'&&['home','category','tools','reader','timer','timer-review','timer-saved','counter','task','read','article','think','reflect','practice','submit','daily','records','learning','guide'].includes(page)))continue;const out=view();assert.equal(typeof out.body,'string',role+' '+page);assert.ok(!out.body.includes('undefined'),role+' '+page+' must render valid data');}
+for(const role of ['student','teacher'])for(const [page,view] of Object.entries(model.views)){model.go(role,page);if((role==='student'&&['students','assign','review','configure','student','pending','arrangement-history','published'].includes(page))||(role==='teacher'&&['home','category','tools','reader','timer','timer-review','timer-saved','counter','task','read','article','think','reflect','practice','submit','records','learning','guide'].includes(page)))continue;const out=view();assert.equal(typeof out.body,'string',role+' '+page);assert.ok(!out.body.includes('undefined'),role+' '+page+' must render valid data');}
 assert.equal(model.seed().version,5);
 for(const initial of ['','#role=teacher&page=assign&student=m2']){const m=load('','file:',initial);assert.ok(m.url().startsWith('#'));assert.equal(new URLSearchParams(m.url().slice(1)).get('role'),initial?'teacher':'student');}
 const old=load('','http:','',JSON.stringify({version:4,assignments:[]}));assert.equal(old.getData().version,5,'old storage cannot become fabricated new assignments');
@@ -249,7 +247,6 @@ const planned=personal.newAssignment('samsara','m1','future-samsara',{status:'pl
 pd.assignments.push(planned);groups=personal.routeGroups('m1');
 assert.equal(groups.planned.length,1);assert.equal(groups.planned[0].id,'future-samsara');
 assert.equal(personal.isOpened(personal.courseById('samsara'),'m1'),false,'future arrangement does not grant current learning permission');
-assert.ok(!personal.checkOptions().some(o=>o.courseId==='samsara'),'future arrangement does not unlock personal self-checks');
 personal.go('student','course-progress','future-samsara');progress=personal.courseProgress();
 assert.match(progress.body,/轮回路险/);assert.match(progress.body,/法师明确的后续安排/);
 assert.doesNotMatch(progress.body,/data-go="(?:task|read|article|think|reflect|practice|submit)"|data-action="course-next"/,'planned detail has no learning action');
