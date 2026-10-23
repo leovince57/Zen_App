@@ -2,4 +2,24 @@
 
 当前版本为2026-10-23的24门课程版，见[24门课程版验证记录](24门课程版验证记录.md)。check-unit-model.cjs已改为本版课程与权限回归检查。
 
+当前花瓣导航与继续学习流程见[花瓣类别导航验证记录](花瓣类别导航验证记录.md)。首页截图为lotus-category-home.png。首页目录交互验证记录及home-focused.png为上一轮筛选式交互的历史记录，已被本轮类别详情方案替代。
+
+新增阅读、学习计时与念佛计数见[阅读计时念佛工具验证记录](阅读计时念佛工具验证记录.md)。当前统一记录截图为study-tools-records.png，阅读器交互截图为study-reader.png；个人工具记录不代表课程完成。
+
 此前的“单元版验证记录”“已采纳单元规则验证记录”“导图校对版验证记录”及旧截图仅为历史记录，不代表当前24门课程规则；旧版计数与独立小单元流程已经被本版课程设计替代。
+
+修学计时本轮新增课程＋闻思修关联、完整结束确认页、可选心得和每日累计，见[修学计时流程验证记录](修学计时流程验证记录.md)。当前累计截图为timer-daily-records.png，结束确认截图为timer-end-review.png。上一轮工具验证保留作历史记录。
+
+本轮调整为内容触发自动计时，见[内容自动计时验证记录](内容自动计时验证记录.md)。auto-reflection-timer.png与auto-reader-timer.png为本版证据。先前的课程独立计时入口已移除，相关历史验证不代表本版入口。
+
+开始学习与内置演示文章见[演示文章阅读验证记录](演示文章阅读验证记录.md)，当前阅读截图为demo-article-reading.png。经用户明确授权提供模拟正文；此前没有内置正文的记录仅保留历史状态。
+
+历程当前为已完成、正在修学、后续安排三段个人课程路线，见[个人课程路线验证记录](个人课程路线验证记录.md)。截图course-route.png、course-route-narrow.png及course-route-progress.png。每课一个节点，闻思修详细进展与全部事件收进二级页。此前简化修学历程、本周积累／回顾及个人事件流水时间线均为历史方案。
+
+首页继续学习已缩为课程名、上次停留环节及继续箭头的整行入口；历程只在对应在学节点标注“上次学习”。截图home-compact-resume.png、home-compact-resume-narrow.png与course-route-last-study.png。模型检查确认无记录不冒充、仅一处对应标记、学员隔离、失效安排不标记及原学习地址不变；现有课程模型回归通过。桌面及窄屏呈现检查完成，窄屏工具实际视口586×1272，手机内容clientWidth与scrollWidth均391，无横向溢出。离线HTML与ZIP同步更新。
+
+阅读器补齐固定底部目录／书签／阅读设置入口，见[阅读器基础设置验证记录](阅读器基础设置验证记录.md)。字体、字号、行距、背景偏好由课程文章与个人TXT共享，原折叠设置已替换。当前截图reader-basic-settings.png、reader-fixed-toolbar.png、reader-settings-night.png及reader-night-toolbar.png。
+
+阅读计时已简化为只显示时长，退出正文自动保存并轻提示，见[阅读自动记录验证记录](阅读自动记录验证记录.md)。截图reading-auto-duration.png、reading-auto-saved.png及对应narrow截图；旧阅读截图中的暂停／结束按钮已移除。该轮“反思仍需结束确认”为历史行为，已由下述衔接优化替代；个人手动计时继续保留结束确认。
+
+续学恢复、阅读后心得、反思自动收尾与法师反馈提醒见[修学衔接优化验证记录](修学衔接优化验证记录.md)。首页莲花和历程结构保持不变；通知仅展示已有安排、指导与明确回复，按条保留已读状态。截图study-feedback-notices.png、study-feedback-notices-narrow.png、reading-to-reflection-narrow.png与reflection-auto-wrapup-narrow.png。393×852下第3节滚动327px，刷新及退出后再进入均恢复327px，最终复测通过。
