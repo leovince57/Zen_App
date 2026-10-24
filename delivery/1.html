@@ -246,15 +246,16 @@
 .home-lotus-hero{display:flex;flex-direction:column;justify-content:center;flex:1 0 auto;padding-bottom:22px}
 .home-lotus-hint{flex:none;margin-top:0;padding-top:0}
 .lotus-home .lotus-bloom{flex:none;width:348px;max-width:100%;margin:0 auto}
-.home-study-sheet{flex:0 0 auto;min-height:0;padding:36px 28px 40px}
+.home-study-sheet{flex:0 0 auto;min-height:186.4px;padding:28px 28px}
 .lotus-home .resume-section{margin:0}
-.lotus-home .home-section-title{margin-bottom:14px}
-.lotus-home .resume-entry{gap:20px;align-items:center}
-.lotus-home .resume-entry-copy strong{font-size:30px;font-weight:500;line-height:1.45;letter-spacing:.04em}
+.lotus-home .home-section-title{margin-bottom:8px}
+.lotus-home .resume-entry{gap:20px;align-items:flex-start}
+.lotus-home .resume-entry-copy strong{font-size:32px;font-weight:500;line-height:1.45;letter-spacing:.06em}
 .lotus-home .resume-entry-copy small{margin-top:8px}
-.lotus-home .resume-entry-action{min-width:78px;min-height:48px;padding:0;border:0;border-radius:0;background:transparent;color:#345f53;gap:12px}
-.lotus-home .resume-entry-action svg{width:20px;height:20px}
-.lotus-home .resume-entry:hover .resume-entry-action{background:transparent;color:#193f33;text-decoration:underline;text-underline-offset:5px}
+.lotus-home .resume-entry-action{min-width:48px;min-height:48px;padding:0;border:0;border-radius:0;background:transparent;color:#345f53;justify-content:flex-end}
+.lotus-home .resume-entry-action svg{width:26px;height:26px;stroke-width:1.4}
+.lotus-home .resume-entry:hover .resume-entry-action{background:transparent;color:#193f33}
+.lotus-home .resume-entry-copy .resume-position{margin-top:14px;font-size:14px;font-weight:400;line-height:24px;letter-spacing:.02em;color:#58695e}
 .lotus-home .resume-entry:focus-visible{outline-offset:8px}
 @media(max-width:360px){.home-study-sheet{padding-inline:22px}.lotus-home .resume-entry{gap:14px}}
 
@@ -2258,9 +2259,9 @@ function resumeStudy(){
  return {a:owned().find(a=>a.status==='active'),page:'task',hasHistory:false};
 }
 function categoryCourses(branch){return COURSES.filter(c=>c.branch===branch);}
-function home(){const unread=noticeItems().filter(n=>n.unread).length,resume=resumeStudy(),a=resume.a,phase={task:'课程学习',read:'闻',article:'闻',think:'思',reflect:'思',practice:'修'};return {
+function home(){const unread=noticeItems().filter(n=>n.unread).length,resume=resumeStudy(),a=resume.a,phase={task:'课程学习',read:'闻',article:'闻',think:'思',reflect:'思',practice:'修'},resumeDetail={article:'闻 · 文章阅读',reflect:'思 · 反思记录'}[resume.page]||phase[resume.page];return {
  bar:`<header class="app-bar home-app-bar"><h1 class="home-page-title">我的修学</h1><button class="icon-btn notification-bell" data-action="notices" aria-label="修学消息${unread?'，'+unread+'条未读':''}">${icon('bell')}${unread?'<span class="notification-dot" aria-hidden="true"></span>':''}</button></header>`,
- body:`<div class="lotus-home"><section class="home-lotus-hero" aria-label="五正修学入口">${studyLotus()}<p class="home-lotus-hint">点击花瓣进入类别</p></section><div class="home-study-sheet"><section class="resume-section" aria-label="${resume.hasHistory?'继续上次学习':'开始学习'}"><h2 class="home-section-title">${resume.hasHistory?'继续学习':'开始学习'}</h2>${a?`<button class="resume-entry" data-go="${resume.page}" data-id="${esc(a.id)}"><span class="resume-entry-copy"><strong>${esc(courseById(a.courseId).title)}</strong><small>${resume.hasHistory?'上次停在：'+phase[resume.page]:'法师已安排，可开始学习'}</small></span><span class="resume-entry-action">${resume.hasHistory?'继续':'开始'} ${icon('arrow')}</span></button>`:`<div class="home-empty"><h3>暂无已安排课程</h3><p>法师安排后，可从这里开始学习。</p><button class="text-button" data-go="guide">先看公共导读 ${icon('right')}</button></div>`}</section></div></div>`,bottom:bottom('home')};}
+ body:`<div class="lotus-home"><section class="home-lotus-hero" aria-label="五正修学入口">${studyLotus()}<p class="home-lotus-hint">点击花瓣进入类别</p></section><div class="home-study-sheet"><section class="resume-section" aria-label="${resume.hasHistory?'继续上次学习':'开始学习'}"><h2 class="home-section-title">${resume.hasHistory?'继续学习':'开始学习'}</h2>${a?`<button class="resume-entry" data-go="${resume.page}" data-id="${esc(a.id)}" aria-label="${resume.hasHistory?'继续学习':'开始学习'}，${esc(courseById(a.courseId).title)}${resume.hasHistory?'，上次停在：'+resumeDetail:''}"><span class="resume-entry-copy"><strong>${esc(courseById(a.courseId).title)}</strong>${resume.hasHistory?`<small class="resume-position">${resumeDetail}</small>`:'<small>法师已安排，可开始学习</small>'}</span><span class="resume-entry-action" aria-hidden="true">${icon('arrow')}</span></button>`:`<div class="home-empty"><h3>暂无已安排课程</h3><p>法师安排后，可从这里开始学习。</p><button class="text-button" data-go="guide">先看公共导读 ${icon('right')}</button></div>`}</section></div></div>`,bottom:bottom('home')};}
 function category(){
  const branch=ui.categoryBranch,theory=branch==='正见',items=categoryCourses(branch);
  const assigned=theory?owned().filter(a=>['active','submitted'].includes(a.status)):items.map(c=>owned().find(a=>a.courseId===c.id&&['active','submitted'].includes(a.status))).filter(Boolean);
