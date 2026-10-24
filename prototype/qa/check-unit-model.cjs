@@ -5,9 +5,9 @@ const toolsSource=fs.readFileSync(path.join(root,'study-tools.js'),'utf8');
 const noticesSource=fs.readFileSync(path.join(root,'study-notices.js'),'utf8');
 const toolsContext={};vm.createContext(toolsContext);vm.runInContext(toolsSource,toolsContext);
 const app=fs.readFileSync(path.join(root,'app.js'),'utf8');
-const source=app.replace(/\nrender\(\);\n\}\)\(\);\s*$/,`\nglobalThis.model={COURSES,seed,newAssignment,courseById,definitionGaps,canSubmit,publishCourses,url,current,normalizeRoute,resumeStudy,recordStudy,actualStudyPosition,reflectionValues,saveReflectionSnapshot,flushReflection,noticeItems,markNoticeRead,saveGuidance,categoryCourses,setCategory:branch=>{ui.categoryBranch=branch;},
+const source=app.replace(/\nrender\(\);\n\}\)\(\);\s*$/,`\nglobalThis.model={COURSES,checkOptions,dailyDraft,saveDailySettings,saveSelfCheck,seed,newAssignment,courseById,definitionGaps,canSubmit,publishCourses,url,current,normalizeRoute,resumeStudy,recordStudy,actualStudyPosition,reflectionValues,saveReflectionSnapshot,flushReflection,noticeItems,markNoticeRead,saveGuidance,categoryCourses,setCategory:branch=>{ui.categoryBranch=branch;},
  routeGroups,courseRoute,courseProgress,courseNext,isOpened,T,timeline,recordTitle,recordDescription,timerDaySummary,historyPanel,pathEntries,pathKind,matchesPath,eventTime,learningContext,syncLearningTimer,timerRibbon,setHidden:hidden=>{document.hidden=hidden;},DEMO_ARTICLE,ui,getData:()=>data,go:(r,p,id='karma',student='m1',c='karma')=>{role=r;page=p;activeId=id;activeStudent=student;courseId=c;normalizeRoute();prepareArticle();syncLearningTimer();},
- views:{home,category,tools,reader,article,reflect,timer,'timer-review':timerReview,'timer-saved':timerSaved,counter,'course-progress':courseProgress,'record-detail':recordDetail,course,task,read,think,practice,submit,journey,records,learning,guide,directory,pending,profile,students:teacherHome,student:teacherStudent,assign,review,configure,published,'arrangement-history':historyPage}};\n})();`);
+ views:{home,category,tools,reader,article,reflect,timer,'timer-review':timerReview,'timer-saved':timerSaved,counter,'course-progress':courseProgress,'record-detail':recordDetail,course,task,read,think,practice,submit,daily,'daily-plan':dailyPlan,journey,records,learning,guide,directory,pending,profile,students:teacherHome,student:teacherStudent,assign,review,configure,published,'arrangement-history':historyPage}};\n})();`);
 assert.notEqual(source,app);
 function load(search='',protocol='http:',hash='',raw=null,storage={}){const writes=[];const c={STUDY_MAP:map,URLSearchParams,Intl,Date,setTimeout(){},location:{search,protocol,hash},localStorage:{getItem(){return raw;},setItem(k,v){if(storage.fail)throw Error('storage full');writes.push(k);}},document:{addEventListener(){},querySelector(){return null;}},addEventListener(){},history:{replaceState(){}}};vm.createContext(c);vm.runInContext(toolsSource,c);vm.runInContext(noticesSource,c);vm.runInContext(source,c);return c.model;}
 const model=load(),courses=model.COURSES;
@@ -269,6 +269,32 @@ const noPlanner=evidence.seed();delete noPlanner.planner;const migrated=load('',
 const completedOnly=evidence.seed();completedOnly.assignments=completedOnly.assignments.filter(a=>a.student!=='m1');for(const [i,id] of ['karma','mindfulness','bodhi'].entries())completedOnly.assignments.push(evidence.newAssignment(id,'m1','done-'+i,{status:'completed',completedAt:`2026-10-${23+i}T01:00:00Z`}));
 const archive=load('?role=student&page=journey','http:','',JSON.stringify(completedOnly));assert.equal(archive.routeGroups('m1').completed.length,3);assert.match(archive.views.journey().body,/<details[\s>]/,'older completed courses are expandable');
 console.log('Personal course route passed: three factual groups, course-level nodes, scoped progress detail, read-only completed/future courses, no invented sequence or requirements, preserved old storage and no weekly UI.');
+
+// Personal self-checks persist independently, without bypassing course content gates.
+const self=load('?page=daily'),sd=self.getData();
+assert.equal(new URLSearchParams(self.url().slice(1)).get('page'),'daily');
+assert.match(self.views.home().body,/class="home-self-check" data-go="daily"/);
+const homeSelf=load('?role=student&page=daily&dailyFrom=home');assert.match(homeSelf.views.daily().bar,/data-go="home"/);assert.match(homeSelf.url(),/dailyFrom=home/);
+assert.match(self.views.profile().body,/data-go="daily"/);assert.match(self.views.journey().body,/data-go="daily"/);
+assert.equal(self.checkOptions().length,5);assert.ok(self.checkOptions().every(o=>['karma','mindfulness'].includes(o.courseId)));
+assert.match(self.views.daily().body,/随时自检|自设定课/);assert.match(self.views['daily-plan']().body,/睡前/);
+const unchanged=JSON.stringify(sd.assignments),beforeRecords=self.timeline().length;
+const dp=self.dailyDraft();dp.selected=['mindfulness:观心无常','bodhi:菩提心自检'];dp.time='自定时间';dp.customTime='';
+assert.equal(self.saveDailySettings(),false);assert.equal(sd.daily.saved,false);
+dp.customTime='22:15';assert.equal(self.saveDailySettings(),true);assert.deepEqual([...sd.daily.selected],['mindfulness:观心无常']);
+assert.equal(self.timeline().length,beforeRecords,'saving a plan is not a learning event');
+sd.selfCheckDraft={selected:['mindfulness:观心无常','bodhi:菩提心自检'],text:'观察到自己的急躁，提醒自己耐心倾听。'};
+const selfRecord=self.saveSelfCheck();assert.equal(selfRecord.kind,'self-check');assert.equal(selfRecord.assignmentId,null);assert.deepEqual([...selfRecord.topics],['观心无常']);
+assert.equal(self.timeline().filter(r=>r.kind==='self-check').length,1);assert.equal(self.timeline('m2').filter(r=>r.kind==='self-check').length,0);
+assert.equal(self.saveSelfCheck(),false,'double save cannot duplicate a cleared draft');
+assert.equal(JSON.stringify(sd.assignments),unchanged);assert.equal(self.canSubmit(sd.assignments[0]),false);
+const restoredSelf=load('?page=daily-plan','file:','',JSON.stringify(sd));assert.equal(restoredSelf.getData().daily.customTime,'22:15');assert.equal(restoredSelf.timeline().filter(r=>r.kind==='self-check').length,1);
+const freeState=self.seed();freeState.assignments=[];freeState.selfCheckDraft={selected:[],text:'自由自检心得'};
+const freeSelf=load('?page=daily','http:','',JSON.stringify(freeState));assert.equal(freeSelf.checkOptions().length,0);assert.equal(freeSelf.saveSelfCheck().topics.length,0,'free self-check needs no course assignment');
+const failingStorage={fail:false},failedSelf=load('?page=daily','http:','',JSON.stringify(sd),failingStorage);failedSelf.getData().selfCheckDraft={selected:[],text:'保留这份草稿'};
+failingStorage.fail=true;const failedCount=failedSelf.getData().checkRecords.length;assert.equal(failedSelf.saveSelfCheck(),false);assert.equal(failedSelf.getData().checkRecords.length,failedCount);assert.equal(failedSelf.getData().selfCheckDraft.text,'保留这份草稿');
+failedSelf.dailyDraft().time='不固定';const oldPlan=JSON.stringify(failedSelf.getData().daily);assert.equal(failedSelf.saveDailySettings(),false);assert.equal(JSON.stringify(failedSelf.getData().daily),oldPlan);
+console.log('Personal self-check passed: independent entry, free notes, saved plans, valid time, old settings, learner isolation, storage failure recovery and unchanged course gates.');
 
 // The shipped offline snapshot must contain exactly the current sources, with no external dependencies.
 const offline=fs.readFileSync(path.join(root,'..','delivery','1.html'),'utf8');

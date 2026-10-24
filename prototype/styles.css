@@ -269,3 +269,31 @@
 .phone .bottom-nav.student-tabbar button:focus-visible{outline:2px solid #456b58;outline-offset:-2px;border-radius:6px}
 .phone:has(.student-tabbar) .gesture{background:transparent}
 @media(prefers-reduced-motion:reduce){.phone .bottom-nav.student-tabbar button{transition:none}}
+
+/* Personal self-check: keep the writing area visible; topics remain optional. */
+.self-check-topics{margin:24px 0;}
+.self-check-topics summary{min-height:44px;cursor:pointer;font-size:15px;font-weight:600;line-height:1.7;}
+.self-check-topics summary span{display:block;margin:6px 0 0;font-size:12px;font-weight:400;color:var(--muted);line-height:1.8;}
+.self-check-topics summary:focus-visible{outline:2px solid var(--primary);outline-offset:4px;}
+
+/* Both home actions share the same two-line composition and arrow alignment. */
+.lotus-home{padding-top:0;}
+.home-lotus-hero{padding-bottom:10px;}
+.home-lotus-hero .lotus-bloom{width:348px;margin:0 auto;}
+.home-study-sheet{min-height:0;padding:0 26px 12px;background:#f9f9f7 url('assets/xuan-paper-fiber.jpg') center top/391px auto repeat-y;}
+.home-practice-paper{position:relative;background:transparent;border-radius:0;box-shadow:none;}
+.home-practice-paper::after{content:none;}
+.home-practice-paper .resume-section{min-height:0;margin:0;padding:0;background:transparent;border-radius:0;box-shadow:none;}
+.home-practice-paper .resume-section::after{content:none;}
+.home-practice-paper .resume-entry,.home-self-check{display:flex;align-items:center;justify-content:space-between;gap:16px;width:100%;min-height:108px;margin:0;padding:24px 0;border-top:1px solid transparent;background:transparent;text-align:left;color:#34594b;}
+.home-self-check{border-top:1px solid #dce1d8;}
+.home-practice-paper .resume-entry-copy,.self-check-entry-copy{display:block;flex:1;min-width:0;}
+.home-practice-paper .resume-entry-copy strong,.home-self-check strong{display:block;font-family:var(--serif);font-size:20px;font-weight:500;line-height:30px;letter-spacing:.04em;color:#34594b;}
+.home-practice-paper .resume-entry-copy small,.home-self-check small{display:block;margin-top:4px;font-family:"Home UI Sans",var(--font);font-size:13px;font-weight:400;line-height:22px;letter-spacing:0;color:#58695e;overflow-wrap:anywhere;}
+.home-practice-paper .resume-entry-action,.self-check-entry-arrow{display:grid;place-items:center;justify-content:center;align-items:center;flex:none;width:44px;min-width:44px;min-height:44px;padding:0;color:#34594b;}
+.home-practice-paper .resume-entry-action svg,.home-self-check svg{width:22px;height:22px;stroke-width:1.4;}
+.home-self-check:hover{color:#193f33;}
+.home-self-check:focus-visible,.home-practice-paper .resume-entry:focus-visible{outline-offset:4px;}
+.home-practice-paper .home-empty{padding:24px 0;}
+.phone:has(.lotus-home) .bottom-nav.student-tabbar{background:#f9f9f7 url('assets/xuan-paper-fiber.jpg') center bottom/391px auto repeat-y;}
+@media(max-width:360px){.home-study-sheet{padding-inline:22px;}.home-practice-paper .resume-entry,.home-self-check{gap:12px;}}
