@@ -122,7 +122,8 @@
 .bloom-petal[data-petal="正行"]{--lettering:inset(56% 22% 36% 64%)}
 .bloom-hit{position:absolute;inset:0;width:100%;height:100%;padding:0;margin:0;border:0;background:transparent;clip-path:var(--shape);pointer-events:auto;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
 .bloom-petal:has(.bloom-hit:focus-visible) .bloom-surface{filter:brightness(1.08) drop-shadow(0 0 2px #f5d98f)}
-.bloom-jue{position:absolute;left:calc(50% - 26px);top:76%;width:52px;height:52px;padding:0;border:1px solid #c4ac79;border-radius:50%;background:#d6bd84 url('assets/jue-copper-flake.svg') center/cover;box-shadow:none;font:400 25px/1 var(--serif);color:#304e45;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+@font-face{font-family:"Jue Serif";src:url('assets/fonts/jue-serif.ttf') format('truetype');font-weight:500;font-style:normal;font-display:swap;unicode-range:U+899A}
+.bloom-jue{position:absolute;left:calc(50% - 26px);top:76%;width:52px;height:52px;padding:0;border:1px solid #c4ac79;border-radius:50%;background:#d6bd84 url('assets/jue-copper-flake.svg') center/cover;box-shadow:none;font:500 26px/1 "Jue Serif",var(--serif);color:#304e45;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
 .bloom-jue:focus-visible{outline:2px solid #eee2c7;outline-offset:4px}
 .bloom-live{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 
