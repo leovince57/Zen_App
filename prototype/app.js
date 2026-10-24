@@ -12,6 +12,7 @@ const ICONS = {
  right:'<path d="m9 5 7 7-7 7"/>',left:'<path d="m15 5-7 7 7 7"/>',down:'<path d="m5 9 7 7 7-7"/>',
  arrow:'<path d="M4 12h16m-6-6 6 6-6 6"/>',close:'<path d="m6 6 12 12M6 18 18 6"/>',
  bell:'<path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9Zm-8 12h4"/>',
+ templeBell:'<path d="M10 5V4a2 2 0 0 1 4 0v1M7 7c0-1.6 10-1.6 10 0l1 9c.2 1.6.8 3 2 4-5 1.3-11 1.3-16 0 1.2-1 1.8-2.4 2-4Z"/><path d="M6.7 10h10.6M5.5 18h13"/><circle cx="12" cy="14" r="1.4"/>',
  bookmark:'<path d="M6 3h12v18l-6-4-6 4Z"/>',
  note:'<path d="M14 3H5v18h14V8Z"/><path d="M14 3v5h5M8 12h8m-8 4h5"/>',
  edit:'<path d="m16 3 5 5L9 20l-6 1 1-6Zm-10 10 5 5M14 5l5 5"/>',
@@ -93,7 +94,7 @@ function studyLotus(){
  <svg class="bloom-filter-defs" width="0" height="0" aria-hidden="true" focusable="false"><defs><filter id="lotus-edge-alpha" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  12 -12 0 0 1"/></filter></defs></svg>
  <div class="bloom-disk" aria-hidden="true"></div><div class="bloom-shadow" aria-hidden="true"></div>
  ${LOTUS_PETALS.map(p=>{const state=lotusState(p.name);return `<div class="bloom-petal" data-petal="${p.name}" style="--shape:${p.shape};--origin:${p.origin}" data-tilt="${p.tilt}"><span class="bloom-surface" aria-hidden="true"></span><button type="button" class="bloom-hit" data-lotus-entry data-go="category" data-branch="${p.name}" aria-label="进入${p.name}类别，${p.name==='正见'?'解，理论基础':'行，落实实践'}，${state.label}"></button></div>`;}).join('')}
- <button type="button" class="bloom-jue" data-lotus-entry aria-label="覚，查看五正修学说明" aria-haspopup="dialog">覚</button>
+ <button type="button" class="bloom-jue" data-lotus-entry aria-label="覚，查看五正修学说明" aria-haspopup="dialog"><span class="bloom-jue-label" aria-hidden="true">覚</span></button>
  <span class="bloom-live" role="status" aria-live="polite"></span></div>`;
 }
 function cancelLotusNavigation(){
@@ -243,7 +244,7 @@ function resumeStudy(){
 }
 function categoryCourses(branch){return COURSES.filter(c=>c.branch===branch);}
 function home(){const unread=noticeItems().filter(n=>n.unread).length,resume=resumeStudy(),a=resume.a,phase={task:'课程学习',read:'闻',article:'闻',think:'思',reflect:'思',practice:'修'},resumeDetail={article:'闻 · 文章阅读',reflect:'思 · 反思记录'}[resume.page]||phase[resume.page];return {
- bar:`<header class="app-bar home-app-bar"><h1 class="home-page-title">我的修学</h1><button class="icon-btn notification-bell" data-action="notices" aria-label="修学消息${unread?'，'+unread+'条未读':''}">${icon('bell')}${unread?'<span class="notification-dot" aria-hidden="true"></span>':''}</button></header>`,
+ bar:`<header class="app-bar home-app-bar"><h1 class="home-page-title">我的修学</h1><button class="icon-btn notification-bell" data-action="notices" aria-label="修学消息${unread?'，'+unread+'条未读':''}">${icon('templeBell')}${unread?'<span class="notification-dot" aria-hidden="true"></span>':''}</button></header>`,
  body:`<div class="lotus-home"><section class="home-lotus-hero" aria-label="五正修学入口">${studyLotus()}<p class="home-lotus-hint">轻点花瓣，查看课程</p></section><div class="home-study-sheet"><section class="resume-section" aria-label="${resume.hasHistory?'继续上次学习':'开始学习'}"><h2 class="home-section-title">${resume.hasHistory?'继续学习':'开始学习'}</h2>${a?`<button class="resume-entry" data-go="${resume.page}" data-id="${esc(a.id)}" aria-label="${resume.hasHistory?'继续学习':'开始学习'}，${esc(courseById(a.courseId).title)}${resume.hasHistory?'，上次停在：'+resumeDetail:''}"><span class="resume-entry-copy"><strong>${esc(courseById(a.courseId).title)}</strong>${resume.hasHistory?`<small class="resume-position">${resumeDetail}</small>`:'<small>法师已安排，可开始学习</small>'}</span><span class="resume-entry-action" aria-hidden="true">${icon('arrow')}</span></button>`:`<div class="home-empty"><h3>暂无已安排课程</h3><p>法师安排后，可从这里开始学习。</p><button class="text-button" data-go="guide">先看公共导读 ${icon('right')}</button></div>`}</section></div></div>`,bottom:bottom('home')};}
 function category(){
  const branch=ui.categoryBranch,theory=branch==='正见',items=categoryCourses(branch);
