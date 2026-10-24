@@ -112,8 +112,9 @@
 .bloom-surface{position:absolute;inset:0;clip-path:var(--shape);transform-origin:var(--origin);pointer-events:none}
 /* Preserve warm source colors. A very light ivory wash only softens the tips and lower folds. */
 .bloom-surface::before,.bloom-surface::after{content:"";position:absolute;inset:0;background-image:linear-gradient(to bottom,transparent 22%,#fff8e915 26%,transparent 40%,transparent 52%,#fff8e922 69%,transparent 72%),var(--lotus-source);background-size:100% 100%;pointer-events:none}
-.bloom-surface::before{filter:url(#lotus-edge-alpha)}
-.bloom-surface::after{clip-path:var(--lettering)}
+/* Tone the petals after edge extraction so the silhouette stays opaque and crisp. */
+.bloom-surface::before{filter:url(#lotus-edge-alpha) saturate(.48) contrast(.94) brightness(1.025)}
+.bloom-surface::after{clip-path:var(--lettering);filter:saturate(.48) contrast(.94) brightness(1.025)}
 .bloom-petal[data-petal="正见"]{--lettering:inset(32% 43% 60% 43%)}
 .bloom-petal[data-petal="正人"]{--lettering:inset(41% 59% 51% 27%)}
 .bloom-petal[data-petal="正信"]{--lettering:inset(41% 26% 51% 60%)}
