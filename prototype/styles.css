@@ -223,7 +223,7 @@
 .phone:has(.lotus-home){--home-teal:#52746b;background:#52746b}
 .phone:has(.lotus-home)::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(#52746b94,#52746b94),#52746b url('assets/celadon-glaze-refined.jpg') center top/100% auto no-repeat;filter:blur(.65px);pointer-events:none}
 .lotus-home .lotus-bloom{--lotus-source:url('assets/lotus-depth.jpg')}
-.home-study-sheet{position:relative;padding:28px 24px 26px;min-height:258px;border-radius:5px 5px 0 0;background:#f9f9f7 url('assets/xuan-paper-fiber.jpg') center/100% auto repeat-y;box-shadow:none}
+.home-study-sheet{position:relative;border-radius:0;background:linear-gradient(transparent 18px,#eeeee8 18px);box-shadow:none}
 .lotus-home .lotus-relation{column-gap:24px;align-items:center}
 .lotus-home .lotus-relation .home-relation-item{display:flex;align-items:center;gap:12px}
 .lotus-home .home-relation-item>span{display:block}
@@ -241,8 +241,10 @@
 .home-lotus-hero{display:flex;flex-direction:column;justify-content:center;flex:1 0 auto;padding-bottom:22px}
 .home-lotus-hint{flex:none;margin-top:0;padding-top:0}
 .lotus-home .lotus-bloom{flex:none;width:348px;max-width:100%;margin:0 auto}
-.home-study-sheet{flex:0 0 auto;min-height:186.4px;padding:28px 28px}
-.lotus-home .resume-section{margin:0}
+.home-study-sheet{flex:0 0 auto;min-height:186.4px;padding:0 12px 12px}
+/* A separate sheet resting on a quiet backing, with a thin paper edge. */
+.lotus-home .resume-section{position:relative;min-height:174.4px;margin:0;padding:24px 16px 20px;border-radius:2px;background:#f9f9f7 url('assets/xuan-paper-fiber.jpg') center/391px auto repeat-y;box-shadow:0 1px 2px #17382e0d,0 3px 5px -3px #17382e1f}
+.lotus-home .resume-section::after{content:"";position:absolute;left:1px;right:1px;bottom:0;height:1px;background:#deded4;opacity:.65;pointer-events:none}
 .lotus-home .home-section-title{margin-bottom:8px}
 .lotus-home .resume-entry{gap:20px;align-items:flex-start}
 .lotus-home .resume-entry-copy strong{font-size:32px;font-weight:500;line-height:1.45;letter-spacing:.06em}
@@ -252,7 +254,7 @@
 .lotus-home .resume-entry:hover .resume-entry-action{background:transparent;color:#193f33}
 .lotus-home .resume-entry-copy .resume-position{margin-top:14px;font-size:14px;font-weight:400;line-height:24px;letter-spacing:.02em;color:#58695e}
 .lotus-home .resume-entry:focus-visible{outline-offset:8px}
-@media(max-width:360px){.home-study-sheet{padding-inline:22px}.lotus-home .resume-entry{gap:14px}}
+@media(max-width:360px){.home-study-sheet{padding-inline:10px}.lotus-home .resume-section{padding-inline:12px}.lotus-home .resume-entry{gap:14px}}
 
 /* Learner navigation as text tabs on one continuous paper surface. */
 .phone:has(.student-tabbar)::after{content:"";position:absolute;left:0;right:0;bottom:0;height:99px;z-index:-1;pointer-events:none;background:#f9f9f7 url('assets/xuan-paper-fiber.jpg') center/100% auto repeat-y}

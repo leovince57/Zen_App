@@ -12,7 +12,7 @@ const ICONS = {
  right:'<path d="m9 5 7 7-7 7"/>',left:'<path d="m15 5-7 7 7 7"/>',down:'<path d="m5 9 7 7 7-7"/>',
  arrow:'<path d="M4 12h16m-6-6 6 6-6 6"/>',close:'<path d="m6 6 12 12M6 18 18 6"/>',
  bell:'<path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9Zm-8 12h4"/>',
- templeBell:'<path d="M10 5V4a2 2 0 0 1 4 0v1M7 7c0-1.6 10-1.6 10 0l1 9c.2 1.6.8 3 2 4-5 1.3-11 1.3-16 0 1.2-1 1.8-2.4 2-4Z"/><path d="M6.7 10h10.6M5.5 18h13"/><circle cx="12" cy="14" r="1.4"/>',
+ templeBell:'<path d="M10 5V4a2 2 0 0 1 4 0v1M7 7c0-1.6 10-1.6 10 0l1 9c.2 1.6.8 3 2 4-5 1.3-11 1.3-16 0 1.2-1 1.8-2.4 2-4Z"/><path d="M5.5 18h13"/>',
  bookmark:'<path d="M6 3h12v18l-6-4-6 4Z"/>',
  note:'<path d="M14 3H5v18h14V8Z"/><path d="M14 3v5h5M8 12h8m-8 4h5"/>',
  edit:'<path d="m16 3 5 5L9 20l-6 1 1-6Zm-10 10 5 5M14 5l5 5"/>',
